@@ -1,0 +1,479 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 8 juil. 2014, 16:27:50
+    Author     : PGE
+*/
+@grey:rgb(230,230,230);
+@color:rgb(101,193,120);
+@black:rgb(80,80,80);
+
+
+
+//LAYOUT
+@site-menu:8%;
+
+@global-padding:15px;
+@photo-margin:20px;
+@global-margin : 3%;
+
+@top-left-width : 35%;
+@top-right-width: 100% - @top-left-width - @global-margin;
+
+@middle-left-width : 60%;
+@middle-right-width: 100% - @middle-left-width - @global-margin;
+
+@icon_height : 40px;
+@top_height : 110px;
+
+//AUTO
+@middle_height_formation : 300px;
+@middle_height_experience : 300px;
+@middle_height_sidebar : 800px;
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-size: 0;
+    border: 0px solid red;
+}
+
+body{
+    background-color: @grey;
+    font-family: Roboto;
+}
+
+#CV{
+    //display: none; 
+}
+#site-body{
+    width:900px;
+    margin: auto;
+    margin-top: 20px;
+
+    //padding-bottom: 100px;
+}
+#menu{
+    background-color: white;
+    width: @site-menu;
+    height: 240px;
+    font-size:10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.page{
+    display: inline-block;
+    //padding-top: 20px;
+    //height: 1000px;
+    width: 100% - @global-margin - @site-menu;
+    float:right;
+
+}
+#bandeau{
+    background-color: @color;
+    height: 20px;
+    width: 100%;
+    position: fixed;
+    top:0px;
+    left: 0px;
+}
+.boxshadow{
+    //box-shadow: 2px 2px 2px 2px rgba(119, 119, 119, 0.75);
+    //box-shadow:         0 0 65px #cdbe9f inset, 0 0 20px #beae8c inset;  
+    position: relative;
+}
+
+.boxshadow:after, .boxshadow:before {  
+    content: " ";  
+    position: absolute;  
+    width: 50%;  
+    height: 100px;  
+    z-index: -10;  
+}  
+//.boxshadow:before { background: green;}  
+//.boxshadow:after { background: red; }  
+
+.boxshadow:before {  
+    top: 0px;  
+    left: 5%;  
+    width: 90%;  
+    height: 50px;  
+
+    border-radius: 125px / 12px;  
+    box-shadow: 0 0 8px rgba(50,50,50,0.25);  
+}  
+.boxshadow:after {   
+    bottom: 0px;  
+    left: 5%;  
+    width: 90%;  
+    height: 50px;  
+    border-radius: 125px / 12px;  
+    box-shadow: 0 0 8px rgba(50,50,50,0.25); 
+}
+
+
+/* ---------------------------------TEXTs-----------------------------------*/
+a{
+    font-size: 12px;
+}
+.h1{
+    //TITLE
+    font-family:Bebas Neue;
+    font-size:32px;
+    color:rgb(80,80,80);
+}
+.note{
+    //EMAIL
+    font-family:Roboto;
+    font-size:12px;
+    color:@black;
+    text-align: right;
+    font-style: italic;
+}
+
+.section-title{
+    //TITLE COLORÈ
+    font-family:Roboto;
+    font-size:18px;
+    color:@color;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.section-title i{
+    //TITRE COLOREE ICON
+    font-size: 20px;
+    color:rgb(130,130,130);
+    padding: 0 5px 0 0px;
+}
+.section-subtitle{
+    //SOUS-TITRE GRAS
+    font-family:Roboto;
+    font-size:14px;
+    font-weight: bold;
+    color:@black;
+}
+.section-subtitle.head{
+    //SOUS-TITRE GRAS
+    font-family:Roboto;
+    font-size:14px;
+    font-weight: bold;
+    color:@black;
+    margin-bottom: 10px;
+}
+.text{
+    font-family:Roboto;
+    font-size:12px;
+    color:@black;
+    font-weight: normal;
+}
+
+//------------------------------------------------TABLE
+table{
+    border-collapse: collapse;
+}
+td:nth-child(1){
+    //PREMIERE COLONNE
+    border-right: 2px solid @color;
+    color:@color;
+    font-size:12px;
+    font-weight: bold;
+    padding-right: @global-padding;
+    vertical-align: top;
+    text-align: right;
+}
+td:nth-child(2){
+    //DEUSIEME COLONNE
+    padding-left: @global-padding;
+}
+td{
+    padding-bottom: 20px;
+    border: 0px solid red;
+}
+//--TABLE COMPETENCE
+.competence td:nth-child(1){
+    //PREMIERE COLONNE
+    //border: 2px solid blue; 
+    width: 22%;
+    text-align: right;
+
+}
+.competence td:nth-child(2){
+    //DEUSIEME COLONNE
+    //border: 2px solid blue; 
+    //width: 150px;
+    //text-align: right;
+    //color:red;
+    padding-right: 5px;
+    width: 43%;
+}
+.competence td:nth-child(3){
+    //PREMIERE COLONNE
+    //border: 2px solid blue; 
+    //padding-left: 15px;
+    width: 35%;
+}
+.competence tr:nth-child(2){
+    //border-top:1px solid @grey;
+}
+.competence tr:nth-child(3){
+    //border-top:1px solid @grey;
+}
+
+.competence-break{
+    height: 20px;
+}
+.android *{
+        border:0px solid red;
+}
+//----------------------------------------ANDROID TABLE
+.android td:nth-child(1){
+    //Première colonne android table
+    width : 20%;
+    text-align: right;
+}
+
+.android td:nth-child(2){
+    //Deusième colonne android table
+    width : 30%;
+
+    
+}
+.android td:nth-child(3){
+    //Troizièem colonne android table
+    //width : 50%;
+    text-align: center;
+    height: 100%;
+    width: 50%;
+        border: 0px solid blue;
+}
+.android-image-div{
+    //width: 25%;
+   //height: 100%;
+}
+.android-image{
+    
+   //max-height: 100%;
+   width: 100px;
+   //max-width: 100%;
+}
+
+//----------------------------------------------LIST
+li{
+    display: block;
+}
+li:before {
+    content:"\f054 "; /* this is the Unicode for the icon */
+    font-family: FontAwesome;
+    font-size:12px;
+    margin-left: 15px;
+}
+
+//----NOTATION
+.notation i{
+    font-size:12px;
+    color:@black;
+}
+
+#top-desc{
+    width: 100%;
+}
+
+/* ---------------------------------GLOBAL MENU-----------------------------------*/
+.menu-element{
+    width: 100%;
+    height: 80px;
+    background: @black;
+    text-align: center;
+    border-bottom: 1px solid @grey;
+    padding-top:15px;
+}
+.menu-icon i{
+    font-size:25px;
+    color:white;
+}
+.menu-text{
+    font-size:11px;
+    color:white;
+    padding-top: 2px;
+}
+
+.menu-element:hover *{
+    color:@color;
+}
+.active {
+    color:@color;
+}
+.active i{
+    color:@color;
+}
+.active *{
+    color:@color;
+}
+
+
+
+/* ---------------------------------TOP LEFT-----------------------------------*/
+
+#top-desc-photo{
+    height: @top_height - @photo-margin;
+    width: @top_height - @photo-margin;
+    display: inline-block;
+    vertical-align: top;
+    background-color: grey;
+    border-radius: @top_height/2;
+    margin: @photo-margin/2;
+
+}
+#photo-img{
+    height: @top_height - @photo-margin;
+    max-width: 100%;
+    border-radius: @top_height/2;
+}
+#top-desc-text{
+    height: 100%;
+    display: inline-block;
+    padding-top: 20px;
+}
+#top-desc-left{
+    height:@top_height;
+    width:@top-left-width ;
+    background-color: white;
+    display: inline-block;
+}
+#logo-informations{
+    height: @icon_height;
+}
+.logo-square{
+    height: 100%;
+    width: 20%;
+    background-color: @color;
+    text-align: center;
+    color:@black;
+    display: inline-block;
+}
+.logo-square:hover *{
+    color:white;
+}
+.logo-square i{
+    font-size: 16px;
+    padding-top: 5px;
+}
+.logo-square .text{
+    font-size: 11px;
+}
+
+/* ---------------------------------TOP RIGHT-----------------------------------*/
+
+#top-desc-right{
+    height:@top_height+@icon_height;
+    width:@top-right-width ;
+    background-color: white;
+    display: inline-block;
+    vertical-align: top;
+    float:right;
+    padding: 15px;
+    padding: @global-padding;
+}
+
+/* ---------------------------------MIDDLE LEFT-----------------------------------*/
+
+#global-content-left{
+    margin-top:@global-margin;
+    width: @middle-left-width;
+    display: inline-block;
+}
+
+#global-content-left-1{
+    background-color: white;
+    padding: @global-padding;
+}
+#global-content-left-2{
+    margin-top: @global-margin+2px;
+    background-color: white;
+    padding: @global-padding;
+}
+
+/* ---------------------------------MIDDLE RIGHT-----------------------------------*/
+
+#global-content-right{
+    margin-top:@global-margin;
+    width: @middle-right-width;
+    //background-color: white;
+    display: inline-block;
+    //vertical-align: top;
+    float:right;
+    //padding: @global-padding;
+}
+#global-content-right-1{
+    background-color: white;
+    padding: @global-padding;
+}
+#global-content-right-2{
+    margin-top: @global-margin+5px;
+    background-color: white;
+    padding: @global-padding;
+}
+
+/*-------------------------LAYOUT-------------------------*/
+.top-central-content{
+    
+    background-color: white;
+    padding: @global-padding;
+}
+
+
+
+/*-------------------------IMG-------------------------*/
+
+#loisir-img-div{
+    //border : 1px solid red;
+    width: 100%;
+}
+#loisir-img{
+    max-width:100%;
+}
+
+/*-------------------------LANGUAGUEs TAGs-------------------------*/
+.tag{
+    display: inline;
+    padding: 2px 3px 2px 3px;
+    border-radius: 3px;
+    font-size: 11px;
+    color:white;
+    line-height: 21px;
+}
+.tag:hover{
+    color:@black;
+}
+.blue{
+    background-color: rgb(0,191,221);
+}
+.yellow{
+    background-color: rgb(255,199,0);
+}
+.orange{
+    background-color: rgb(255,112,42);
+}
+.grey{
+    background-color: rgb(150,150,150);
+}
+.green{
+    background-color: @color;
+}
+
+
+/*-------------------------FOOTER-------------------------*/
+#footer{
+    height: 100px;
+}
+
+
+
+
+
+

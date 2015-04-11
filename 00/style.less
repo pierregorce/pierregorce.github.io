@@ -1,0 +1,382 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 6 juil. 2014, 17:57:10
+    Author     : PGE
+*/
+
+
+
+/*Palette de couleur*/
+@color1 : white;
+@color2 : rgb(57,69,80);
+@color3 : rgb(49,86,96);
+@color4 : rgb(26,149,109);
+@color5 : rgb(90,123,126);
+@color6 : rgb(164,169,168);
+@color7 : rgb(68,165,142);
+@color8 : rgb(79,167,71);
+@color9 : rgb(50,57,61);
+@color10 : rgb(223,223,223);
+
+
+
+
+@color_green : rgb(101,193,120);
+@color_lightGrey_border : rgba(223,223,223, 0.8);
+@color_darkGrey : rgb(57,69,80);
+@color_darkGrey_light : rgb(26,149,109);
+
+
+@width : 800px;
+@headerHeight : 80px;
+@navHeight : 40px;
+
+@asideHeight : 30px;
+@breakHeight : 30px;
+@sectionHeight : 600px;
+
+@asideWidth : 30%;
+@articleWidth : 70%;
+
+
+
+*,*:before,*:after {
+    box-sizing: border-box; 
+    border: 0px solid red;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(img/pattern.png);
+    background-repeat: repeat;
+    font-family: Roboto;
+    width : @width;
+    background-color: @color9;
+    margin: auto;
+    margin-top: 20px;
+}
+
+/*-------------------------HEADER-------------------------*/
+
+#header_desc{
+    /*    height: @headerHeigh;*/
+    background-color: @color_green;
+    color : white;
+    height: @headerHeight;
+    padding-top: 15px;
+}
+#header_logo{
+    display: inline-block;
+    font-size: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#header_logo_border{
+    border-right: 1px solid @color_lightGrey_border;
+    height: 30px;
+    display: inline-block;
+}
+#header_text{
+    display: inline-block;
+    padding-left: 15px;
+}
+h1{
+    font-size: 20px;
+}
+h2{
+    font-size: 15px;
+}
+
+/*-------------------------NAV-------------------------*/
+
+#nav_desc{
+    height: @navHeight;
+    font-size: 0px;
+}
+.nav_button_frame{
+    display: inline-block;
+    font-size: 14px;
+    text-align: center;
+    color: @color_darkGrey;
+    background-color: white;
+    width: 20%;
+    height: 100%;
+    line-height: @navHeight;
+    border-right: 1px solid @color_lightGrey_border;
+}
+.nav_button_frame:hover{
+    color: white;
+    background-color: @color_darkGrey_light;
+}
+.menu{
+    background-color: @color_darkGrey_light;
+    color: white;
+    border:none;
+}
+.nav_button_frame:last-child{
+    border-right: none;
+}
+#nav_desc .active{
+    border-bottom: 4px solid @color_darkGrey_light;
+    color: white;
+    background-color: @color3;
+    border-right: none;
+}
+.header_icon{
+    display: inline-block;
+    padding-right: 5px;
+}
+
+/*-------------------------SECTION-------------------------*/
+section{
+    height: @sectionHeight;
+    background-color: white;    
+    font-size: 0px;
+}
+
+
+/*-------------------------ASIDE-------------------------*/
+aside{
+    width: @asideWidth;
+    border-right: 1px solid @color_lightGrey_border;
+    display: inline-block;
+    text-align: center;
+}
+
+#aside_top{
+    height: @asideHeight;
+    background-color: white;
+
+}
+#aside_middle{
+    height: 30px;
+    background-color: @color_lightGrey_border;
+}
+#aside_bottom{
+    height: 500px;
+    background-color: white;
+    height: 510px;
+    overflow: scroll;
+}
+aside p{
+    text-align: center;
+    line-height: @asideHeight;
+    font-size: 12px;
+}
+
+/*-------------------------ASIDE NAV ICON-------------------------*/
+
+#aside_middle{
+    font-size: 0px;
+    line-height: 30px;
+    color: white;
+    cursor: pointer;
+    background-color: @color6;
+}
+.GLOBAL_BOUTTON_ICON{
+    font-size: 12px;
+    display: inline-block;
+    border-right: 1px solid rgba(0,0,0,0.15);
+    width: 20%;
+    text-align: center;
+}
+.GLOBAL_BOUTTON_ICON:last-child{
+    border: none;
+}
+.GLOBAL_BOUTTON_ICON:hover{
+    background-color: @color_darkGrey_light;
+    color: black;
+}
+
+
+/*-------------------------ASIDE SNIPPET LIST HEADER-------------------------*/
+#snippet_list_header{
+    font-size: 0px;
+}
+.snippet_list_header_text{
+    display: inline-block;
+    font-size: 14px;
+    color: white;
+    background-color: @color_darkGrey;
+    height: 30px;
+    line-height: 30px;
+}
+.snippet_list_header_text:first-child{
+    padding-left: 5px;
+}
+#snippet_list_header .left{
+    width: 10%;
+}
+#snippet_list_header .middle{
+    width: 50%;
+}
+#snippet_list_header .right{
+    width: 40%;
+}    
+
+/*-------------------------ASIDE SNIPPET LIST-------------------------*/
+
+.snippet_list_content{
+    font-size: 0px;
+    color: @color_darkGrey;
+}
+.snippet_list_content_text{
+    display: inline-block;
+    font-size: 14px;
+    height: 25px;
+    line-height: 25px;
+}
+.snippet_list_content:nth-child(odd){
+    background-color: @color_lightGrey_border;
+}
+.snippet_list_content:hover{
+    background-color: @color_darkGrey;
+    color:white;
+    cursor:pointer;
+}
+.snippet_list_content_text:first-child{
+    padding-left: 5px;
+}
+.snippet_list_content .left{
+    width: 10%;
+}
+.snippet_list_content .middle{
+    width: 50%;
+    color:@color_green;
+}
+.snippet_list_content .right{
+
+    width: 40%;
+}  
+
+#aside_bottom .active{
+    background-color: @color3;
+    color:white;
+    border-left: 5px solid @color_green;
+}
+
+
+/*-------------------------ASIDE SNIPPET TAG-------------------------*/
+.tag{
+    display: inline;
+    padding: 2px;
+    border-radius: 3px;
+    background-color: @color_green;
+    font-size: 11px;
+    color:white;
+}
+
+
+
+.Java{
+    background-color: rgb(141,202,54);
+}
+.HTML{
+    background-color: rgb(0,191,221);
+}
+.CSS{
+    background-color: rgb(255,112,42);
+}
+.SQL{
+    background-color: rgb(255,199,0);
+}
+
+
+/******************************CONTENT********************************/
+/******************************CONTENT********************************/
+/******************************CONTENT********************************/
+/******************************CONTENT********************************/
+
+
+/*-------------------------BREAK-------------------------*/
+
+#break{
+    height: @asideHeight;
+    background-color: @color_darkGrey;
+    font-size: 10px;
+    color: white; 
+    line-height: @asideHeight;
+}
+#break p{
+    display:block;
+    width: 100%;
+    text-align: right;
+    padding-right: 10px;
+    
+}
+
+/*-------------------------ARTICLE-------------------------*/
+article{
+    width: @articleWidth;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#snippet_details *{
+    border : 0px solid red;
+}
+
+#snippet_details{
+    background-color: @color_lightGrey_border;
+    font-size: 12px;
+    color: @color_darkGrey;
+}
+
+#snippet_detail_logo{
+    color: white;
+    font-size: 55px;
+    display: inline-block;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    vertical-align: top;
+}
+#snippet_detail_logo p{
+    padding:0px;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: center;
+    color: @color_darkGrey;
+
+}
+
+#snippet_detail_text{
+    display: inline-block;
+    width:80%;
+}
+
+.formulaire{
+    display: block;
+    margin-top: 4px;
+    padding: 3px;
+    width: 100%;
+    border: 1px solid @color_lightGrey_border;
+}
+#subtitle{
+    color:grey;
+}
+.formulaire:first-child{
+    margin-top:10px;
+}
+.formulaire:last-child{
+    margin-bottom:10px;
+}
+.formulaire p{
+    border: none;
+}
+
+#snippet_detail_text #label{
+    display: inline-block;
+    /*border:none;*/
+    width:110px;
+}
+#snippet_detail_text #language{
+    display: inline-block;
+    width: 335px;
+}
