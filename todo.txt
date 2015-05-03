@@ -3,30 +3,13 @@ sql serveur
 
 triggeur, procedure stockée, architecture eav, merise
 
-vb.net & c#
+vb.net & c# 
 
-asp.net webform -> 2 sites web
-asp.net mvc -> notions de cours
+asp.net webform -> 1sites web
+asp.net mvc -> 1 site
 entity framework
 
 gestionnaire de version svn/git
 
 bootstrap less framework
 
-
-F
--E
---C
----A
----B
--D
-
-
-
-Get 0 parent | F
-	Get child | E
-		Get parent > C
-	Get 1 parent | D
-		Get 2 parent > E
-		Get 2 parent > E
-Get child > 0
