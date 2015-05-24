@@ -29,7 +29,7 @@ and open the template in the editor.
 @middle-right-width: @total-width - @middle-left-width - @global-margin;
 
 @icon_height : 40px;
-@top_height : 110px;
+@top_height : 125px;
 
 
 
@@ -171,18 +171,17 @@ a{
 #socialmedia{
 
 }
-#email{
+.link{
     //font-style: italic;
 }    
 .note i{
     font-size:14px;
     color:@black;
 }
-#email:hover, #socialmedia:hover{
+.link:hover, #socialmedia:hover{
     text-decoration: underline;
     cursor: pointer;
 }
-
 .section-title{
     //TITLE COLORÈ
     font-family:'Arvo';
@@ -217,6 +216,16 @@ a{
     font-size:12px;
     color:@black;
     font-weight: normal;
+}
+.text-min{
+    font-family:'OpenSans';
+    font-size:11px;
+    color:@black;
+    font-weight: normal;
+}
+.link{
+    padding-top:5px;
+    text-align:right;
 }
 #googlePlayLink{
     padding: 20px;
@@ -425,6 +434,7 @@ li:before {
 }
 #top-desc-text{
     height: 100%;
+    width:190px;
     display: inline-block;
     padding-top: 20px;
 }
@@ -506,7 +516,7 @@ li:before {
     padding: @global-padding;
 }
 #global-content-right-2{
-    margin-top: @global-margin+5px;
+    margin-top: @global-margin;
     background-color: white;
     padding: @global-padding;
 }
@@ -574,7 +584,7 @@ li:before {
 
 /*-------------------------FOOTER-------------------------*/
 #footer{
-    height: 100px;
+    height: 140px;
 }
 
 
@@ -606,12 +616,12 @@ li:before {
     //  transform: translateX(900px);
     // opacity: 0;
 }
-.ng-enter-active, ng-leave{
+.ng-enter-active, .ng-leave{
     // transform: translateX(0px);
     // opacity: 1;
 }
 
-.ng-leave, ng-leave-active{
+.ng-leave, .ng-leave-active{
     // animation-name: fadeInRight;
     //display:none;
     //position:absolute;
@@ -935,5 +945,23 @@ article *{
     left: 21px;
     font-family: FontAwesome;
     color:@color;
+    font-size: 12px;
+}
+
+.competence td{
+    padding-bottom : 5px;
+}
+
+.cv-print{
+    margin: 30px;
+  display: inline-block;
+}
+
+.text-print{
+    font-size:10px;
+}
+
+.competence-break-print{
+    height:10px;
 }
 
