@@ -1,0 +1,449 @@
+﻿$grey: rgb(230,230,230);
+$mediumgrey: #828282;
+$darkgrey: rgb(180,180,180);
+$green: rgb(101,193,120);
+$black: rgb(80,80,80);
+$blue: rgb(0,191,221);
+$violet: #5C5EDC;
+
+.blue {
+    background-color: $blue;
+}
+
+.green {
+    background-color: $green;
+}
+
+.darkgrey {
+    background-color: $darkgrey;
+}
+
+.black {
+    background-color: $black;
+}
+
+.violet {
+    background-color: $violet;
+}
+
+
+
+//-------------------- BOOTSTRAP OVERIDING
+
+h1, h2 {
+    font-family: "Arvo";
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 30px;
+    letter-spacing: -0.9px;
+
+    .small {
+        font-size: 25px;
+        color: $black;
+    }
+
+    .colorized {
+        color: $green;
+    }
+
+    b {
+        color: $green;
+    }
+}
+
+h2 {
+    color: $green;
+    font-size: 18px;
+
+    .fa {
+        font-size: 20px;
+        color: $mediumgrey;
+    }
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+body {
+    background-color: $grey;
+    color: $black;
+    padding-top: 25px;
+    overflow:scroll;
+}
+
+.well {
+    background-color: white;
+    border-radius: 0;
+    border: none;
+}
+
+
+//-------------------- BOX-SHADOW
+
+.boxshadow {
+    position: relative;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.boxshadow:after, .boxshadow:before {
+    content: " ";
+    position: absolute;
+    width: 50%;
+    height: 100px;
+    z-index: -10;
+}
+
+.boxshadow:before {
+    top: 0;
+    left: 5%;
+    width: 90%;
+    height: 50px;
+    border-radius: 125px / 12px;
+    box-shadow: 0 0 8px rgba(50,50,50,0.25);
+}
+
+.boxshadow:after {
+    bottom: 0;
+    left: 5%;
+    width: 90%;
+    height: 50px;
+    border-radius: 125px / 12px;
+    box-shadow: 0 0 8px rgba(50,50,50,0.25);
+}
+
+
+//-------------------- IMAGES
+
+.crop-profil {
+    width: 200px;
+    height: 118px;
+    overflow: hidden;
+}
+
+.img-profil {
+    max-width: 158px;
+    margin-top: -33px;
+    margin-left: -27px;
+}
+
+.crop-loisirs {
+    height: 150px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.img-loisirs {
+    max-width: 100%;
+    height: 150px;
+    margin-left: 21px;
+}
+
+//---------------------- CV HEAD
+
+.cv-header {
+    min-height: 200px;
+    height: 100%;
+}
+
+
+//---------------------- POSTCARD
+.informations .fa {
+    font-size: 14px;
+}
+
+
+.logo-square-container {
+    font-size: 0;
+    margin-left: -19px;
+    margin-right: -11px;
+}
+
+.logo-square {
+    height: 100%;
+    width: 20%;
+    text-align: center;
+    color: $black;
+    display: inline-block;
+}
+
+.logo-square:hover * {
+    color: white;
+}
+
+.logo-square i {
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+.logo-square .text {
+    font-size: 11px;
+}
+
+
+//---------------------------TABLES
+
+.timeline-bubble {
+    background-color: $grey;
+    padding: 1px 15px;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+}
+
+.timeline-bubble::before {
+    color: $grey;
+    position: absolute;
+    top: 2px;
+    left: -10px;
+    pointer-events: none;
+    content: "";
+    font-family: FontAwesome;
+    font-size: 31px;
+}
+
+.timeline {
+    ul {
+        padding: 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    li:before {
+        content: "\f054"+" "; /* this is the Unicode for the icon */
+        font-family: FontAwesome;
+        font-size: 12px;
+        margin-left: 15px;
+    }
+
+    td {
+        padding-bottom: 20px;
+    }
+
+    td:nth-child(2) {
+        padding-left: 15px;
+    }
+
+    td:nth-child(1) {
+        border-right: 2px solid $green;
+        color: $green;
+        font-size: 12px;
+        font-weight: bold;
+        vertical-align: top;
+        text-align: right;
+        width: 15%;
+        padding-right: 10px;
+
+        .historyPoint {
+            position: relative;
+            content: "";
+            display: inline-block;
+            left: 17px;
+            font-family: FontAwesome;
+            color: #FFFFFF;
+            font-size: 13px;
+            top: -23px;
+        }
+    }
+}
+
+//----------------------------MENU
+
+.menu {
+        float: right;
+    margin: 0 -11px;
+
+    .menu-box {
+        width: 80px;
+        height: 80px;
+        background: #505050;
+        text-align: center;
+        margin: 10px 0;
+        color: white;
+
+        .menu-box-items {
+            display: inline-block;
+            padding: 15px 5px;
+            font-size: 10px;
+        }
+
+        .fa {
+            font-size: 25px;
+        }
+    }
+
+    .menu-box:hover {
+        color: $green;
+        cursor: pointer;
+    }
+
+    .active {
+        background: $green !important;
+    }
+
+    .active:hover {
+        color: $black !important;
+    }
+}
+
+
+//-----------------------------CONPETENCE
+
+.competences {
+    font-size: 11px;
+    width: 100%;
+
+    tr {
+        line-height: 20px;
+        height: 30px;
+    }
+
+    td:nth-child(1) {
+        width: 50%;
+        padding-right: 10px;
+    }
+
+    .competence-bar {
+        color: white;
+        width: 100px;
+        padding: 1px 5px;
+        border-radius: 1px;
+        font-weight: bold;
+        letter-spacing: -0.5px;
+    }
+}
+
+
+
+//----------------------------- ANDROID
+
+.android-get-on-google-play {
+    text-align: center;
+    padding: 15px;
+}
+
+//------------------------------- PRESENTATION
+
+
+.presentation-header {
+    padding-bottom: 15px;
+}
+
+
+
+//-----------
+
+#wrapper {
+    /*position: absolute;
+	width: 50%;
+	left: 25%;
+	top: 50px;*/
+}
+
+#carousel-wrapper {
+    padding-top: 10px;
+    position: relative;
+}
+
+#carousel, #thumbs {
+    overflow: hidden;
+}
+
+#carousel-wrapper .caroufredsel_wrapper {
+    border: 4px solid $black;
+}
+
+#carousel span, #carousel img,
+#thumbs a, #thumbs img {
+    display: block;
+    float: left;
+}
+
+#carousel span, #carousel a,
+#thumbs span, #thumbs a {
+    position: relative;
+}
+
+#carousel img,
+#thumbs img {
+    border: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#carousel img.glare,
+#thumbs img.glare {
+    width: 102%;
+    height: auto;
+}
+
+#carousel span {
+    width: 554px;
+    height: 313px;
+}
+
+#thumbs-wrapper {
+    padding: 10px 40px;
+    position: relative;
+}
+
+#thumbs a {
+    border: 4px solid $grey;
+    width: 150px;
+    height: 100px;
+    margin: 0 10px;
+    overflow: hidden;
+    -webkit-transition: border-color .2s;
+    -moz-transition: border-color .2s;
+    -ms-transition: border-color .2s;
+    transition: border-color .2s;
+}
+
+#thumbs a:hover, #thumbs a.selected {
+    border-color: $black;
+}
+
+#wrapper img#shadow {
+    /*width: 100%;
+	position: absolute;
+	bottom: 0;*/
+}
+
+#prev, #next {
+    display: block;
+    font-size: 22px;
+    margin-top: -10px;
+    position: absolute;
+    top: 50%;
+    color: $black;
+}
+
+#prev {
+    background-position: 0 0;
+    left: 10px;
+}
+
+#next {
+    background-position: -19px 0;
+    right: 10px;
+}
+
+#prev:hover {
+    background-position: 0 -20px;
+}
+
+#next:hover {
+    background-position: -19px -20px;
+}
+
+#prev.disabled, #next.disabled {
+    display: none !important;
+}
