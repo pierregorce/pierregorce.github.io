@@ -1,114 +1,985 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <title>Pierre GORCE - CV & Informations</title>
-        <meta charset="UTF-8">
-        <meta name="author" content="Pierre GORCE">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Pierre GORCE : Développeur Objet, Java, J2EE, Android.">
-        <meta name="geo.placename" content="Grenoble, Isère, France">
-        <meta name="keywords" lang="fr" content="Développeur, Java, Programmation orientée objet, POO, J2EE,Web,Android, développement, SQL, Rhone-Alpes, Grenoble,
-        Valence, LibGDX, Jeux android, Transact-SQL, HTML5, CSS3, AngularJS, JQuery, Struts, JPA, JSP, CV">
-        
-        <!-- *******************************CSS******************************* -->
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
 
-        <link rel="stylesheet/less" type="text/css" href="style.less"/>
-        <script src="libs/less.js/less.min.js" type="text/javascript"></script>
-        <link href="libs/font-awesome/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="libs/animate/animate.css">
+    <!--todo
+    carouseel
+    menu invariante selon page
+    anim changement page + url page unique en js (~routing js) mais how to referencement alors...
+    effet bouton menu-->
+
+    <link href="Css/font-awesome.css" rel="stylesheet" />
+    <link href="Css/animate.css" rel="stylesheet" />
+    <link href="Css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="Css/style.css" rel="stylesheet" />
+
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arvo:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+</head>
 
 
-        <!-- *******************************JS******************************* -->
+<body>
 
-        <script src="libs/angular.js/angular.js"></script>
-        <script src="libs/angular.js/angular-resource.js"></script>
-        <script src="libs/angular.js/angular-route.js"></script>
-        <script src="libs/angular.js/angular-animate.js"></script>
+    <!--<a class="button button--line button--effect-2" style="height: 150px; width: 150px; display: block">
+        <span class="morph-shape" data-morph-active="M286,113c0,0-68.8-5-136-5c-78.2,0-137,5-137,5s5-15.802,5-50.5C18,33.999,13,12,13,12s59,5,137,5c85,0,136-5,136-5s-5,17.598-5,52C281,96.398,286,113,286,113z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                    <path d="M286,113c0,0-68.8,0-136,0c-78.2,0-137,0-137,0s0-15.802,0-50.5C13,33.999,13,12,13,12s59,0,137,0c85,0,136,0,136,0s0,17.598,0,52C286,96.398,286,113,286,113z" />
+                </svg>
+            </span>
+        <span class="button__text">Hit me</span>
+    </a>-->
+    <!--<button class="button button--fill button--effect-2">
+        <span class="morph-shape" data-morph-active="M286,113c0,0-68.8,6-136,6c-78.2,0-137-6-137-6S6,97.198,6,62.5C6,33.999,13,12,13,12s59-7,137-7c85,0,136,7,136,7s8,17.598,8,52C294,96.398,286,113,286,113z">
+            <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                <path d="M286,113c0,0-68.8,0-136,0c-78.2,0-137,0-137,0s0-15.802,0-50.5C13,33.999,13,12,13,12s59,0,137,0c85,0,136,0,136,0s0,17.598,0,52C286,96.398,286,113,286,113z" />
+            </svg>
+        </span>
+        <span class="button__text">Press me</span>
+    </button>-->
 
-        <script src="script.js"></script>
 
-        <script src="libs/codemirror/lib/codemirror.js"></script>
-        <link rel="stylesheet" href="libs/codemirror/lib/codemirror.css">
-        <link rel="stylesheet" href="libs/codemirror/theme/solarized.css">
-        <link rel="stylesheet" href="libs/codemirror/theme/monokai.css">
+    <div class="container">
 
-        <script src="libs/codemirror/mode/javascript/javascript.js"></script>
-        <script src="libs/codemirror/mode/css/css.js"></script>
-        <script src="libs/codemirror/mode/clike/clike.js"></script>
-        <script src="libs/codemirror/mode/sql/sql.js"></script>
-        <script src="libs/codemirror/mode/xml/xml.js"></script>
-        <script src="libs/codemirror/mode/htmlmixed/htmlmixed.js"></script>
-
-        <script src="googleDrive.js"></script>
-        <script type="text/javascript" src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
-
-        <script>
-            (function(i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r;
-                i[r] = i[r] || function() {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
-                a = s.createElement(o),
-                        m = s.getElementsByTagName(o)[0];
-                a.async = 1;
-                a.src = g;
-                m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-            ga('create', 'UA-52969121-1', 'auto');
-            ga('send', 'pageview');
-
-        </script>
-
-    </head>
-
-    <body data-ng-app="myApp">
-
-        <div id="bandeauXX"></div>
-
-        <div id="site-body" data-ng-controller="NavCtrl">
-            <div id="menu" class="boxshadow">
-                <a href="#home">
-                    <div class="menu-element" data-ng-class="{active : menu == 'home'}" data-ng-click="menu = 'home'">
-                        <div class="menu-icon">
-                            <i class="fa fa-home"></i>
-                        </div>
-                        <div class="menu-text">
-                            Home - CV
-                        </div>
-                    </div>
-                </a>
-                <a href="#android">
-                    <div class="menu-element" data-ng-class="{active : menu == 'android'}" data-ng-click="menu = 'android'">
-                        <div class="menu-icon">
-                            <i class="fa fa-android"></i>
-                        </div>
-                        <div class="menu-text">
-                            Réalisations Android
-                        </div>
-                    </div>
-                </a>
-                <!-- <a href="#web">
-                    <div class="menu-element" data-ng-class="{active : menu == 'web'}" data-ng-click="menu = 'web'">
-                        <div class="menu-icon">
-                            <i class="fa fa-cloud"></i>
-                        </div>
-                        <div class="menu-text">
-                            Réalisations Web
-                        </div>
-                    </div>
-                </a> -->
+        <div class="row">
+            <div class="col-md-12 hidden-lg hidden-md">
                 
+                <!--MENU MENU SMARTPHONE
+
+                todo : carousel portrait, carousel web page, content webpage, menu pour smartphone
+                todo-after : button effet morph, cv effet hover-->
+
             </div>
-            <div class="view" data-ng-view data-ng-cloak=""></div>
         </div>
-    </body>
+
+    <div class="row">
+            <div class="col-md-1">
+
+                <div id="menu">
+                    <nav class="menu hidden-sm hidden-xs">
+                        <div class="menu-box active" data-url="page-cv">
+                            <div class="menu-box-items">
+                                <div>
+                                    <i class="fa fa-home"></i>
+                                </div>
+                                <div>
+                                    <span>Accueil - CV</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-box" data-url="page-android">
+                            <div class="menu-box-items">
+                                <div>
+                                    <i class="fa fa-android"></i>
+                                </div>
+                                <div>Réalisations Android</div>
+                            </div>
+                        </div>
+
+                        <!--<div class="menu-box" data-url="page-web">
+                            <div class="menu-box-items">
+                                <i class="fa fa-cloud"></i> Réalisations Web
+                            </div>
+                        </div>-->
+                    </nav>
+                </div>
+
+            </div>
+            <div class="col-md-11">
+
+                <div id="content">
+
+                    <!-------------------------------------------------------------------- CV-->
+
+                    <div id="page-cv" class="page">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="well boxshadow cv-header">
+                                    <div class="row">
+                                        <div class="col-xs-5">
+                                            <div class="crop-profil img-responsive">
+                                                <img src="Content/Img/CV/profil.jpg" alt="photo-profil" class="img-profil" />
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-7 informations">
+                                            <h1>
+                                                <b class="small">Pierre <b class="colorized">GORCE</b></b>
+                                            </h1>
+                                            <p>
+                                                <i class="fa fa-map-marker"></i> <span> Grenoble (38)</span>
+                                            </p>
+                                            <p>
+                                                <i class="fa fa-comment"></i> <span>gorce.pierre@gmail.com</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="position: absolute; bottom: 0; width: 100%;">
+                                        <div class="col-md-12">
+                                            <div class="logo-square-container">
+                                                <div class="logo-square blue">
+                                                    <i class="fa fa-male"></i>
+                                                    <p class="text">25 ans</p>
+                                                </div>
+                                                <div class="logo-square green">
+                                                    <i class="fa fa-car"></i>
+                                                    <p class="text">Permis B</p>
+                                                </div>
+                                                <div class="logo-square darkgrey">
+                                                    <i class="fa fa-heart"></i>
+                                                    <p class="text">Passionné</p>
+                                                </div>
+                                                <div class="logo-square blue">
+                                                    <i class="fa fa-quote-right"></i>
+                                                    <p class="text">Curieux</p>
+                                                </div>
+                                                <div class="logo-square green">
+                                                    <i class="fa fa-info"></i>
+                                                    <p class="text">Autonome</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="well boxshadow cv-header">
+                                    <h1 style="letter-spacing: -2.3px">Concepteur, Développeur Informatique</h1>
+                                    <p>
+                                        <i class="fa fa-quote-left" style="padding: 0 8px; font-size: 15px;"></i>
+                                        Polyvalent, déterminé, aux compétences multiples et en constant apprentissage.<br />
+                                        Je me passionne pour les nouvelles technologies du Web ainsi que l'ensemble des environnements mobiles.
+                                        Je travaille actuellement sur la réalisation d'applications Web et de sites e-commerce.
+                                        Mes préférences se tournent vers la conception et l'architecture ainsi que le back-office.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <br />
+
+
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="well boxshadow">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h2>
+                                                <i class="fa fa-briefcase"></i> Expériences
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <table class="timeline">
+                                                <tr>
+                                                    <td>
+                                                        <h3>2015</h3>
+                                                        <div class="historyPoint"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="timeline-bubble">
+                                                            <h3>Concepteur Développeur, Enovalp - Agence Web- Grenoble (38)</h3>
+                                                            <ul>
+                                                                <li>Refonte complète et migration des 4 sites de la librairie Mollat.</li>
+                                                                <li>CMS, Site e-commerce, Site Pro, Plateforme big data (analyse & profiling utilisateur)</li>
+                                                                <li>Conception des modèles de données SQL & NoSQL, Architecture du CMS, Creation d'API REST</li>
+                                                                <li>ASP.NET MVC, REST, JS</li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <h3>2015</h3>
+                                                        <div class="historyPoint"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="timeline-bubble">
+                                                            <h3>Stage BAC+4 (3 mois), Enovalp - Agence Web- Grenoble (38)</h3>
+                                                            <ul>
+                                                                <li>Conception, Architecture & Développement d'une application de gestion RH </li>
+                                                                <li>Application SAAS ASP.NET MVC, Entity & Identity Framework</li>
+                                                                <li>JQuery, Ajax, HTML5, CCS3 Responsive, MySql, SVN</li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <h3>2011-2014</h3>
+                                                        <div class="historyPoint"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="timeline-bubble">
+                                                            <h3>Chargé d’étude (3 ans), OASIIS - Bureau d'étude HQE- Aubagne (13)</h3>
+                                                            <ul>
+                                                                <li>Conception, Architecture & Développement d'une application de gestion RH </li>
+                                                                <li>Application SAAS ASP.NET MVC, Entity & Identity Framework</li>
+                                                                <li>JQuery, Ajax, HTML5, CCS3 Responsive, MySql, SVN</li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <h3>2011</h3>
+                                                        <div class="historyPoint"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="timeline-bubble">
+                                                            <h3>Stage Licence Pro (4 mois), OASIIS - Bureau d’étude HQE - Aubagne (13)</h3>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <h3>2010</h3>
+                                                        <div class="historyPoint"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="timeline-bubble">
+                                                            <h3>Intérimaire (2 mois), Billon S.A - Entreprise CVC - Portes-lès-Valence (26)</h3>
+                                                            <ul>
+                                                                <li>Réalisation de l'interface graphique utilisateur d'une Gestion Technique Centralisée - l’Oréal, Paris</li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <h3>2010</h3>
+                                                        <div class="historyPoint"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="timeline-bubble">
+                                                            <h3>Stage DUT (2 mois), Billon S.A - Entreprise CVC - Portes-lès-Valence (26)</h3>
+                                                            <ul>
+                                                                <li>Suivi de chantier, Chiffrage</li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="well boxshadow">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h2>
+                                                <i class="fa fa-university"></i> Formations
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <table class="timeline">
+                                                <tr>
+                                                    <td>
+                                                        <h3>2014-2015</h3>
+                                                        <div class="historyPoint"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="timeline-bubble">
+                                                            <h3>BAC+4</h3>
+                                                            <div>
+                                                                Concepteur-développeur informatique Option J2EE - AFPA - Pont de Claix (38)
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <h3>2010-2011</h3>
+                                                        <div class="historyPoint"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="timeline-bubble">
+                                                            <h3>BAC+3</h3>
+                                                            <div>
+                                                                Licence Professionnelle Chargé d’Affaires en Génie Climatique - Mention AB - Université Blaise Pascal - Montluçon (03)
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <h3>2008-2010</h3>
+                                                        <div class="historyPoint"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="timeline-bubble">
+                                                            <h3>BAC+2</h3>
+                                                            <div>
+                                                                DUT Génie Thermique et Energie - Université Joseph Fourier - Grenoble (38)
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <h3>2007-2008</h3>
+                                                        <div class="historyPoint"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="timeline-bubble">
+                                                            <h3>Classe Préparatoire</h3>
+                                                            <div>
+                                                                Classe préparatoire école d'ingénieur (E.S.I.S.A.R) - Valence (26)
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <h3>2006-2007</h3>
+                                                        <div class="historyPoint"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="timeline-bubble">
+                                                            <h3>BAC</h3>
+                                                            <div>
+                                                                Baccalauréat Général Série S - Mention AB - Privas (07)
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="well boxshadow">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h2>
+                                                <i class="fa fa-cogs"></i> Compétences
+                                            </h2>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h3>Back-End</h3>
+                                            <table class="competences">
+                                                <tr>
+                                                    <td>ASP.NET MVC [VB.NET & C#]</td>
+                                                    <td>
+                                                        <div class="competence-bar green" style="width: 85%">85/100</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ORM Entity Framework</td>
+                                                    <td>
+                                                        <div class="competence-bar green" style="width: 75%">75/100</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Identity Framework (Framework d'Auth)</td>
+                                                    <td>
+                                                        <div class="competence-bar green" style="width: 70%">70/100</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Java SE & Java EE</td>
+                                                    <td>
+                                                        <div class="competence-bar green" style="width: 60%">60/100</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Web services SOAP & REST</td>
+                                                    <td>
+                                                        <div class="competence-bar green" style="width: 70%">70/100</div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h3>Modèle de données</h3>
+                                            <table class="competences">
+                                                <tr>
+                                                    <td>MySQL, MS SQL Serveur</td>
+                                                    <td>
+                                                        <div class="competence-bar darkgrey" style="width: 85%">85/100</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Conception modèle & base de données - Optimisation</td>
+                                                    <td>
+                                                        <div class="competence-bar darkgrey" style="width: 80%">80/100</div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h3>Front-End</h3>
+                                            <table class="competences">
+                                                <tr>
+                                                    <td>Javascript - Organisation & Bonnes pratiques + Jquery</td>
+                                                    <td>
+                                                        <div class="competence-bar blue" style="width: 85%">80/100</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Ajax, Json, Mustache JS (Templating Client)</td>
+                                                    <td>
+                                                        <div class="competence-bar blue" style="width: 75%">75/100</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>CSS [LESS & SASS], HTML, Bootstrap</td>
+                                                    <td>
+                                                        <div class="competence-bar blue" style="width: 90%">90/100</div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h3>Android</h3>
+                                            <table class="competences">
+                                                <tr>
+                                                    <td>Android Stock</td>
+                                                    <td>
+                                                        <div class="competence-bar green" style="width: 50%">50/100</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Framework multiplateforme Ligdx & OpenGL</td>
+                                                    <td>
+                                                        <div class="competence-bar green" style="width: 75%">75/100</div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h3>Outils</h3>
+                                            <table class="competences">
+                                                <tr>
+                                                    <td>Git, Svn, Github</td>
+                                                    <td>
+                                                        <div class="competence-bar black" style="width: 90%">90/100</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Photoshop, Illustator</td>
+                                                    <td>
+                                                        <div class="competence-bar black" style="width: 75%">75/100</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>VBA (Excel)</td>
+                                                    <td>
+                                                        <div class="competence-bar black" style="width: 95%">95/100</div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h3>Autre</h3>
+                                            <table class="competences">
+                                                <tr>
+                                                    <td>Anglais</td>
+                                                    <td>
+                                                        <div class="competence-bar darkgrey" style="width: 90%">
+                                                            <small>Utilisation quotienne à l'écrit</small>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Méthodes agiles Scrum</td>
+                                                    <td>
+                                                        <div class="competence-bar darkgrey" style="width: 75%">75/100</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>VBA (Excel)</td>
+                                                    <td>
+                                                        <div class="competence-bar darkgrey" style="width: 95%">95/100</div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="well boxshadow">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h2>
+                                                <i class="fa fa-paper-plane"></i> Loisirs
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="crop-loisirs img-responsive">
+                                                <img src="Content/Img/CV/loisirs.png" alt="mes-loisirs" class="img-loisirs" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h5><i class="fa fa-android" style="font-size: 16px;"></i> Mes applications</h5>
+                                            <a href="https://play.google.com/store/apps/developer?id=Pierre+GORCE" style="font-size: 11px;">https://play.google.com/store/apps/developer?id=Pierre+GORCE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-------------------------------------------------------------------- Android -->
+
+                    <div id="page-android" class="page" style="visibility: hidden;">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="well">
+                                    <h2>
+                                        <i class="fa fa-android"></i> Android
+                                    </h2>
+                                    Sur cette page, sont détaillés mes principaux projets personnels.
+                                    <hr />
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="presentation-header">
+                                                <h3>Crazy Shooter</h3><span class="label blue">Java</span> <span class="label green">Framework Libgdx</span> <span class="label black">Photoshop</span>
+                                            </div>
+
+                                            <div class="presentation-header">
+                                                <iframe style="width: 100%; height: 400px;" src="https://www.youtube.com/embed/5suOz2fNto8" frameborder="0" allowfullscreen></iframe>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <b>Crazy Shooter est un shoot'em up pixélisé, chaotique, fun et explosif.</b>
+                                            <br>
+                                            <br>
+                                            <i class="fa fa-chevron-right"></i> L'objectif est de parcourir tous les niveaux pour éradiquer toute forme de vie. De nombreuses créatures vous attendent et même de nombreux boss.
+                                            <br>
+                                            <i class="fa fa-chevron-right"></i> Vous débloquerez de nouvelles armes comme le fusil d'assaut, le canon laser, le bazooka, le lance-flamme et plus encore !
+                                            <br>
+                                            <i class="fa fa-chevron-right"></i> Vous gagnerez des point de talent pour votre personnage au fil des niveaux pour personnaliser ses aptitudes.
+
+                                            <h4>Gameplay Video : <a href="https://www.youtube.com/watch?v=5suOz2fNto8&feature=youtu.be">Youtube</a></h4>
+
+                                            <div class="android-get-on-google-play">
+                                                <a href="https://play.google.com/store/apps/details?id=com.oasix.crazyshooter.android">
+                                                    <img alt="Get it on Google Play" src="Content/Img/Android/en_generic_rgb_wo_60.png" />
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-8">
+
+                                            <div id="wrapper_">
+                                                <div class="carousel-wrapper">
+                                                    <div id="" class="carousel carousel-1">
+                                                        <span id="img1"><img src="Content/Img/Android/CrazyShooter/1.png" /></span>
+                                                        <span id="img2"><img src="Content/Img/Android/CrazyShooter/2.png" /></span>
+                                                        <span id="img3"><img src="Content/Img/Android/CrazyShooter/3.png" /></span>
+                                                        <span id="img4"><img src="Content/Img/Android/CrazyShooter/4.png" /></span>
+                                                        <span id="img5"><img src="Content/Img/Android/CrazyShooter/5.png" /></span>
+                                                        <span id="img6"><img src="Content/Img/Android/CrazyShooter/6.png" /></span>
+                                                        <span id="img7"><img src="Content/Img/Android/CrazyShooter/7.png" /></span>
+                                                        <span id="img8"><img src="Content/Img/Android/CrazyShooter/8.png" /></span>
+                                                    </div>
+                                                </div>
+                                                <div class="thumbs-wrapper">
+                                                    <div class="thumbs thumbs-1">
+                                                        <a href="#img1" class="selected"><img src="Content/Img/Android/CrazyShooter/1.png" /></a>
+                                                        <a href="#img2"><img src="Content/Img/Android/CrazyShooter/2.png" /></a>
+                                                        <a href="#img3"><img src="Content/Img/Android/CrazyShooter/3.png" /></a>
+                                                        <a href="#img4"><img src="Content/Img/Android/CrazyShooter/4.png" /></a>
+                                                        <a href="#img5"><img src="Content/Img/Android/CrazyShooter/5.png" /></a>
+                                                        <a href="#img6"><img src="Content/Img/Android/CrazyShooter/6.png" /></a>
+                                                        <a href="#img7"><img src="Content/Img/Android/CrazyShooter/7.png" /></a>
+                                                        <a href="#img8"><img src="Content/Img/Android/CrazyShooter/8.png" /></a>
+                                                    </div>
+                                                    <a class="prev prev-1" href="#"><i class="fa fa-chevron-circle-left"></i></a>
+                                                    <a class="next next-1" href="#"><i class="fa fa-chevron-circle-right"></i></a>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+                                    <hr />
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="presentation-header">
+                                                <h3>Panda City Jump</h3><span class="label blue">Java</span> <span class="label green">Framework Libgdx</span> <span class="label black">Photoshop</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <b>Un petit jeu simple ou le personnage controllé doit sauter le plus loin possible.</b>
+                                            <br>
+                                            <br>
+                                            <i class="fa fa-chevron-right"></i> Controle du parapluie permettant de s'envoller.
+                                            <br>
+                                            <i class="fa fa-chevron-right"></i> Ajout des powers (coeurs) pour recharger la barre de Jump.
+                                            <br>
+                                            <i class="fa fa-chevron-right"></i> Ajout de protections pour resister aux enemies.
+
+                                            <div class="android-get-on-google-play">
+                                                <a href="https://play.google.com/store/apps/details?id=com.oasix.me.android">
+                                                    <img alt="Get it on Google Play" src="Content/Img/Android/en_generic_rgb_wo_60.png" />
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-8">
+
+                                            <div>
+                                                <div class="carousel-wrapper">
+                                                    <div class="carousel carousel-2">
+                                                        <span id="img1"><img src="Content/Img/Android/PandaCityJump/1.png" /></span>
+                                                        <span id="img2"><img src="Content/Img/Android/PandaCityJump/2.png" /></span>
+                                                        <span id="img3"><img src="Content/Img/Android/PandaCityJump/3.png" /></span>
+                                                        <span id="img4"><img src="Content/Img/Android/PandaCityJump/4.png" /></span>
+                                                        <span id="img5"><img src="Content/Img/Android/PandaCityJump/5.png" /></span>
+                                                    </div>
+                                                </div>
+                                                <div class="thumbs-wrapper">
+                                                    <div class="thumbs thumbs-2">
+                                                        <a href="#img1" class="selected"><img src="Content/Img/Android/PandaCityJump/1.png" /></a>
+                                                        <a href="#img2"><img src="Content/Img/Android/PandaCityJump/2.png" /></a>
+                                                        <a href="#img3"><img src="Content/Img/Android/PandaCityJump/3.png" /></a>
+                                                        <a href="#img4"><img src="Content/Img/Android/PandaCityJump/4.png" /></a>
+                                                        <a href="#img5"><img src="Content/Img/Android/PandaCityJump/5.png" /></a>
+                                                    </div>
+                                                    <a class="prev prev-2" href="#"><i class="fa fa-chevron-circle-left"></i></a>
+                                                    <a class="next next-2" href="#"><i class="fa fa-chevron-circle-right"></i></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <hr />
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="presentation-header">
+                                                <h3>Bubble Crush</h3><span class="label blue">Java</span> <span class="label green">Framework Libgdx</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <b>Un jeu de casse bulles !</b>
+                                            <br>
+                                            <br>
+                                            <i class="fa fa-chevron-right"></i> Éclate le plus grand groupe de bulles de la même couleur. Plus le groupe de bulles est grand, plus les points gagnés sont important.
+                                            <br>
+                                            <i class="fa fa-chevron-right"></i> Petit mode story avec des niveaux à franchir et un cap de point.
+
+                                            <div class="android-get-on-google-play">
+                                                <a href="https://play.google.com/store/apps/details?id=com.me.mygdxgame.oasix.pge">
+                                                    <img alt="Get it on Google Play" src="Content/Img/Android/en_generic_rgb_wo_60.png" />
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-8">
+
+                                            <div>
+                                                <div class="carousel-wrapper">
+                                                    <div class="carousel carousel-3">
+                                                        <span id="img1"><img src="Content/Img/Android/BubbleCrush/1.png" /></span>
+                                                        <span id="img2"><img src="Content/Img/Android/BubbleCrush/2.png" /></span>
+                                                        <span id="img3"><img src="Content/Img/Android/BubbleCrush/3.png" /></span>
+                                                        <span id="img4"><img src="Content/Img/Android/BubbleCrush/4.png" /></span>
+                                                    </div>
+                                                </div>
+                                                <div class="thumbs-wrapper">
+                                                    <div class="thumbs thumbs-3">
+                                                        <a href="#img1" class="selected"><img src="Content/Img/Android/BubbleCrush/1.png" /></a>
+                                                        <a href="#img2"><img src="Content/Img/Android/BubbleCrush/2.png" /></a>
+                                                        <a href="#img3"><img src="Content/Img/Android/BubbleCrush/3.png" /></a>
+                                                        <a href="#img4"><img src="Content/Img/Android/BubbleCrush/4.png" /></a>
+                                                        <a href="#img5"><img src="Content/Img/Android/BubbleCrush/5.png" /></a>
+                                                    </div>
+                                                    <a class="prev prev-3" href="#"><i class="fa fa-chevron-circle-left"></i></a>
+                                                    <a class="next next-3" href="#"><i class="fa fa-chevron-circle-right"></i></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-------------------------------------------------------------------- Web -->
+
+                    <div id="page-web" class="page" style="visibility: hidden;">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="well">
+                                    <h2>
+                                        <i class="fa fa-cloud"></i> Web
+                                    </h2>
+                                    Sur cette page, sont détaillés les projets web sur lequels j'ai travaillé (professionnels & personnels).
+                                    <hr />
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="presentation-header">
+                                                <h3>Site Web - Administration Librairie Mollat</h3>
+                                                <span class="label blue">ASP.NET MVC</span>
+                                                <span class="label green">Conception SQL</span>
+                                                <span class="label black">Bootstrap</span>
+                                                <span class="label blue">Visual-Paradigm</span>
+                                                <span class="label violet">REST</span>
+                                                <span class="label green">Javascript & JQuery</span>
+                                                <span class="label blue">AJAX</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <b>Conception, Architecture & réalisation des différents sites (4) de la librairie mollat. </b>
+                                            <br>
+                                            <br>
+                                            <i class="fa fa-chevron-right"></i> Site e-commerce avec gestion de contenu (cms).
+                                            <br>
+                                            <i class="fa fa-chevron-right"></i> Blogs & Gestion d'évenements.
+                                            <br>
+                                            <i class="fa fa-chevron-right"></i> Profiling Client.
+                                            <br />
+                                            <br />
+                                            Réalisation des modèles de données (MySql). Conception du Back-Office. Référent fonctionnel
+                                        </div>
+                                        <div class="col-md-8">
+
+
+                                            <div>
+                                                <div class="pagination">
+                                                    <div class="pagination-content">
+                                                        <div class="pagination-item">
+                                                            <img src="Content/Img/Web/Mollat BO/1.png" alt="image01"/>
+                                                        </div>
+                                                        <div class="pagination-item">
+                                                            <img src="Content/Img/Web/Mollat BO/2.png" alt="image02" />
+                                                        </div>
+                                                        <div class="pagination-item">
+                                                            <img src="Content/Img/Web/Mollat BO/3.png" alt="image03" />
+                                                        </div>
+                                                        <div class="pagination-item">
+                                                            <img src="Content/Img/Web/Mollat BO/4.png" alt="image04" />
+                                                        </div>
+                                                        <div class="pagination-item">
+                                                            <img src="Content/Img/Web/Mollat BO/1.png" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="pagination-navigation">
+                                                        <div class="pagination-current"></div>
+                                                        <div class="pagination-dots">
+                                                            <button class="pagination-dot">
+                                                                <span class="pagination-number">1</span>
+                                                            </button>
+                                                            <button class="pagination-dot">
+                                                                <span class="pagination-number">2</span>
+                                                            </button>
+                                                            <button class="pagination-dot">
+                                                                <span class="pagination-number">3</span>
+                                                            </button>
+                                                            <button class="pagination-dot">
+                                                                <span class="pagination-number">4</span>
+                                                            </button>
+                                                            <button class="pagination-dot">
+                                                                <span class="pagination-number">5</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+
+                                        </div>
+                                    </div>
+
+                                    <hr />
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="presentation-header">
+                                                <h3>Application Web - Startool</h3><span class="label blue">ASP.MVC</span> <span class="label green">Conception SQL</span> <span class="label black">Workflows</span> <span class="label darkgrey">Statistiques</span> <span class="label violet">Visual-Paradigm</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <b>Crazy Shooter est un shoot'em up pixélisé, chaotique, fun et explosif.</b>
+                                            <br>
+                                            <br>
+                                            <i class="fa fa-chevron-right"></i> L'objectif est de parcourir tous les niveaux pour éradiquer toute forme de vie. De nombreuses créatures vous attendent et même de nombreux boss.
+                                            <br>
+                                            <i class="fa fa-chevron-right"></i> Vous débloquerez de nouvelles armes comme le fusil d'assaut, le canon laser, le bazooka, le lance-flamme et plus encore !
+                                            <br>
+                                            <i class="fa fa-chevron-right"></i> Vous gagnerez des point de talent pour votre personnage au fil des niveaux pour personnaliser ses aptitudes.
+
+                                        </div>
+                                        <div class="col-md-8">
+
+
+                                           
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="800">
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+            </filter>
+        </defs>
+    </svg>
+
+
+
+
+
+
+
+    <script src="Content/Lib/jquery-2.1.4.min.js"></script>
+    <script src="Content/Lib/bootstrap.min.js"></script>
+    <script src="Content/Lib/Gallery/jquery.carouFredSel-6.2.1.js"></script>
+    <script src="Content/Lib/SVG/snap.svg-min.js"></script>
+    <script src="Content/Lib/Gallery2/TweenMax.min.js"></script>
+    <script src="Content/Lib/Gallery2/pagination.js"></script>
+
+    <script src="Scripts/script.js"></script>
+
+    <script>
+    (function() {
+
+        function extend(a, b) {
+            for (var key in b) {
+                if (b.hasOwnProperty(key)) {
+                    a[key] = b[key];
+                }
+            }
+            return a;
+        }
+
+        function SVGButton(el, options) {
+            this.el = el;
+            this.options = extend({}, this.options);
+            extend(this.options, options);
+            this.init();
+        }
+
+        SVGButton.prototype.options = {
+            speed: { reset: 800, active: 150 },
+            easing: { reset: mina.elastic, active: mina.easein }
+        };
+
+        SVGButton.prototype.init = function() {
+            this.shapeEl = this.el.querySelector('span.morph-shape');
+
+            var s = Snap(this.shapeEl.querySelector('svg'));
+            this.pathEl = s.select('path');
+            this.paths = {
+                reset: this.pathEl.attr('d'),
+                active: this.shapeEl.getAttribute('data-morph-active')
+            };
+
+            this.initEvents();
+        };
+
+        SVGButton.prototype.initEvents = function() {
+            this.el.addEventListener('mousedown', this.down.bind(this)); //mouseover
+            this.el.addEventListener('mouseover', this.down.bind(this)); //mouseover
+            this.el.addEventListener('touchstart', this.down.bind(this));
+
+            this.el.addEventListener('mouseup', this.up.bind(this));
+            this.el.addEventListener('touchend', this.up.bind(this));
+            this.el.addEventListener('mouseout', this.up.bind(this));
+        };
+
+        SVGButton.prototype.down = function() {
+            this.pathEl.stop().animate({ 'path': this.paths.active }, this.options.speed.active, this.options.easing.active);
+        };
+
+        SVGButton.prototype.up = function() {
+            this.pathEl.stop().animate({ 'path': this.paths.reset }, this.options.speed.reset, this.options.easing.reset);
+        };
+
+        [].slice.call(document.querySelectorAll('button.button--effect-1')).forEach(function(el) {
+            new SVGButton(el);
+        });
+
+        [].slice.call(document.querySelectorAll('button.button--effect-2')).forEach(function(el) {
+            new SVGButton(el, {
+                speed: { reset: 650, active: 650 },
+                easing: { reset: mina.elastic, active: mina.elastic }
+            });
+        });
+
+    })();
+    </script>
+
+
+
+</body>
 </html>
-
-
-
