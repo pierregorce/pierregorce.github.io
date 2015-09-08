@@ -85,8 +85,7 @@
     $("#page-web").css("display", "none");
 
 
-
-
+   
 
 });
 

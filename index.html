@@ -12,8 +12,9 @@
     <link href="Css/font-awesome.css" rel="stylesheet" />
     <link href="Css/animate.css" rel="stylesheet" />
     <link href="Css/bootstrap/bootstrap.min.css" rel="stylesheet" />
-    <link href="Css/style.css" rel="stylesheet"/>
+    <link href="Css/style.css" rel="stylesheet" />
 
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Arvo:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 
@@ -22,15 +23,14 @@
 
 <body>
 
-<!--<a class="button button--line button--effect-2" style="height: 150px; width: 150px; display: block">
-    <span class="morph-shape" data-morph-active="M286,113c0,0-68.8-5-136-5c-78.2,0-137,5-137,5s5-15.802,5-50.5C18,33.999,13,12,13,12s59,5,137,5c85,0,136-5,136-5s-5,17.598-5,52C281,96.398,286,113,286,113z">
-            <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
-                <path d="M286,113c0,0-68.8,0-136,0c-78.2,0-137,0-137,0s0-15.802,0-50.5C13,33.999,13,12,13,12s59,0,137,0c85,0,136,0,136,0s0,17.598,0,52C286,96.398,286,113,286,113z" />
-            </svg>
-        </span>
-    <span class="button__text">Hit me</span>
-</a>-->
-
+    <!--<a class="button button--line button--effect-2" style="height: 150px; width: 150px; display: block">
+        <span class="morph-shape" data-morph-active="M286,113c0,0-68.8-5-136-5c-78.2,0-137,5-137,5s5-15.802,5-50.5C18,33.999,13,12,13,12s59,5,137,5c85,0,136-5,136-5s-5,17.598-5,52C281,96.398,286,113,286,113z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                    <path d="M286,113c0,0-68.8,0-136,0c-78.2,0-137,0-137,0s0-15.802,0-50.5C13,33.999,13,12,13,12s59,0,137,0c85,0,136,0,136,0s0,17.598,0,52C286,96.398,286,113,286,113z" />
+                </svg>
+            </span>
+        <span class="button__text">Hit me</span>
+    </a>-->
     <!--<button class="button button--fill button--effect-2">
         <span class="morph-shape" data-morph-active="M286,113c0,0-68.8,6-136,6c-78.2,0-137-6-137-6S6,97.198,6,62.5C6,33.999,13,12,13,12s59-7,137-7c85,0,136,7,136,7s8,17.598,8,52C294,96.398,286,113,286,113z">
             <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
@@ -41,10 +41,15 @@
     </button>-->
 
 
-<div class="container">
-
+    <div class="container">
 
         <div class="row">
+            <div class="col-md-12 hidden-lg hidden-md">
+                MENU MENU SMARTPHONE
+            </div>
+        </div>
+
+    <div class="row">
             <div class="col-md-1">
 
                 <div id="menu">
@@ -82,8 +87,8 @@
 
                 <div id="content">
 
-                en faite bien faire 3 pages, avec un menu sans texte ou vide pour ne pas trop repeter de code. Ce menu sera mit a jour en ajax.
-                    non nul car ça repète le referencement/layout...
+                    todo : carousel portrait, carousel web page, content webpage, menu pour smartphone
+                    todo-after : button effet, cv effet hover
 
                     <!-------------------------------------------------------------------- CV-->
 
@@ -748,13 +753,20 @@
                                     <h2>
                                         <i class="fa fa-cloud"></i> Web
                                     </h2>
-                                    Sur cette page, sont détaillés les projets web sur lequels j'ai travaillés (professionnel & personnels).
+                                    Sur cette page, sont détaillés les projets web sur lequels j'ai travaillé (professionnels & personnels).
                                     <hr />
 
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="presentation-header">
-                                                <h3>Site Web - Administration Librairie Mollat</h3><span class="label blue">ASP.MVC</span> <span class="label green">Conception SQL</span> <span class="label black">E-Commerce</span> <span class="label violet">Visual-Paradigm</span>
+                                                <h3>Site Web - Administration Librairie Mollat</h3>
+                                                <span class="label blue">ASP.NET MVC</span>
+                                                <span class="label green">Conception SQL</span>
+                                                <span class="label black">Bootstrap</span>
+                                                <span class="label blue">Visual-Paradigm</span>
+                                                <span class="label violet">REST</span>
+                                                <span class="label green">Javascript & JQuery</span>
+                                                <span class="label blue">AJAX</span>
                                             </div>
                                         </div>
                                     </div>
@@ -775,6 +787,48 @@
                                         </div>
                                         <div class="col-md-8">
 
+
+                                            <div>
+                                                <div class="pagination">
+                                                    <div class="pagination-content">
+                                                        <div class="pagination-item">
+                                                            <img src="Content/Img/Web/Mollat BO/1.png" alt="image01"/>
+                                                        </div>
+                                                        <div class="pagination-item">
+                                                            <img src="Content/Img/Web/Mollat BO/2.png" alt="image02" />
+                                                        </div>
+                                                        <div class="pagination-item">
+                                                            <img src="Content/Img/Web/Mollat BO/3.png" alt="image03" />
+                                                        </div>
+                                                        <div class="pagination-item">
+                                                            <img src="Content/Img/Web/Mollat BO/4.png" alt="image04" />
+                                                        </div>
+                                                        <div class="pagination-item">
+                                                            <img src="Content/Img/Web/Mollat BO/1.png" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="pagination-navigation">
+                                                        <div class="pagination-current"></div>
+                                                        <div class="pagination-dots">
+                                                            <button class="pagination-dot">
+                                                                <span class="pagination-number">1</span>
+                                                            </button>
+                                                            <button class="pagination-dot">
+                                                                <span class="pagination-number">2</span>
+                                                            </button>
+                                                            <button class="pagination-dot">
+                                                                <span class="pagination-number">3</span>
+                                                            </button>
+                                                            <button class="pagination-dot">
+                                                                <span class="pagination-number">4</span>
+                                                            </button>
+                                                            <button class="pagination-dot">
+                                                                <span class="pagination-number">5</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
 
 
 
@@ -807,7 +861,7 @@
                                         <div class="col-md-8">
 
 
-
+                                           
 
 
                                         </div>
@@ -825,13 +879,19 @@
             </div>
         </div>
 
-
-
-
     </div>
 
 
 
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="800">
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+            </filter>
+        </defs>
+    </svg>
 
 
 
@@ -843,77 +903,81 @@
     <script src="Content/Lib/bootstrap.min.js"></script>
     <script src="Content/Lib/Gallery/jquery.carouFredSel-6.2.1.js"></script>
     <script src="Content/Lib/SVG/snap.svg-min.js"></script>
+    <script src="Content/Lib/Gallery2/TweenMax.min.js"></script>
+    <script src="Content/Lib/Gallery2/pagination.js"></script>
 
     <script src="Scripts/script.js"></script>
 
     <script>
-        (function () {
+    (function() {
 
-            function extend(a, b) {
-                for (var key in b) {
-                    if (b.hasOwnProperty(key)) {
-                        a[key] = b[key];
-                    }
+        function extend(a, b) {
+            for (var key in b) {
+                if (b.hasOwnProperty(key)) {
+                    a[key] = b[key];
                 }
-                return a;
             }
+            return a;
+        }
 
-            function SVGButton(el, options) {
-                this.el = el;
-                this.options = extend({}, this.options);
-                extend(this.options, options);
-                this.init();
-            }
+        function SVGButton(el, options) {
+            this.el = el;
+            this.options = extend({}, this.options);
+            extend(this.options, options);
+            this.init();
+        }
 
-            SVGButton.prototype.options = {
-                speed: { reset: 800, active: 150 },
-                easing: { reset: mina.elastic, active: mina.easein }
+        SVGButton.prototype.options = {
+            speed: { reset: 800, active: 150 },
+            easing: { reset: mina.elastic, active: mina.easein }
+        };
+
+        SVGButton.prototype.init = function() {
+            this.shapeEl = this.el.querySelector('span.morph-shape');
+
+            var s = Snap(this.shapeEl.querySelector('svg'));
+            this.pathEl = s.select('path');
+            this.paths = {
+                reset: this.pathEl.attr('d'),
+                active: this.shapeEl.getAttribute('data-morph-active')
             };
 
-            SVGButton.prototype.init = function () {
-                this.shapeEl = this.el.querySelector('span.morph-shape');
+            this.initEvents();
+        };
 
-                var s = Snap(this.shapeEl.querySelector('svg'));
-                this.pathEl = s.select('path');
-                this.paths = {
-                    reset: this.pathEl.attr('d'),
-                    active: this.shapeEl.getAttribute('data-morph-active')
-                };
+        SVGButton.prototype.initEvents = function() {
+            this.el.addEventListener('mousedown', this.down.bind(this)); //mouseover
+            this.el.addEventListener('mouseover', this.down.bind(this)); //mouseover
+            this.el.addEventListener('touchstart', this.down.bind(this));
 
-                this.initEvents();
-            };
+            this.el.addEventListener('mouseup', this.up.bind(this));
+            this.el.addEventListener('touchend', this.up.bind(this));
+            this.el.addEventListener('mouseout', this.up.bind(this));
+        };
 
-            SVGButton.prototype.initEvents = function () {
-                this.el.addEventListener('mousedown', this.down.bind(this)); //mouseover
-                this.el.addEventListener('mouseover', this.down.bind(this)); //mouseover
-                this.el.addEventListener('touchstart', this.down.bind(this));
+        SVGButton.prototype.down = function() {
+            this.pathEl.stop().animate({ 'path': this.paths.active }, this.options.speed.active, this.options.easing.active);
+        };
 
-                this.el.addEventListener('mouseup', this.up.bind(this));
-                this.el.addEventListener('touchend', this.up.bind(this));
-                this.el.addEventListener('mouseout', this.up.bind(this));
-            };
+        SVGButton.prototype.up = function() {
+            this.pathEl.stop().animate({ 'path': this.paths.reset }, this.options.speed.reset, this.options.easing.reset);
+        };
 
-            SVGButton.prototype.down = function () {
-                this.pathEl.stop().animate({ 'path': this.paths.active }, this.options.speed.active, this.options.easing.active);
-            };
+        [].slice.call(document.querySelectorAll('button.button--effect-1')).forEach(function(el) {
+            new SVGButton(el);
+        });
 
-            SVGButton.prototype.up = function () {
-                this.pathEl.stop().animate({ 'path': this.paths.reset }, this.options.speed.reset, this.options.easing.reset);
-            };
-
-            [].slice.call(document.querySelectorAll('button.button--effect-1')).forEach(function (el) {
-                new SVGButton(el);
+        [].slice.call(document.querySelectorAll('button.button--effect-2')).forEach(function(el) {
+            new SVGButton(el, {
+                speed: { reset: 650, active: 650 },
+                easing: { reset: mina.elastic, active: mina.elastic }
             });
+        });
 
-            [].slice.call(document.querySelectorAll('button.button--effect-2')).forEach(function (el) {
-                new SVGButton(el, {
-                    speed: { reset: 650, active: 650 },
-                    easing: { reset: mina.elastic, active: mina.elastic }
-                });
-            });
-
-        })();
+    })();
     </script>
+
+
 
 </body>
 </html>

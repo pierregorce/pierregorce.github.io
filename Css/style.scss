@@ -4,7 +4,7 @@ $darkgrey: rgb(180,180,180);
 $green: rgb(101,193,120);
 $black: rgb(80,80,80);
 $blue: rgb(0,191,221);
-$violet: #5C5EDC;
+$violet: #7778B7;
 
 .blue {
     background-color: $blue;
@@ -73,7 +73,7 @@ body {
     background-color: $grey;
     color: $black;
     padding-top: 25px;
-    overflow:scroll;
+    overflow: scroll;
 }
 
 .well {
@@ -171,8 +171,11 @@ body {
     display: inline-block;
 }
 
-.logo-square:hover * {
+.logo-square:hover {
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
     color: white;
+    cursor: pointer;
 }
 
 .logo-square i {
@@ -255,7 +258,7 @@ body {
 //----------------------------MENU
 
 .menu {
-        float: right;
+    float: right;
     margin: 0 -11px;
 
     .menu-box {
@@ -280,14 +283,20 @@ body {
     .menu-box:hover {
         color: $green;
         cursor: pointer;
+        transition-duration: 0.2s;
+        transition-timing-function: ease;
     }
 
     .active {
         background: $green !important;
+        transition-duration: 0.2s;
+        transition-timing-function: ease;
     }
 
     .active:hover {
         color: $black !important;
+        transition-duration: 0.2s;
+        transition-timing-function: ease;
     }
 }
 
@@ -448,4 +457,81 @@ body {
 
 .prev.disabled, .next.disabled {
     display: none !important;
+}
+
+
+
+
+
+
+// ---------------
+
+
+.pagination {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.pagination-navigation {
+    position: relative;
+    text-align: center;
+    font-size: 0;
+    filter: url("../index.html#goo");
+    -webkit-filter: url("#goo");
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.pagination-dot,
+.pagination-current {
+    position: relative;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    line-height: 32px;
+    background: $black;
+    border-radius: 50%;
+    margin: 0 13px;
+    border: none;
+    outline: none;
+    font-size: 11px;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Oswald';
+}
+
+.pagination-number {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    -webkit-transform: scale(0.01, 0.01);
+    transform: scale(0.01, 0.01);
+}
+
+.pagination-current {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.pagination-content {
+    height: 300px;
+}
+
+.pagination-item {
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    font-size: 0;
+    border: 4px solid #4F4F4F;
+}
+
+.pagination-item img {
+    position: relative;
+    opacity: 0.95;
+    max-width: 350px;
 }
