@@ -41,9 +41,9 @@
         };
     };
 
-    $('.thumbs-1').carouFredSel(getChildCarouselOptions(".prev-1",".next-1"));
-    $('.thumbs-2').carouFredSel(getChildCarouselOptions(".prev-2",".next-2"));
-    $('.thumbs-3').carouFredSel(getChildCarouselOptions(".prev-3",".next-3"));
+    $('.thumbs-1').carouFredSel(getChildCarouselOptions(".prev-1", ".next-1"));
+    $('.thumbs-2').carouFredSel(getChildCarouselOptions(".prev-2", ".next-2"));
+    $('.thumbs-3').carouFredSel(getChildCarouselOptions(".prev-3", ".next-3"));
 
     $('.thumbs-1 a').click(function (e) {
         $('.carousel-1').trigger('slideTo', '#' + this.href.split('#').pop());
@@ -66,7 +66,8 @@
         return false;
     });
 
-    $(".menu-box").click(function() {
+    $(".menu-box").click(function () {
+
         $(".menu-box").removeClass("active");
         $(this).addClass("active");
 
@@ -74,19 +75,46 @@
 
         $(".page").hide();
         $("#" + pageUrl).show();
-
+        window.location.hash = pageUrl;
+        $('html').scrollTop(0);
     });
 
 
+    var hash = document.location.hash;
 
-    $("#page-android").css("visibility", "visible");
-    $("#page-web").css("visibility", "visible");
-    $("#page-android").css("display", "none");
-    $("#page-web").css("display", "none");
+    if (hash === "#android") {
+        $("#cv").hide();
+        $("#android").show();
+        $("#web").hide();
 
+    } else if (hash === "#web") {
+        $("#cv").hide();
+        $("#android").hide();
+        $("#web").show();
+    } else {
+        $("#cv").show();
+        $("#android").hide();
+        $("#web").hide();
+    }
 
-   
+    $("#cv").css("visibility", "visible");
+    $("#android").css("visibility", "visible");
+    $("#web").css("visibility", "visible");
+
+    var isAnchor = false;
+    $(".menu-box").each(function () {
+        if ("#" + $(this).data("url") === hash) {
+            $(this).addClass("active");
+            isAnchor = true;
+        }
+    });
+    if (!isAnchor) {
+        $(".menu-box[data-url='cv']").addClass("active");
+    }
+
+    $('html').scrollTop(0);
 
 });
+
 
 

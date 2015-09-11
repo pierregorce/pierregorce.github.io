@@ -5,9 +5,28 @@
 
     <!--todo
     carouseel
+    meta
     menu invariante selon page
     anim changement page + url page unique en js (~routing js) mais how to referencement alors...
     effet bouton menu-->
+
+    <meta charset="utf-8">
+
+    <title>Pierre GORCE : Concepteur Développeur Informatique</title>
+
+    <meta name="description" content="Pierre GORCE - Concepteur Développeur Informatique. Découvrez mon parcours et mes réalisation sur ce portfolio.">
+
+    <meta name="geo.placename" content="Grenoble, Isère, France">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, maximum-scale=1, user-scalable=no">
+
+    <meta name="keywords" lang="fr" content="Développeur, ASP.NET MVC, Android, SQL, Conception Web, Rhône-Alpes, Grenoble, Valence, LibGDX, Jeux Android, Modélisation de données, Entity Framework, Crazy Shooter, SOAP,REST, JQuery, CV, GORCE Pierre, Architecture Web">
+
+    <link rel="icon" href="/Content/favicon.ico" type="image/x-icon">
+
+
+
+
 
     <link href="Css/animate.min.css" rel="stylesheet"/>
     <link href="Css/bootstrap/bootstrap.min.css" rel="stylesheet"/>
@@ -60,7 +79,7 @@
 
                 <div id="menu">
                     <nav class="menu hidden-sm hidden-xs">
-                        <div class="menu-box active" data-url="page-cv">
+                        <div class="menu-box" data-url="cv">
                             <div class="menu-box-items">
                                 <div>
                                     <i class="fa fa-home"></i>
@@ -71,7 +90,7 @@
                             </div>
                         </div>
 
-                        <div class="menu-box" data-url="page-android">
+                        <div class="menu-box" data-url="android">
                             <div class="menu-box-items">
                                 <div>
                                     <i class="fa fa-android"></i>
@@ -80,7 +99,7 @@
                             </div>
                         </div>
 
-                        <!--<div class="menu-box" data-url="page-web">
+                        <!--<div class="menu-box" data-url="web">
                             <div class="menu-box-items">
                                 <i class="fa fa-cloud"></i> Réalisations Web
                             </div>
@@ -95,69 +114,69 @@
 
                     <!-------------------------------------------------------------------- CV-->
 
-                    <div id="page-cv" class="page">
-                        <div class="row">
-                            <div class="col-md-5">
-                                <div class="well boxshadow cv-header">
-                                    <div class="row">
-                                        <div class="col-xs-5">
-                                            <div class="crop-profil img-responsive">
-                                                <img src="Content/Img/CV/profil.jpg" alt="photo-profil" class="img-profil" />
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-7 informations">
-                                            <h1>
-                                                <b class="small">Pierre <b class="colorized">GORCE</b></b>
-                                            </h1>
-                                            <p>
-                                                <i class="fa fa-map-marker"></i> <span> Grenoble (38)</span>
-                                            </p>
-                                            <p>
-                                                <i class="fa fa-comment"></i> <span>gorce.pierre@gmail.com</span>
-                                            </p>
+                    <div id="cv" class="page" style="visibility: hidden;">
+                        <div class=" row">
+                        <div class="col-md-5">
+                            <div class="well boxshadow cv-header">
+                                <div class="row">
+                                    <div class="col-xs-5">
+                                        <div class="crop-profil img-responsive">
+                                            <img src="Content/Img/CV/profil.jpg" alt="photo-profil" class="img-profil" />
                                         </div>
                                     </div>
-                                    <div class="row" style="position: absolute; bottom: 0; width: 100%;">
-                                        <div class="col-md-12">
-                                            <div class="logo-square-container">
-                                                <div class="logo-square blue">
-                                                    <i class="fa fa-male"></i>
-                                                    <p class="text">25 ans</p>
-                                                </div>
-                                                <div class="logo-square green">
-                                                    <i class="fa fa-car"></i>
-                                                    <p class="text">Permis B</p>
-                                                </div>
-                                                <div class="logo-square darkgrey">
-                                                    <i class="fa fa-heart"></i>
-                                                    <p class="text">Passionné</p>
-                                                </div>
-                                                <div class="logo-square blue">
-                                                    <i class="fa fa-quote-right"></i>
-                                                    <p class="text">Curieux</p>
-                                                </div>
-                                                <div class="logo-square green">
-                                                    <i class="fa fa-info"></i>
-                                                    <p class="text">Autonome</p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div class="col-xs-7 informations">
+                                        <h1>
+                                            <b class="small">Pierre <b class="colorized">GORCE</b></b>
+                                        </h1>
+                                        <p>
+                                            <i class="fa fa-map-marker"></i> <span> Grenoble (38)</span>
+                                        </p>
+                                        <p>
+                                            <i class="fa fa-comment"></i> <span>gorce.pierre@gmail.com</span>
+                                        </p>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-7">
-                                <div class="well boxshadow cv-header">
-                                    <h1 style="letter-spacing: -2.3px">Concepteur, Développeur Informatique</h1>
-                                    <p>
-                                        <i class="fa fa-quote-left" style="padding: 0 8px; font-size: 15px;"></i>
-                                        Polyvalent, déterminé, aux compétences multiples et en constant apprentissage.<br />
-                                        Je me passionne pour les nouvelles technologies du Web ainsi que l'ensemble des environnements mobiles.
-                                        Je travaille actuellement sur la réalisation d'applications Web et de sites e-commerce.
-                                        Mes préférences se tournent vers la conception et l'architecture ainsi que le back-end.
-                                    </p>
+                                <div class="row" style="position: absolute; bottom: 0; width: 100%;">
+                                    <div class="col-md-12">
+                                        <div class="logo-square-container">
+                                            <div class="logo-square blue">
+                                                <i class="fa fa-male"></i>
+                                                <p class="text">25 ans</p>
+                                            </div>
+                                            <div class="logo-square green">
+                                                <i class="fa fa-car"></i>
+                                                <p class="text">Permis B</p>
+                                            </div>
+                                            <div class="logo-square darkgrey">
+                                                <i class="fa fa-heart"></i>
+                                                <p class="text">Passionné</p>
+                                            </div>
+                                            <div class="logo-square blue">
+                                                <i class="fa fa-quote-right"></i>
+                                                <p class="text">Curieux</p>
+                                            </div>
+                                            <div class="logo-square green">
+                                                <i class="fa fa-info"></i>
+                                                <p class="text">Autonome</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-md-7">
+                            <div class="well boxshadow cv-header">
+                                <h1 style="letter-spacing: -2.3px">Concepteur, Développeur Informatique</h1>
+                                <p>
+                                    <i class="fa fa-quote-left" style="padding: 0 8px; font-size: 15px;"></i>
+                                    Polyvalent, déterminé, aux compétences multiples et en constant apprentissage.<br />
+                                    Je me passionne pour les nouvelles technologies du Web ainsi que l'ensemble des environnements mobiles.
+                                    Je travaille actuellement sur la réalisation d'applications Web et de sites e-commerce.
+                                    Mes préférences se tournent vers la conception et l'architecture ainsi que le back-end.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
                         <br />
 
@@ -554,10 +573,10 @@
 
                     <!-------------------------------------------------------------------- Android -->
 
-                    <div id="page-android" class="page" style="visibility: hidden;">
+                    <div id="android" class="page" style="visibility: hidden;">
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="well">
+                                <div class="well boxshadow ">
                                     <h2>
                                         <i class="fa fa-android"></i> Android
                                     </h2>
@@ -749,10 +768,10 @@
 
                     <!-------------------------------------------------------------------- Web -->
 
-                    <div id="page-web" class="page" style="visibility: hidden;">
+                    <div id="web" class="page" style="visibility: hidden;">
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="well">
+                                <div class="well boxshadow ">
                                     <h2>
                                         <i class="fa fa-cloud"></i> Web
                                     </h2>
@@ -795,7 +814,7 @@
                                                 <div class="pagination">
                                                     <div class="pagination-content">
                                                         <div class="pagination-item">
-                                                            <img src="Content/Img/Web/Mollat BO/1.png" alt="image01"/>
+                                                            <img src="Content/Img/Web/Mollat BO/1.png" alt="image01" />
                                                         </div>
                                                         <div class="pagination-item">
                                                             <img src="Content/Img/Web/Mollat BO/2.png" alt="image02" />
@@ -864,7 +883,7 @@
                                         <div class="col-md-8">
 
 
-                                           
+
 
 
                                         </div>
