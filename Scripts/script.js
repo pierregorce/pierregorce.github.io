@@ -112,7 +112,7 @@
         $(".menu-box[data-url='cv']").addClass("active");
     }
 
-    $('html').scrollTop(0);
+    $('body,html,document').scrollTop(0);
 
 });
 

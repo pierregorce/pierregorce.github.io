@@ -1,13 +1,16 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    
-    <!--todo
-    carouseel
-    meta
-    menu invariante selon page
-    anim changement page + url page unique en js (~routing js) mais how to referencement alors...
-    effet bouton menu-->
+
+    <!--
+    todo
+    favicon
+    carouseel web
+    carousel android portrait
+    anim changement page
+    effet bouton menu
+    menu pour site mobile
+        -->
 
     <meta charset="utf-8">
 
@@ -27,9 +30,9 @@
 
 
 
-    <link href="Css/animate.min.css" rel="stylesheet"/>
-    <link href="Css/bootstrap/bootstrap.min.css" rel="stylesheet"/>
-    <link href="Css/style.css" rel="stylesheet"/>
+    <link href="Css/animate.min.css" rel="stylesheet" />
+    <link href="Css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="Css/style.css" rel="stylesheet" />
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
@@ -64,7 +67,7 @@
 
         <div class="row">
             <div class="col-md-12 hidden-lg hidden-md">
-                
+
                 <!--MENU MENU SMARTPHONE
 
                 todo : carousel portrait, carousel web page, content webpage, menu pour smartphone
@@ -73,7 +76,7 @@
             </div>
         </div>
 
-    <div class="row">
+        <div class="row">
             <div class="col-md-1">
 
                 <div id="menu">
@@ -115,67 +118,67 @@
 
                     <div id="cv" class="page" style="visibility: hidden;">
                         <div class=" row">
-                        <div class="col-md-5">
-                            <div class="well boxshadow cv-header">
-                                <div class="row">
-                                    <div class="col-xs-5">
-                                        <div class="crop-profil img-responsive">
-                                            <img src="Content/Img/CV/profil.jpg" alt="photo-profil" class="img-profil" />
+                            <div class="col-md-5">
+                                <div class="well boxshadow cv-header">
+                                    <div class="row">
+                                        <div class="col-xs-5">
+                                            <div class="crop-profil img-responsive">
+                                                <img src="Content/Img/CV/profil.jpg" alt="photo-profil" class="img-profil" />
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-7 informations">
+                                            <h1>
+                                                <b class="small">Pierre <b class="colorized">GORCE</b></b>
+                                            </h1>
+                                            <p>
+                                                <i class="fa fa-map-marker"></i> <span> Grenoble (38)</span>
+                                            </p>
+                                            <p>
+                                                <i class="fa fa-comment"></i> <span>gorce.pierre@gmail.com</span>
+                                            </p>
                                         </div>
                                     </div>
-                                    <div class="col-xs-7 informations">
-                                        <h1>
-                                            <b class="small">Pierre <b class="colorized">GORCE</b></b>
-                                        </h1>
-                                        <p>
-                                            <i class="fa fa-map-marker"></i> <span> Grenoble (38)</span>
-                                        </p>
-                                        <p>
-                                            <i class="fa fa-comment"></i> <span>gorce.pierre@gmail.com</span>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="row" style="position: absolute; bottom: 0; width: 100%;">
-                                    <div class="col-md-12">
-                                        <div class="logo-square-container">
-                                            <div class="logo-square blue">
-                                                <i class="fa fa-male"></i>
-                                                <p class="text">25 ans</p>
-                                            </div>
-                                            <div class="logo-square green">
-                                                <i class="fa fa-car"></i>
-                                                <p class="text">Permis B</p>
-                                            </div>
-                                            <div class="logo-square darkgrey">
-                                                <i class="fa fa-heart"></i>
-                                                <p class="text">Passionné</p>
-                                            </div>
-                                            <div class="logo-square blue">
-                                                <i class="fa fa-quote-right"></i>
-                                                <p class="text">Curieux</p>
-                                            </div>
-                                            <div class="logo-square green">
-                                                <i class="fa fa-info"></i>
-                                                <p class="text">Autonome</p>
+                                    <div class="row" style="position: absolute; bottom: 0; width: 100%;">
+                                        <div class="col-md-12">
+                                            <div class="logo-square-container">
+                                                <div class="logo-square blue">
+                                                    <i class="fa fa-male"></i>
+                                                    <p class="text">25 ans</p>
+                                                </div>
+                                                <div class="logo-square green">
+                                                    <i class="fa fa-car"></i>
+                                                    <p class="text">Permis B</p>
+                                                </div>
+                                                <div class="logo-square darkgrey">
+                                                    <i class="fa fa-heart"></i>
+                                                    <p class="text">Passionné</p>
+                                                </div>
+                                                <div class="logo-square blue">
+                                                    <i class="fa fa-quote-right"></i>
+                                                    <p class="text">Curieux</p>
+                                                </div>
+                                                <div class="logo-square green">
+                                                    <i class="fa fa-info"></i>
+                                                    <p class="text">Autonome</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="well boxshadow cv-header">
-                                <h1 style="letter-spacing: -2.3px">Concepteur, Développeur Informatique</h1>
-                                <p>
-                                    <i class="fa fa-quote-left" style="padding: 0 8px; font-size: 15px;"></i>
-                                    Polyvalent, déterminé, aux compétences multiples et en constant apprentissage.<br />
-                                    Je me passionne pour les nouvelles technologies du Web ainsi que l'ensemble des environnements mobiles.
-                                    Je travaille actuellement sur la réalisation d'applications Web et de sites e-commerce.
-                                    Mes préférences se tournent vers la conception et l'architecture ainsi que le back-end.
-                                </p>
+                            <div class="col-md-7">
+                                <div class="well boxshadow cv-header">
+                                    <h1 style="letter-spacing: -2.3px">Concepteur, Développeur Informatique</h1>
+                                    <p>
+                                        <i class="fa fa-quote-left" style="padding: 0 8px; font-size: 15px;"></i>
+                                        Polyvalent, déterminé, aux compétences multiples et en constant apprentissage.<br />
+                                        Je me passionne pour les nouvelles technologies du Web ainsi que l'ensemble des environnements mobiles.
+                                        Je travaille actuellement sur la réalisation d'applications Web et de sites e-commerce.
+                                        Mes préférences se tournent vers la conception et l'architecture ainsi que le back-end.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
                         <br />
 
@@ -930,72 +933,72 @@
     <script src="Scripts/script.js"></script>
 
     <script>
-    (function() {
+        (function () {
 
-        function extend(a, b) {
-            for (var key in b) {
-                if (b.hasOwnProperty(key)) {
-                    a[key] = b[key];
+            function extend(a, b) {
+                for (var key in b) {
+                    if (b.hasOwnProperty(key)) {
+                        a[key] = b[key];
+                    }
                 }
+                return a;
             }
-            return a;
-        }
 
-        function SVGButton(el, options) {
-            this.el = el;
-            this.options = extend({}, this.options);
-            extend(this.options, options);
-            this.init();
-        }
+            function SVGButton(el, options) {
+                this.el = el;
+                this.options = extend({}, this.options);
+                extend(this.options, options);
+                this.init();
+            }
 
-        SVGButton.prototype.options = {
-            speed: { reset: 800, active: 150 },
-            easing: { reset: mina.elastic, active: mina.easein }
-        };
-
-        SVGButton.prototype.init = function() {
-            this.shapeEl = this.el.querySelector('span.morph-shape');
-
-            var s = Snap(this.shapeEl.querySelector('svg'));
-            this.pathEl = s.select('path');
-            this.paths = {
-                reset: this.pathEl.attr('d'),
-                active: this.shapeEl.getAttribute('data-morph-active')
+            SVGButton.prototype.options = {
+                speed: { reset: 800, active: 150 },
+                easing: { reset: mina.elastic, active: mina.easein }
             };
 
-            this.initEvents();
-        };
+            SVGButton.prototype.init = function () {
+                this.shapeEl = this.el.querySelector('span.morph-shape');
 
-        SVGButton.prototype.initEvents = function() {
-            this.el.addEventListener('mousedown', this.down.bind(this)); //mouseover
-            this.el.addEventListener('mouseover', this.down.bind(this)); //mouseover
-            this.el.addEventListener('touchstart', this.down.bind(this));
+                var s = Snap(this.shapeEl.querySelector('svg'));
+                this.pathEl = s.select('path');
+                this.paths = {
+                    reset: this.pathEl.attr('d'),
+                    active: this.shapeEl.getAttribute('data-morph-active')
+                };
 
-            this.el.addEventListener('mouseup', this.up.bind(this));
-            this.el.addEventListener('touchend', this.up.bind(this));
-            this.el.addEventListener('mouseout', this.up.bind(this));
-        };
+                this.initEvents();
+            };
 
-        SVGButton.prototype.down = function() {
-            this.pathEl.stop().animate({ 'path': this.paths.active }, this.options.speed.active, this.options.easing.active);
-        };
+            SVGButton.prototype.initEvents = function () {
+                this.el.addEventListener('mousedown', this.down.bind(this)); //mouseover
+                this.el.addEventListener('mouseover', this.down.bind(this)); //mouseover
+                this.el.addEventListener('touchstart', this.down.bind(this));
 
-        SVGButton.prototype.up = function() {
-            this.pathEl.stop().animate({ 'path': this.paths.reset }, this.options.speed.reset, this.options.easing.reset);
-        };
+                this.el.addEventListener('mouseup', this.up.bind(this));
+                this.el.addEventListener('touchend', this.up.bind(this));
+                this.el.addEventListener('mouseout', this.up.bind(this));
+            };
 
-        [].slice.call(document.querySelectorAll('button.button--effect-1')).forEach(function(el) {
-            new SVGButton(el);
-        });
+            SVGButton.prototype.down = function () {
+                this.pathEl.stop().animate({ 'path': this.paths.active }, this.options.speed.active, this.options.easing.active);
+            };
 
-        [].slice.call(document.querySelectorAll('button.button--effect-2')).forEach(function(el) {
-            new SVGButton(el, {
-                speed: { reset: 650, active: 650 },
-                easing: { reset: mina.elastic, active: mina.elastic }
+            SVGButton.prototype.up = function () {
+                this.pathEl.stop().animate({ 'path': this.paths.reset }, this.options.speed.reset, this.options.easing.reset);
+            };
+
+            [].slice.call(document.querySelectorAll('button.button--effect-1')).forEach(function (el) {
+                new SVGButton(el);
             });
-        });
 
-    })();
+            [].slice.call(document.querySelectorAll('button.button--effect-2')).forEach(function (el) {
+                new SVGButton(el, {
+                    speed: { reset: 650, active: 650 },
+                    easing: { reset: mina.elastic, active: mina.elastic }
+                });
+            });
+
+        })();
     </script>
 
 
