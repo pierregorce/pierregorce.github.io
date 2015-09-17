@@ -1,0 +1,26 @@
+[
+  {
+    "outputFileName": "output/bundle.js",
+    "inputFiles": [
+      "Content/Lib/jquery-2.1.4.js",
+      "Content/Lib/bootstrap.min.js",
+      "Content/Lib/Gallery/jquery.carouFredSel-6.2.1.js",
+      "Content/Lib/SVG/snap.svg-min.js",
+      "Content/Lib/Gallery2/TweenMax.min.js",
+      "Content/Lib/Gallery2/pagination.js",
+      "Scripts/script.js"
+    ]
+  },
+  {
+    "outputFileName": "output/bundle.css",
+    "inputFiles": [
+      "Css/bootstrap/bootstrap.css",
+      "Css/animate.css",
+      "Css/style.css"
+    ],
+    "minify": {
+      "enabled": true,
+      "commentMode": "all"
+    }
+  }
+]

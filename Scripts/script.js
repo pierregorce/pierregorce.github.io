@@ -76,9 +76,8 @@
         $(".page").hide();
         $("#" + pageUrl).show();
         window.location.hash = pageUrl;
-        $('html').scrollTop(0);
+        $('body,html,document').scrollTop(0);
     });
-
 
     var hash = document.location.hash;
 
