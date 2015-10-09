@@ -256,7 +256,7 @@ body {
     }
 }
 
-//----------------------------MENU
+//----------------------------MENUS
 
 .menu {
     float: right;
@@ -300,6 +300,39 @@ body {
         transition-timing-function: ease;
     }
 }
+
+.menu-bar {
+
+    .menu-bar-icon {
+        cursor: pointer;
+    }
+
+    .menu-bar-item {
+        border-bottom: 1px solid $grey;
+        cursor: pointer;
+        padding: 15px;
+        font-size: 16px;
+        font-family: "Arvo";
+        color: $green;
+        font-weight: 500;
+                
+        
+
+        i {
+            color: $black;
+            padding-right: 5px;
+        }
+    }
+
+    .menu-bar-item:hover {
+        background-color: $green;
+        color: $black;
+        transition-duration: 0.2s;
+        transition-timing-function: ease;
+
+    }
+}
+
 
 
 //-----------------------------CONPETENCE

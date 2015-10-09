@@ -4,7 +4,6 @@
 
     <!--
     todo
-    favicon
     carouseel web
     carousel android portrait
     anim changement page
@@ -12,29 +11,30 @@
     menu pour site mobile
         -->
 
-    <meta charset="utf-8">
-    <meta http-equiv="Cache-Control" content="public"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
+    <meta http-equiv="Content-Language" content="fr" />
+
+    <meta http-equiv="Cache-Control" content="public" />
 
     <title>Pierre GORCE : Concepteur Développeur Informatique</title>
 
     <meta name="description" content="Pierre GORCE - Concepteur Développeur Informatique. Découvrez mon parcours et mes réalisation sur ce portfolio.">
 
-    <meta name="geo.placename" content="Grenoble, Isère, France">
-
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, maximum-scale=1, user-scalable=no">
 
+    <link rel="icon" href="Content/Img/favicon.png" type="image/x-icon">
+
+    <!-- META OBSOLETES POUR GOOGLE -->
+
     <meta name="keywords" lang="fr" content="Développeur, ASP.NET MVC, Android, SQL, Conception Web, Rhône-Alpes, Grenoble, Valence, LibGDX, Jeux Android, Modélisation de données, Entity Framework, Crazy Shooter, SOAP, REST, JQuery, CV, GORCE Pierre, Architecture Web">
-
-    <link rel="icon" href="/Content/Img/favicon.png" type="image/x-icon">
-
+    <meta name="geo.placename" content="Grenoble, Isère, France">
 
     <link href="output/bundle.min.css" rel="stylesheet" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Arvo:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-
 </head>
 
 
@@ -57,7 +57,54 @@
         </span>
         <span class="button__text">Press me</span>
     </button>-->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 hidden-md hidden-lg">
+                <div class="menu-bar">
+                    <div class="well boxshadow">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="pull-right">
+                                    <div class="menu-bar-icon">
+                                        <h3>
+                                            <i class="fa fa-bars"></i> Menu
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" id="menu-bar-item-container">
+                            <div class="col-xs-12">
 
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="menu-bar-item" data-url="cv">
+                                            <div><i class="fa fa-home"></i> Acceuil - CV</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="menu-bar-item" data-url="android">
+                                            <div><i class="fa fa-android"></i> Réalisations Android</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--<div class="row">
+                                    <div class="col-md-12">
+                                        <div class="menu-bar-item" data-url="web">
+                                            <div><i class="fa fa-cloud"></i> Réalisations Web</div>
+                                        </div>
+                                    </div>
+                                </div>-->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="container">
 
@@ -890,7 +937,7 @@
         </div>
     </div>
 
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="800">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
         <defs>
             <filter id="goo">
                 <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />

@@ -76,7 +76,8 @@
         $(".page").hide();
         $("#" + pageUrl).show();
         window.location.hash = pageUrl;
-        $('body,html,document').scrollTop(0);
+        //$('body,html,document').scrollTop(0);
+        window.scrollTo(0, 0);
     });
 
     var hash = document.location.hash;
@@ -111,9 +112,27 @@
         $(".menu-box[data-url='cv']").addClass("active");
     }
 
-    $('body,html,document').scrollTop(0);
+    window.scrollTo(0, 0);
+
+    $(".menu-bar-item").click(function () {
+
+        $(".menu-box").removeClass("active");
+        $(this).addClass("active");
+
+        var pageUrl = $(this).data("url");
+
+        $(".page").hide();
+        $("#" + pageUrl).show();
+        window.location.hash = pageUrl;
+        //$('body,html,document').scrollTop(0);
+        window.scrollTo(0, 0);
+    });
+
+
+
 
 });
 
 
 
+window.scrollTo(0, 0);
