@@ -67,7 +67,7 @@ body {
   left: 5%;
   width: 90%;
   height: 50px;
-  border-radius: 125px/12px;
+  border-radius: 125px / 12px;
   box-shadow: 0 0 8px rgba(50, 50, 50, 0.25); }
 
 .boxshadow:after {
@@ -75,7 +75,7 @@ body {
   left: 5%;
   width: 90%;
   height: 50px;
-  border-radius: 125px/12px;
+  border-radius: 125px / 12px;
   box-shadow: 0 0 8px rgba(50, 50, 50, 0.25); }
 
 .crop-profil {
@@ -116,7 +116,8 @@ body {
   text-align: center;
   color: #505050;
   display: inline-block;
-  padding-top: 5px; }
+  padding-top: 5px;
+  font-size: 11px; }
 
 .logo-square:hover {
   transition-duration: 0.3s;
@@ -313,10 +314,10 @@ body {
   height: 100px;
   margin: 0 10px;
   overflow: hidden;
-  -webkit-transition: border-color 0.2s;
-  -moz-transition: border-color 0.2s;
-  -ms-transition: border-color 0.2s;
-  transition: border-color 0.2s; }
+  -webkit-transition: border-color .2s;
+  -moz-transition: border-color .2s;
+  -ms-transition: border-color .2s;
+  transition: border-color .2s; }
 
 .thumbs a:hover, .thumbs a.selected {
   border-color: #505050; }
