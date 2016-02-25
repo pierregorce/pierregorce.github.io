@@ -4,7 +4,7 @@ $darkgrey: rgb(180,180,180);
 $green: rgb(101,193,120);
 $black: rgb(80,80,80);
 $blue: rgb(0,191,221);
-$violet: #7778B7;
+$violet: #8C8DBF;
 
 .blue {
     background-color: $blue;
@@ -384,12 +384,22 @@ body {
 
 //----------- CAROUSEL
 
-#wrapper {
-    /*position: absolute;
-	width: 50%;
-	left: 25%;
-	top: 50px;*/
+
+.caroussel{
+    div{
+        margin:5px;
+    }
+    img{
+        width:100%;
+    }
 }
+
+/*
+#wrapper {
+
+}
+
+    .
 
 .carousel-wrapper {
     padding-top: 10px;
@@ -458,9 +468,9 @@ body {
 }
 
 #wrapper img#shadow {
-    /*width: 100%;
+    width: 100%;
 	position: absolute;
-	bottom: 0;*/
+	bottom: 0;
 }
 
 .prev, .next {
@@ -495,14 +505,14 @@ body {
 }
 
 
-
+    */
 
 
 
 // ---------------
 
 
-.pagination {
+/*.pagination {
     position: relative;
     width: 100%;
     max-width: 800px;
@@ -569,4 +579,4 @@ body {
     position: relative;
     opacity: 0.95;
     max-width: 350px;
-}
+}*/

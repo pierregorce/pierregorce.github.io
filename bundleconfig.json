@@ -3,11 +3,8 @@
     "outputFileName": "output/bundle.js",
     "inputFiles": [
       "Content/Lib/jquery-2.1.4.js",
+      "Content/Lib/slick/slick.js",
       "Content/Lib/bootstrap.min.js",
-      "Content/Lib/Gallery/jquery.carouFredSel-6.2.1.js",
-      "Content/Lib/SVG/snap.svg-min.js",
-      "Content/Lib/Gallery2/TweenMax.min.js",
-      "Content/Lib/Gallery2/pagination.js",
       "Scripts/script.js"
     ]
   },
@@ -15,6 +12,8 @@
     "outputFileName": "output/bundle.css",
     "inputFiles": [
       "Css/bootstrap/bootstrap.css",
+      "Content/Lib/slick/slick.css",
+      "Content/Lib/slick/slick-theme.css",
       "Css/animate.css",
       "Css/style.css"
     ],
