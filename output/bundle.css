@@ -10375,7 +10375,7 @@ Copyright (c) 2015 Daniel Eden
   background-color: #505050; }
 
 .violet {
-  background-color: #8C8DBF; }
+  background-color: #9597FF; }
 
 h1, h2 {
   font-family: "Arvo";
@@ -10460,6 +10460,9 @@ body {
   max-width: 100%;
   height: 150px;
   margin-left: 21px; }
+
+img {
+  width: 100%; }
 
 .cv-header {
   min-height: 200px;

@@ -1,110 +1,68 @@
-﻿$(function () {
-
-    var slickResponsiveBreakPoint = [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
+﻿var slickResponsiveBreakPoint = [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
             }
-    ]
-
-    $('.caroussel').slick({
-        infinite: true,
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        autoplay: true,
-        autoplaySpeed: 4000,
-        speed: 400,
-        cssEase: 'linear',
-        dots: true,
-        arrows: false,
-        responsive: slickResponsiveBreakPoint
-    });
-
-    $(".menu-box").click(function () {
-
-        $(".menu-box").removeClass("active");
-        $(this).addClass("active");
-        $('.caroussel').resize();
-
-        var pageUrl = $(this).data("url");
-
-        $(".page").hide();
-        $("#" + pageUrl).show();
-        window.location.hash = pageUrl;
-        //$('body,html,document').scrollTop(0);
-        window.scrollTo(0, 0);
-    });
-
-    var hash = document.location.hash;
-
-    if (hash === "#android") {
-        $("#cv").hide();
-        $("#android").show();
-        $("#web").hide();
-
-    } else if (hash === "#web") {
-        $("#cv").hide();
-        $("#android").hide();
-        $("#web").show();
-    } else {
-        $("#cv").show();
-        $("#android").hide();
-        $("#web").hide();
-    }
-
-    $("#cv").css("visibility", "visible");
-    $("#android").css("visibility", "visible");
-    $("#web").css("visibility", "visible");
-
-    var isAnchor = false;
-    $(".menu-box").each(function () {
-        if ("#" + $(this).data("url") === hash) {
-            $(this).addClass("active");
-            isAnchor = true;
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
         }
-    });
-    if (!isAnchor) {
-        $(".menu-box[data-url='cv']").addClass("active");
-    }
+]
 
-    window.scrollTo(0, 0);
-
-    $(".menu-bar-item").click(function () {
-
-        $(".menu-box").removeClass("active");
-        $(this).addClass("active");
-        $('.caroussel').resize();
-        var pageUrl = $(this).data("url");
-
-        $(".page").hide();
-        $("#" + pageUrl).show();
-        window.location.hash = pageUrl;
-        //$('body,html,document').scrollTop(0);
-        window.scrollTo(0, 0);
-    });
-
-
-
-
+$('.caroussel').slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    speed: 400,
+    cssEase: 'linear',
+    dots: true,
+    arrows: false,
+    responsive: slickResponsiveBreakPoint
 });
 
+var hash = document.location.hash;
 
+if (hash) {
+    setPage(hash.split('#')[1]);
+} else {
+    setPage('cv');
+}
+
+function setPage(hash) {
+    $(".page").hide();
+    $("#" + hash).show();
+    $(".page").css("visibility", "visible");
+    $(".menu-box").removeClass("active");
+    $(".menu-box[data-url='" + hash + "']").addClass("active");
+    $(".menu-bar-item").removeClass("active");
+    $(".menu-bar-item[data-url='" + hash + "']").addClass("active");
+    document.location.hash = "#" + hash
+    window.scrollTo(0, 0);
+
+    $('.caroussel').each(function (i, e) { e.slick.setPosition(); })
+}
+
+$(".menu-box").click(function () {
+    setPage($(this).data("url"));
+});
+
+$(".menu-bar-item").click(function () {
+    setPage($(this).data("url"));
+});
 
 window.scrollTo(0, 0);

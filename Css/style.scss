@@ -4,11 +4,12 @@ $darkgrey: rgb(180,180,180);
 $green: rgb(101,193,120);
 $black: rgb(80,80,80);
 $blue: rgb(0,191,221);
-$violet: #8C8DBF;
+$violet: #9597FF;
 
 .blue {
     background-color: $blue;
 }
+
 
 .green {
     background-color: $green;
@@ -142,6 +143,11 @@ body {
     height: 150px;
     margin-left: 21px;
 }
+
+img{
+    width:100%;
+}
+
 
 //---------------------- CV HEAD
 
