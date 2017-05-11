@@ -1,0 +1,331 @@
+$grey: rgb(230,230,230);
+$mediumgrey: #828282;
+$darkgrey: rgb(180,180,180);
+$green: rgb(101,193,120);
+$black: rgb(80,80,80);
+$blue: rgb(0,191,221);
+$violet: #9597FF;
+
+@import url("https://fonts.googleapis.com/css?family=Arvo:400,400italic,700,700italic");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+$font-title:'Arvo';
+$font-content:'Open Sans';
+$font-icon:'Montserrat';
+
+.blue { 
+    background-color: $blue;
+}
+
+.green {
+    background-color: $green;
+}
+
+.darkgrey {
+    background-color: $darkgrey;
+}
+
+.black {
+    background-color: $black;
+}
+
+.violet {
+    background-color: $violet;
+}
+
+//-------------------- BOOTSTRAP OVERIDING
+
+h1, h2 {
+    font-family: $font-title;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 30px;
+    letter-spacing: -0.9px;
+
+    .small {
+        font-size: 25px;
+        color: $black;
+    }
+
+    .colorized {
+        color: $green;
+    }
+
+    b {
+        color: $green;
+    }
+}
+
+h2 {
+    color: $green;
+    font-size: 18px;
+
+    .fa {
+        font-size: 20px;
+        color: $mediumgrey;
+    }
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+body {
+    font-family: $font-content;
+    font-size: 13px;
+    background-color: $grey;
+    color: $black;
+    padding-top: 25px;
+    overflow: scroll;
+}
+
+.well {
+    background-color: white;
+    border-radius: 0;
+    border: none;
+}
+
+
+//-------------------- BOX-SHADOW
+
+.boxshadow {
+    position: relative;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.boxshadow:after, .boxshadow:before {
+    content: " ";
+    position: absolute;
+    width: 50%;
+    height: 100px;
+    z-index: -10;
+}
+
+.boxshadow:before {
+    top: 0;
+    left: 5%;
+    width: 90%;
+    height: 50px;
+    border-radius: 125px / 12px;
+    box-shadow: 0 0 8px rgba(50,50,50,0.25);
+}
+
+.boxshadow:after {
+    bottom: 0;
+    left: 5%;
+    width: 90%;
+    height: 50px;
+    border-radius: 125px / 12px;
+    box-shadow: 0 0 8px rgba(50,50,50,0.25);
+}
+
+
+//-------------------- IMAGES
+
+.crop-profil {
+    width: 200px;
+    height: 118px;
+    overflow: hidden;
+}
+
+.img-profil {
+    max-width: 158px;
+    margin-top: -33px;
+    margin-left: -27px;
+}
+
+img{
+    width:100%;
+}
+
+
+//---------------------- CV HEAD
+
+.cv-header {
+    min-height: 200px;
+    height: 100%;
+}
+
+//---------------------- POSTCARD
+.informations{
+    p{
+        font-size: 12px;
+    }
+    .fa {
+        font-size: 16px;
+        padding: 0 4px 0 0;
+    }
+}
+
+.logo-square-container {
+    font-size: 0;
+    margin-left: -19px;
+    margin-right: -11px;
+
+    
+.logo-square {
+    height: 100%;
+    width: 25%;
+    text-align: center;
+    color: $black;
+    display: inline-block;
+    padding-top: 5px;
+    font-size:11px;
+    text-transform: uppercase;
+
+&:hover {
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    color: white;
+    cursor: pointer;
+}
+
+ i {
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+
+}
+}
+
+
+
+
+//---------------------------TABLES
+
+.timeline-bubble {
+    background-color: $grey;
+    padding: 1px 15px;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+}
+
+.timeline-bubble::before {
+    color: $grey;
+    position: absolute;
+    top: 2px;
+    left: -10px;
+    pointer-events: none;
+    content: "";
+    font-family: FontAwesome;
+    font-size: 31px;
+}
+
+.timeline {
+    ul {
+        padding: 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    li:before {
+        content: "\f054"+" "; /* this is the Unicode for the icon */
+        font-family: FontAwesome;
+        font-size: 12px;
+        margin-left: 15px;
+    }
+
+    td {
+        padding-bottom: 20px;
+    }
+
+    td:nth-child(2) {
+        padding-left: 15px;
+    }
+
+    td:nth-child(1) {
+        border-right: 2px solid $green;
+        color: $green;
+        font-size: 12px;
+        font-weight: bold;
+        vertical-align: top;
+        text-align: right;
+        width: 15%;
+        padding-right: 10px;
+
+        .historyPoint {
+            position: relative;
+            content: "";
+            display: inline-block;
+            left: 17px;
+            font-family: FontAwesome;
+            color: #FFFFFF;
+            font-size: 13px;
+            top: -23px;
+        }
+    }
+}
+
+
+//-----------------------------CONPETENCE
+
+.competences {
+
+    font-size: 11px;
+    width: 100%;
+
+    tr {
+        line-height: 20px;
+        height: 30px;
+    }
+
+    td:nth-child(1) {
+        width: 50%;
+        padding-right: 10px;
+    }
+
+    .competence-bar {
+        color: white;
+        width: 100px;
+        padding: 1px 5px;
+        border-radius: 1px;
+        font-weight: bold;
+        letter-spacing: -0.5px;
+    }
+
+    .tag{
+        color: white;
+        padding: 4px 5px;
+        border-radius: 2px;
+        font-weight: bold;
+        display: inline-block;
+        margin: 2px 0;
+    }
+}
+
+#loisirs{
+
+    position:relative;
+
+    .circle-container{
+        position:absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    .circle{
+        opacity: 0.8;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        z-index:1;
+    }
+
+    .text{
+        position:absolute;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+        z-index:2;
+    }
+}
+    
+}
