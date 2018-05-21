@@ -642,7 +642,7 @@
                 Loisirs</h2>
             </v-card-text>
             <v-card-text>
-
+<div class="text-xs-center">
               <div class="tags">
 
                 <div class="tag" style="bottom:140px; left:10px">
@@ -713,7 +713,7 @@
 
 
               </div>
-
+</div>
             </v-card-text>
           </v-card>
         </div>
@@ -726,95 +726,97 @@
 </template>
 
 <script>
-  export default {
-    components: {},
-    created: function () { },
+export default {
+  components: {},
+  created: function() {},
 
-    methods: {
-      getRandomPosition: function (size) {
-        var left = Math.round(Math.random() * 500);
-        var top = Math.round(Math.random() * 500);
+  methods: {
+    getRandomPosition: function(size) {
+      var left = Math.round(Math.random() * 500);
+      var top = Math.round(Math.random() * 500);
 
-        return {
-          top: top / 2,
-          left: left / 2
-        };
-      }
+      return {
+        top: top / 2,
+        left: left / 2
+      };
     }
-  };
+  }
+};
 </script>
 
 <style>
-  h1 {
-    font-size: 28px;
-  }
+h1 {
+  font-size: 28px;
+}
 
-  h2 {
-    font-size: 23px;
-  }
+h2 {
+  font-size: 23px;
+}
 
-  h3 {
-    font-size: 15px;
-  }
+h3 {
+  font-size: 15px;
+}
 
-  h4 {
-    font-size: 14px;
-    font-weight: normal;
-  }
+h4 {
+  font-size: 14px;
+  font-weight: normal;
+}
 
-  * {
-    font-size: 13px;
-  }
+* {
+  font-size: 13px;
+}
 
-  #main-container {
-    max-width: 1170px;
-    padding: 5px !important;
-  }
+#main-container {
+  max-width: 1170px;
+  padding: 5px !important;
+}
 
-  .profil-block {
-    text-transform: uppercase;
-    padding: 5px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    cursor: pointer;
-  }
+.profil-block {
+  text-transform: uppercase;
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
 
-  .triangle {
-    width: 20px;
-    height: 20px;
-    transform: rotate(45deg);
-    position: absolute;
-    left: -10px;
-    top: 30px;
-  }
+.triangle {
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  position: absolute;
+  left: -10px;
+  top: 30px;
+}
 
-  .timeline {
-    height: 100%;
-    border-right: 2px solid #65c178;
-    margin-right: 25px;
-    position: relative;
-    text-align: center;
-  }
+.timeline {
+  height: 100%;
+  border-right: 2px solid #65c178;
+  margin-right: 25px;
+  position: relative;
+  text-align: center;
+}
 
-  .timeline-point {
-    position: absolute;
-    width: 14px;
-    height: 14px;
-    border-radius: 7px;
-    background-color: #65c178;
-    top: 32px;
-    right: -8px;
-  }
+.timeline-point {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  background-color: #65c178;
+  top: 32px;
+  right: -8px;
+}
 
-  .tags {
-    position: relative;
-    min-height: 300px;
-    overflow: auto;
-  }
+.tags {
+  position: relative;
+  min-height: 300px;
+  overflow: auto;
+  max-width:320px;
+  margin: auto;
+}
 
-  .tag {
-    position: absolute;
-  }
+.tag {
+  position: absolute;
+}
 </style>
