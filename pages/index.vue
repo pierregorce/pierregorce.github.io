@@ -39,13 +39,13 @@
               </div>
               <h4>Passionné</h4>
             </v-flex>
-            <v-flex v-ripple  xs3 class="blue profil-block">
+            <v-flex v-ripple xs3 class="blue profil-block">
               <div>
                 <v-icon>search</v-icon>
               </div>
               <h4>Curieux</h4>
             </v-flex>
-            <v-flex v-ripple  xs3 class="violet profil-block">
+            <v-flex v-ripple xs3 class="violet profil-block">
               <div>
                 <v-icon>rowing</v-icon>
               </div>
@@ -61,9 +61,9 @@
             <h1>Concepteur Développeur Web - Full Stack</h1>
             <div>
               <v-icon>format_quote</v-icon>
-              Passionné par le web, code, design ainsi que la programmation & algorithmes pour les jeux vidéos, 
-              je travaille actuellement sur la réalisation d'applications web de gestion et de sites e-commerce. 
-              Mes préférences se tournent vers la conception, l'architecture & la mise en place des bonnes pratiques de développement. 
+              Passionné par le web, code, design et les nouveautés ; je travaille actuellement
+              sur la réalisation d'applications web de gestion et de sites e-commerce. Mes préférences se tournent vers la
+              conception, l'architecture & la mise en place des bonnes pratiques de développement.
               <v-icon>format_quote</v-icon>
             </div>
           </v-card-text>
@@ -537,7 +537,7 @@
 
               <v-layout align-center mt-1>
                 <v-flex xs7>
-                  ORM Entity Framework, Autofac, Automapper, Swagger, REST, SOAP, Linq, JWT, Identity Framework
+                  ORM Entity Framework, Autofac, Automapper, Swagger, REST, SOAP, Linq, JWT, Identity Framework, Hangfire (Message broker)
                 </v-flex>
                 <v-flex xs5 pl-2>
                   <v-progress-linear value="85" height="20" color="green"></v-progress-linear>
@@ -568,9 +568,20 @@
 
                 </v-flex>
               </v-layout>
+            </v-card-text>
 
-
-
+            <v-card-text>
+              <h3>
+                <v-icon>dns</v-icon>
+                Ops</h3>
+              <v-layout align-center>
+                <v-flex xs7>
+                  Intégration continue (VSTS), Déploiement continu (VSTS), MsTest, Cloud Azure, Cloud AWS
+                </v-flex>
+                <v-flex xs5 pl-2>
+                  <v-progress-linear value="70" height="20" color="green"></v-progress-linear>
+                </v-flex>
+              </v-layout>
 
             </v-card-text>
 
@@ -582,7 +593,7 @@
 
               <v-layout align-center>
                 <v-flex xs7>
-                  SQL, MySQL, SQL Server
+                  SQL, MySQL, SQL Server, PostGreSQL
                 </v-flex>
                 <v-flex xs5 pl-2>
                   <v-progress-linear value="90" height="20" color="green"></v-progress-linear>
@@ -619,9 +630,6 @@
 
                 <v-chip disabled label class="grey darken-3 white--text">Architecture Web</v-chip>
                 <v-chip disabled label class="grey darken-3 white--text">Git</v-chip>
-                <v-chip disabled label class="grey darken-3 white--text">VSTS</v-chip>
-                <v-chip disabled label class="grey darken-3 white--text">Cloud Microsoft Azure</v-chip>
-                <v-chip disabled label class="grey darken-3 white--text">Cloud AWS</v-chip>
                 <v-chip disabled label class="grey darken-3 white--text">Photoshop</v-chip>
                 <v-chip disabled label class="grey darken-3 white--text">Illustator</v-chip>
                 <v-chip disabled label class="grey darken-3 white--text">VBA (Excel)</v-chip>
@@ -642,78 +650,78 @@
                 Loisirs</h2>
             </v-card-text>
             <v-card-text>
-<div class="text-xs-center">
-              <div class="tags">
+              <div class="text-xs-center">
+                <div class="tags">
 
-                <div class="tag" style="bottom:140px; left:10px">
-                  <v-avatar v-ripple color="transparent" size="100" style="background-color: rgba(101, 193, 120, 0.9)  !important; cursor: pointer;">
-                    <div>
+                  <div class="tag" style="bottom:140px; left:10px">
+                    <v-avatar v-ripple color="transparent" size="100" style="background-color: rgba(101, 193, 120, 0.9)  !important; cursor: pointer;">
                       <div>
-                        <v-icon>directions_run</v-icon>
+                        <div>
+                          <v-icon>directions_run</v-icon>
+                        </div>
+                        <h3>SQUASH</h3>
                       </div>
-                      <h3>SQUASH</h3>
-                    </div>
-                  </v-avatar>
-                </div>
+                    </v-avatar>
+                  </div>
 
-                <div class="tag" style="bottom:150px; left:100px">
-                  <v-avatar v-ripple color="transparent" size="120" style="background-color: rgba(0, 191, 221, 0.9) !important; cursor: pointer;">
-                    <div>
+                  <div class="tag" style="bottom:150px; left:100px">
+                    <v-avatar v-ripple color="transparent" size="120" style="background-color: rgba(0, 191, 221, 0.9) !important; cursor: pointer;">
                       <div>
-                        <v-icon>far fa-paper-plane</v-icon>
+                        <div>
+                          <v-icon>far fa-paper-plane</v-icon>
+                        </div>
+                        <h3>KITESURF</h3>
                       </div>
-                      <h3>KITESURF</h3>
-                    </div>
-                  </v-avatar>
-                </div>
+                    </v-avatar>
+                  </div>
 
-                <div class="tag" style="bottom:105px; left:80px">
-                  <v-avatar v-ripple color="transparent" size="70" style="background-color: rgba(197, 214, 54, 0.8) !important; cursor: pointer;">
-                    <div>
+                  <div class="tag" style="bottom:105px; left:80px">
+                    <v-avatar v-ripple color="transparent" size="70" style="background-color: rgba(197, 214, 54, 0.8) !important; cursor: pointer;">
                       <div>
-                        <v-icon>restaurant_menu</v-icon>
+                        <div>
+                          <v-icon>restaurant_menu</v-icon>
+                        </div>
+                        <h3>CUISINE</h3>
                       </div>
-                      <h3>CUISINE</h3>
-                    </div>
-                  </v-avatar>
-                </div>
+                    </v-avatar>
+                  </div>
 
-                <div class="tag" style="bottom:80px; left:150px">
-                  <v-avatar v-ripple color="transparent" size="100" style="background-color: rgba(1, 0, 0, 0.4) !important; cursor: pointer;">
-                    <div>
+                  <div class="tag" style="bottom:80px; left:150px">
+                    <v-avatar v-ripple color="transparent" size="100" style="background-color: rgba(1, 0, 0, 0.4) !important; cursor: pointer;">
                       <div>
-                        <v-icon>videogame_asset</v-icon>
+                        <div>
+                          <v-icon>videogame_asset</v-icon>
+                        </div>
+                        <h3>JEUX-VIDEOS</h3>
                       </div>
-                      <h3>JEUX-VIDEOS</h3>
-                    </div>
-                  </v-avatar>
-                </div>
+                    </v-avatar>
+                  </div>
 
-                <div class="tag" style="bottom:170px; left:190px">
-                  <v-avatar v-ripple color="transparent" size="110" style="background-color: rgba(149, 151, 255, 0.9) !important; cursor: pointer;">
-                    <div>
+                  <div class="tag" style="bottom:170px; left:190px">
+                    <v-avatar v-ripple color="transparent" size="110" style="background-color: rgba(149, 151, 255, 0.9) !important; cursor: pointer;">
                       <div>
-                        <v-icon>wb_cloudy</v-icon>
+                        <div>
+                          <v-icon>wb_cloudy</v-icon>
+                        </div>
+                        <h3>WEB & CODE</h3>
                       </div>
-                      <h3>WEB & CODE</h3>
-                    </div>
-                  </v-avatar>
-                </div>
-                <div class="tag" style="bottom:120px; left:230px">
-                  <v-avatar v-ripple color="transparent" size="80" style="background-color: rgba(24, 217, 163, 0.7) !important; cursor: pointer;">
-                    <div>
+                    </v-avatar>
+                  </div>
+                  <div class="tag" style="bottom:120px; left:230px">
+                    <v-avatar v-ripple color="transparent" size="80" style="background-color: rgba(24, 217, 163, 0.7) !important; cursor: pointer;">
                       <div>
-                        <v-icon>ac_unit</v-icon>
+                        <div>
+                          <v-icon>ac_unit</v-icon>
+                        </div>
+                        <h3>SKI</h3>
                       </div>
-                      <h3>SKI</h3>
-                    </div>
-                  </v-avatar>
+                    </v-avatar>
+                  </div>
+
+
+
                 </div>
-
-
-
               </div>
-</div>
             </v-card-text>
           </v-card>
         </div>
@@ -726,97 +734,98 @@
 </template>
 
 <script>
-export default {
-  components: {},
-  created: function() {},
+  export default {
+    components: {},
+    created: function () { },
 
-  methods: {
-    getRandomPosition: function(size) {
-      var left = Math.round(Math.random() * 500);
-      var top = Math.round(Math.random() * 500);
+    methods: {
+      getRandomPosition: function (size) {
+        var left = Math.round(Math.random() * 500);
+        var top = Math.round(Math.random() * 500);
 
-      return {
-        top: top / 2,
-        left: left / 2
-      };
+        return {
+          top: top / 2,
+          left: left / 2
+        };
+      }
     }
-  }
-};
+  };
 </script>
 
 <style>
-h1 {
-  font-size: 28px;
-}
+  h1 {
+    font-size: 28px;
+  }
 
-h2 {
-  font-size: 23px;
-}
+  h2 {
+    font-size: 23px;
+  }
 
-h3 {
-  font-size: 15px;
-}
+  h3 {
+    font-size: 15px;
+  }
 
-h4 {
-  font-size: 14px;
-  font-weight: normal;
-}
+  h4 {
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: none;
+  }
 
-* {
-  font-size: 13px;
-}
+  * {
+    font-size: 13px;
+  }
 
-#main-container {
-  max-width: 1170px;
-  padding: 5px !important;
-}
+  #main-container {
+    max-width: 1170px;
+    padding: 5px !important;
+  }
 
-.profil-block {
-  text-transform: uppercase;
-  padding: 5px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  cursor: pointer;
-}
+  .profil-block {
+    text-transform: uppercase;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+  }
 
-.triangle {
-  width: 20px;
-  height: 20px;
-  transform: rotate(45deg);
-  position: absolute;
-  left: -10px;
-  top: 30px;
-}
+  .triangle {
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    position: absolute;
+    left: -10px;
+    top: 30px;
+  }
 
-.timeline {
-  height: 100%;
-  border-right: 2px solid #65c178;
-  margin-right: 25px;
-  position: relative;
-  text-align: center;
-}
+  .timeline {
+    height: 100%;
+    border-right: 2px solid #65c178;
+    margin-right: 25px;
+    position: relative;
+    text-align: center;
+  }
 
-.timeline-point {
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  border-radius: 7px;
-  background-color: #65c178;
-  top: 32px;
-  right: -8px;
-}
+  .timeline-point {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    background-color: #65c178;
+    top: 32px;
+    right: -8px;
+  }
 
-.tags {
-  position: relative;
-  min-height: 300px;
-  overflow: auto;
-  max-width:320px;
-  margin: auto;
-}
+  .tags {
+    position: relative;
+    min-height: 300px;
+    overflow: auto;
+    max-width: 320px;
+    margin: auto;
+  }
 
-.tag {
-  position: absolute;
-}
+  .tag {
+    position: absolute;
+  }
 </style>
