@@ -10,7 +10,7 @@
             <v-layout wrap>
               <v-flex xs4>
                 <div style="height:118px; overflow:hidden">
-                  <img style="max-width: 158px; margin-top: -33px; margin-left: -27px;" src="/profil.jpg" alt="photo-profil-gorce-pierre">
+                  <img style="max-width: 158px; margin-top: -33px; margin-left: -27px;" src="profil.jpg" alt="photo-profil-gorce-pierre">
                 </div>
               </v-flex>
               <v-flex xs7 pl-2>
@@ -59,12 +59,12 @@
         <v-card>
           <v-card-text>
             <h1>Concepteur Développeur Web - Full Stack</h1>
-            <div>
+            <div style="font-size:16px;">
               <v-icon>format_quote</v-icon>
-              Passionné par le web, code, design et les nouveautés ; je travaille actuellement
+              Passionné par le web, le code, l'architecture web, le design et les nouveautés associées ; je travaille actuellement
               sur la réalisation d'applications web de gestion et de sites e-commerce. Mes préférences se tournent vers la
-              conception, l'architecture & la mise en place des bonnes pratiques de développement.
-              <v-icon>format_quote</v-icon>
+              conception, l'architecture & la mise en place de bonnes pratiques de développement.
+              <v-icon style="position: absolute;">format_quote</v-icon>
             </div>
           </v-card-text>
         </v-card>
@@ -98,19 +98,18 @@
                       <h3>Concepteur Développeur, Enovalp - Agence Web- Grenoble (38)</h3>
                       <div class="pa-0">
                         <v-icon>chevron_right</v-icon>
-                        Réalidation d'une plateforme libraire ecommerce générique ; front-office + backoffice, clients multiples & cloud
-
+                        Réalidation d'une plateforme/produit ecommerce générique (essentiellement pour libraire) ; front-office + backoffice, clients multiples & cloud
                       </div>
 
                       <div class="pa-0">
                         <v-icon>chevron_right</v-icon>
-                        Catalogue produit, dialogue gestion du magasin, Cms complet, Marketing, Promotions, Emailing, Paiements, Gestion d'utilisateur
+                        Catalogue produit, dialogue avec la gestion du magasin, Cms complet, Marketing, Promotions, Emailing, Paiements, Commandes, Gestion d'utilisateur
                         & permissions...
                       </div>
 
                       <div class="pa-0">
                         <v-icon>chevron_right</v-icon>
-                        ASP.NET CORE, EF6, REST, Swagger, Autofac, JWT, VSTS, Azure, AWS, VueJS, Nuxt, Vuetify, Webpack, Npm, NodeJS
+                        ASP.NET CORE, EF CORE, REST, Swagger, Autofac, Hangfire, Cache, JWT, VSTS, Azure, AWS, VueJS, Nuxt, Vuetify, Webpack, Npm, NodeJS
                       </div>
 
                     </v-card-text>
@@ -130,7 +129,6 @@
                   </v-layout>
 
                 </v-flex>
-
 
                 <v-flex xs3>
 
@@ -170,7 +168,6 @@
                         Suivi du projet & développement
                       </div>
 
-
                       <div class="pa-0">
                         <v-icon>chevron_right</v-icon>
                         ASP.NET CORE, Entity & Identity Framework, C#, SQL Server, Git, VueJS
@@ -194,7 +191,6 @@
 
                 </v-flex>
 
-
                 <v-flex xs3>
                   <div class="timeline">
                     <h3 class="pt-4 pr-3">2015 - 2016</h3>
@@ -208,10 +204,9 @@
 
                       <h3>Concepteur Développeur, Enovalp - Agence Web- Grenoble (38)</h3>
 
-
                       <div class="pa-0">
                         <v-icon>chevron_right</v-icon>
-                        Projet : Refonte complète et migration des 4 sites de la librairie Molat (https://www.mollat.com)
+                        Projet : Refonte complète et migration des 4 sites de la librairie Molat (<a href="https://www.mollat.com">https://www.mollat.com</a>)
                       </div>
 
                       <div class="pa-0">
@@ -243,6 +238,50 @@
                       <div class="pa-0">
                         <v-icon>chevron_right</v-icon>
                         ASP.NET MVC5, Entity & Identity Framework, C# & VB.NET, Html, Css, Responsive, MySql, SOAP & REST, Js, Git, Azure, MongoDB
+                      </div>
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+
+                <v-flex xs12>
+
+                  <v-layout>
+                    <v-flex xs3>
+                      <div class="timeline">
+                        <div class="pt-3"></div>
+                      </div>
+                    </v-flex>
+                    <v-flex xs9>
+                    </v-flex>
+                  </v-layout>
+
+                </v-flex>
+
+                <v-flex xs3>
+                  <div class="timeline">
+                    <h3 class="pt-4 pr-3">2015</h3>
+                    <div class="timeline-point"></div>
+                  </div>
+                </v-flex>
+                <v-flex xs9>
+                  <v-card flat color="grey lighten-3">
+                    <div class="grey lighten-3 triangle"></div>
+                    <v-card-text>
+
+                      <h3>Projet Personnel - Application Android</h3>
+
+                      <div class="pa-0">
+                        <v-icon>chevron_right</v-icon>
+                        Développement d'un jeu vidéo Android grand public. Utilisation de la librairie multiplateforme LibGDX en Java.
+                      </div>
+
+                      <div class="pa-0">
+                        <v-icon>chevron_right</v-icon>
+                        Conception, Architecture, Code (Java) & Algorithms (Path finding, Finite State Machine for IA, Collision, Pooling for mobile optimization, Particle, Physics, Steering behaviour, Vector...), Integration (Play Store IAP, Admob), Graphism (Pixel Art) & Level Design.
+                      </div>
+                      <div class="pa-0">
+                        <v-icon>chevron_right</v-icon>
+                        Publication sur le Play Store Android : <a href="https://play.google.com/store/apps/details?id=com.oasix.crazyshooter.android">https://play.google.com/store/apps/details?id=com.oasix.crazyshooter.android</a>
                       </div>
                     </v-card-text>
                   </v-card>
@@ -329,7 +368,8 @@
             <v-card-text>
               <h2>
                 <v-icon>account_balance</v-icon>
-                Formation</h2>
+                Formation
+              </h2>
             </v-card-text>
 
             <v-card-text>
@@ -514,7 +554,8 @@
             <v-card-text>
               <h2>
                 <v-icon>settings</v-icon>
-                Compétences</h2>
+                Compétences
+              </h2>
             </v-card-text>
 
             <v-card-text>
@@ -525,7 +566,7 @@
 
               <v-layout align-center>
                 <v-flex xs7 d-flex align-center>
-                  ASP.NET CORE (+MVC), C#
+                  C#, ASP.NET CORE (+MVC), Linq, Tests unitaires & fonctionnels (MsTest), Architecture (Layered)
                 </v-flex>
                 <v-flex xs5 pl-2>
 
@@ -535,9 +576,9 @@
                 </v-flex>
               </v-layout>
 
-              <v-layout align-center mt-1>
+              <v-layout align-center mt-3>
                 <v-flex xs7>
-                  ORM Entity Framework, Autofac, Automapper, Swagger, REST, SOAP, Linq, JWT, Identity Framework, Hangfire (Message broker)
+                  ORM (EF6 - EF CORE), Injection de dépendance (Autofac), Mapping (Automapper), API REST (Swagger), SOAP, Auth (JWT, Identity Framework), Message Broker (Hangfire), Cache (SQL)
                 </v-flex>
                 <v-flex xs5 pl-2>
                   <v-progress-linear value="85" height="20" color="green"></v-progress-linear>
@@ -549,10 +590,11 @@
             <v-card-text>
               <h3>
                 <v-icon>gradient</v-icon>
-                Front-End</h3>
+                Front-End
+              </h3>
               <v-layout align-center>
                 <v-flex xs7>
-                  Javascript, VueJS, Nuxt, Vuetify, Npm, Webpack, NodeJS
+                  Javascript (Npm, Webpack, NodeJS, VueJS, Vuex, VueRouter), SSR (NuxtJS)
                 </v-flex>
                 <v-flex xs5 pl-2>
                   <v-progress-linear value="90" height="20" color="green"></v-progress-linear>
@@ -561,7 +603,7 @@
 
               <v-layout align-center mt-1>
                 <v-flex xs7>
-                  CSS [LESS & SASS], HTML, Responsive, Bootstrap, JQuery
+                  CSS (SASS), HTML, Responsive, UI (Bootstrap, Vuetify), JQuery
                 </v-flex>
                 <v-flex xs5 pl-2>
                   <v-progress-linear value="90" height="20" color="green"></v-progress-linear>
@@ -573,10 +615,11 @@
             <v-card-text>
               <h3>
                 <v-icon>dns</v-icon>
-                Ops</h3>
+                Ops
+              </h3>
               <v-layout align-center>
                 <v-flex xs7>
-                  Intégration continue (VSTS), Déploiement continu (VSTS), MsTest, Cloud Azure, Cloud AWS
+                  Intégration continue (VSTS), Déploiement continu (VSTS), Cloud Azure, Cloud AWS
                 </v-flex>
                 <v-flex xs5 pl-2>
                   <v-progress-linear value="70" height="20" color="green"></v-progress-linear>
@@ -593,7 +636,7 @@
 
               <v-layout align-center>
                 <v-flex xs7>
-                  SQL, MySQL, SQL Server, PostGreSQL
+                  Relationnel (MySQL, SQL Server, PostGreSQL)
                 </v-flex>
                 <v-flex xs5 pl-2>
                   <v-progress-linear value="90" height="20" color="green"></v-progress-linear>
@@ -602,7 +645,7 @@
 
               <v-layout align-center>
                 <v-flex xs7>
-                  MongoDB (Query, Aggregation)
+                  Document (MongoDB)
                 </v-flex>
                 <v-flex xs5 pl-2>
                   <v-progress-linear value="65" height="20" color="green"></v-progress-linear>
@@ -611,7 +654,7 @@
 
               <v-layout align-center>
                 <v-flex xs7>
-                  Conception - Optimisations
+                  Conception - Optimisation (Index, Normalisation)
                 </v-flex>
                 <v-flex xs5 pl-2>
                   <v-progress-linear value="80" height="20" color="green"></v-progress-linear>
@@ -624,11 +667,12 @@
             <v-card-text>
               <h3>
                 <v-icon>extension</v-icon>
-                Autres</h3>
+                Autres
+              </h3>
 
               <div>
 
-                <v-chip disabled label class="grey darken-3 white--text">Architecture Web</v-chip>
+                <v-chip disabled label class="grey darken-3 white--text">Architecture Web & Cloud</v-chip>
                 <v-chip disabled label class="grey darken-3 white--text">Git</v-chip>
                 <v-chip disabled label class="grey darken-3 white--text">Photoshop</v-chip>
                 <v-chip disabled label class="grey darken-3 white--text">Illustator</v-chip>
@@ -647,7 +691,8 @@
             <v-card-text>
               <h2>
                 <v-icon>terrain</v-icon>
-                Loisirs</h2>
+                Loisirs
+              </h2>
             </v-card-text>
             <v-card-text>
               <div class="text-xs-center">
@@ -718,8 +763,6 @@
                     </v-avatar>
                   </div>
 
-
-
                 </div>
               </div>
             </v-card-text>
@@ -734,98 +777,98 @@
 </template>
 
 <script>
-  export default {
-    components: {},
-    created: function () { },
+export default {
+  components: {},
+  created: function() {},
 
-    methods: {
-      getRandomPosition: function (size) {
-        var left = Math.round(Math.random() * 500);
-        var top = Math.round(Math.random() * 500);
+  methods: {
+    getRandomPosition: function(size) {
+      var left = Math.round(Math.random() * 500);
+      var top = Math.round(Math.random() * 500);
 
-        return {
-          top: top / 2,
-          left: left / 2
-        };
-      }
+      return {
+        top: top / 2,
+        left: left / 2
+      };
     }
-  };
+  }
+};
 </script>
 
 <style>
-  h1 {
-    font-size: 28px;
-  }
+h1 {
+  font-size: 28px;
+}
 
-  h2 {
-    font-size: 23px;
-  }
+h2 {
+  font-size: 23px;
+}
 
-  h3 {
-    font-size: 15px;
-  }
+h3 {
+  font-size: 15px;
+}
 
-  h4 {
-    font-size: 14px;
-    font-weight: normal;
-    text-transform: none;
-  }
+h4 {
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: none;
+}
 
-  * {
-    font-size: 13px;
-  }
+* {
+  font-size: 13px;
+}
 
-  #main-container {
-    max-width: 1170px;
-    padding: 5px !important;
-  }
+#main-container {
+  max-width: 1300px;
+  padding: 5px !important;
+}
 
-  .profil-block {
-    text-transform: uppercase;
-    padding: 5px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    cursor: pointer;
-  }
+.profil-block {
+  text-transform: uppercase;
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
 
-  .triangle {
-    width: 20px;
-    height: 20px;
-    transform: rotate(45deg);
-    position: absolute;
-    left: -10px;
-    top: 30px;
-  }
+.triangle {
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  position: absolute;
+  left: -10px;
+  top: 30px;
+}
 
-  .timeline {
-    height: 100%;
-    border-right: 2px solid #65c178;
-    margin-right: 25px;
-    position: relative;
-    text-align: center;
-  }
+.timeline {
+  height: 100%;
+  border-right: 2px solid #65c178;
+  margin-right: 25px;
+  position: relative;
+  text-align: center;
+}
 
-  .timeline-point {
-    position: absolute;
-    width: 14px;
-    height: 14px;
-    border-radius: 7px;
-    background-color: #65c178;
-    top: 32px;
-    right: -8px;
-  }
+.timeline-point {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  background-color: #65c178;
+  top: 32px;
+  right: -8px;
+}
 
-  .tags {
-    position: relative;
-    min-height: 300px;
-    overflow: auto;
-    max-width: 320px;
-    margin: auto;
-  }
+.tags {
+  position: relative;
+  min-height: 300px;
+  overflow: auto;
+  max-width: 320px;
+  margin: auto;
+}
 
-  .tag {
-    position: absolute;
-  }
+.tag {
+  position: absolute;
+}
 </style>
