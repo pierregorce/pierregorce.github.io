@@ -1,13 +1,13 @@
 <template>
 
-<v-app class="grey lighten-3">
-  <!-- <v-navigation-drawer app></v-navigation-drawer>
+  <v-app class="grey lighten-3">
+    <!-- <v-navigation-drawer app></v-navigation-drawer>
   <v-toolbar app></v-toolbar> -->
-  <v-content>
-    <nuxt/>
-  </v-content>
-  <!-- <v-footer app></v-footer> -->
-</v-app>
+    <v-content>
+      <nuxt />
+    </v-content>
+    <!-- <v-footer app></v-footer> -->
+  </v-app>
 
 </template>
 
@@ -23,7 +23,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
   margin: 0;
 }
