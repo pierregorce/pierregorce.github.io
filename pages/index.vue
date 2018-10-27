@@ -32,6 +32,7 @@
                 <v-icon>room</v-icon>
               </div>
               <h4>Grenoble (38)</h4>
+              <h4>Montpellier (34)</h4>
             </v-flex>
             <v-flex v-ripple xs3 class="grey profil-block">
               <div>
@@ -98,7 +99,7 @@
                       <h3>Concepteur Développeur, Enovalp - Agence Web- Grenoble (38)</h3>
                       <div class="pa-0">
                         <v-icon>chevron_right</v-icon>
-                        Réalidation d'une plateforme/produit ecommerce générique (essentiellement pour libraire) ; front-office + backoffice, clients multiples & cloud
+                        Architecture & Réalisation d'une plateforme/produit ecommerce générique (essentiellement pour libraire) ; front-office + backoffice, clients multiples & cloud (exemple : <a href="https://www.icigrandsboulevards.fr/">https://www.icigrandsboulevards.fr/</a>)
                       </div>
 
                       <div class="pa-0">
@@ -106,10 +107,13 @@
                         Catalogue produit, dialogue avec la gestion du magasin, Cms complet, Marketing, Promotions, Emailing, Paiements, Commandes, Gestion d'utilisateur
                         & permissions...
                       </div>
-
                       <div class="pa-0">
                         <v-icon>chevron_right</v-icon>
-                        ASP.NET CORE, EF CORE, REST, Swagger, Autofac, Hangfire, Cache, JWT, VSTS, Azure, AWS, VueJS, Nuxt, Vuetify, Webpack, Npm, NodeJS
+                        Référent technique & aide aux autres développeurs
+                      </div>
+                      <div class="pa-0">
+                        <v-icon>chevron_right</v-icon>
+                        ASP.NET CORE, EF CORE, REST, Swagger, Autofac, Hangfire, Cache, JWT, Azure DevOps (VSTS), Azure, AWS, VueJS, Nuxt, Vuetify, Webpack, Npm, NodeJS, Trello
                       </div>
 
                     </v-card-text>
@@ -145,7 +149,7 @@
                       <h3>Concepteur Développeur, Enovalp - Agence Web- Grenoble (38)</h3>
                       <div class="pa-0">
                         <v-icon>chevron_right</v-icon>
-                        Refonte de la gestion article & Migration de la base de donnée pour le diffuseur Sofédis.
+                        Refonte & Conception de la gestion article - migration de la base de donnée pour le diffuseur Sofédis (<a href="http://www.sofedis.fr/">http://www.sofedis.fr/</a>).
                       </div>
 
                       <div class="pa-1">
@@ -165,12 +169,12 @@
 
                       <div class="pa-0">
                         <v-icon>chevron_right</v-icon>
-                        Suivi du projet & développement
+                        Définition des spécifications, suivi de projet, suivi du développement, coding
                       </div>
 
                       <div class="pa-0">
                         <v-icon>chevron_right</v-icon>
-                        ASP.NET CORE, Entity & Identity Framework, C#, SQL Server, Git, VueJS
+                        ASP.NET CORE, Entity & Identity Framework, C#, SQL Server, Git, VueJS, Trello
                       </div>
 
                     </v-card-text>
@@ -619,7 +623,7 @@
               </h3>
               <v-layout align-center>
                 <v-flex xs7>
-                  Intégration continue (VSTS), Déploiement continu (VSTS), Cloud Azure, Cloud AWS
+                  Intégration continue (Azure DevOps - VSTS), Déploiement continu (Azure DevOps - VSTS), Cloud Azure, Cloud AWS
                 </v-flex>
                 <v-flex xs5 pl-2>
                   <v-progress-linear value="70" height="20" color="green"></v-progress-linear>
@@ -673,6 +677,7 @@
               <div>
 
                 <v-chip disabled label class="grey darken-3 white--text">Architecture Web & Cloud</v-chip>
+                <v-chip disabled label class="grey darken-3 white--text">Trello</v-chip>
                 <v-chip disabled label class="grey darken-3 white--text">Git</v-chip>
                 <v-chip disabled label class="grey darken-3 white--text">Photoshop</v-chip>
                 <v-chip disabled label class="grey darken-3 white--text">Illustator</v-chip>
