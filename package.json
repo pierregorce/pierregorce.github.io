@@ -14,9 +14,9 @@
     "deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
-    "node-sass": "^4.11.0",
     "nuxt": "^2.4.0",
-    "sass-loader": "^7.1.0",
+    "sass": "^1.32.4",
+    "sass-loader": "^10.1.1",
     "vuetify": "^1.5.7"
   },
   "devDependencies": {
