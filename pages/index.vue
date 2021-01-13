@@ -101,12 +101,12 @@
                   <v-layout wrap>
                     <v-flex xs2>
                       <div class="timeline">
-                        <h3 class="timeline-date hidden-sm-and-down">2019-2020</h3>
+                        <h3 class="timeline-date hidden-sm-and-down">2019-2021</h3>
                         <div class="timeline-point"></div>
                       </div>
                     </v-flex>
                     <v-flex xs10>
-                      <h3 class="timeline-date text-xs-center hidden-md-and-up">2019-2020</h3>
+                      <h3 class="timeline-date text-xs-center hidden-md-and-up">2019-2021</h3>
                       <v-card flat class="cv-card">
                         <div class="cv-card triangle"></div>
                         <v-card-text>
@@ -119,7 +119,7 @@
                             <v-icon>chevron_right</v-icon>Architecture globale & refonte de modules, ajout de fonctionnalités, réalisation de spécifications techniques, amélioration de la base de code existante, mise en place de stratégies de migration & déploiement de base de donnée, garant des bonnes pratiques de développement.
                           </div>
                           <div class="pa-0">
-                            <v-icon>chevron_right</v-icon>Mise en place de tests unitaires & d’intégration
+                            <v-icon>chevron_right</v-icon>Mise en place des tests unitaires & d’intégration
                           </div>
                           <div class="pa-0">
                             <v-icon>chevron_right</v-icon>Mise en place de pipelines d’intégration continue & de déploiement continue via Azure DevOps
@@ -128,7 +128,7 @@
                             <v-icon>chevron_right</v-icon>Mise en place d'une infrastructure sous docker & d'environnement azure à la demande par branche git (feature branching), utilisation de sh et terraform
                           </div>
                           <div class="pa-0">
-                            <v-icon>chevron_right</v-icon>ASP.NET CORE, EF CORE, REST, Swagger, Autofac, Hangfire, Azure DevOps, Azure, Jira, Docker, MSSQL
+                            <v-icon>chevron_right</v-icon>ASP.NET CORE, DDD, CQRS, EF CORE, REST, Swagger, Autofac, Hangfire, Azure DevOps, Azure, AWS, Jira, Docker, MSSQL
                           </div>
                         </v-card-text>
                       </v-card>
@@ -427,7 +427,15 @@
                   </h3>
 
                   <v-layout align-center>
-                    <v-flex xs7 d-flex align-center>C#, ASP.NET CORE (+MVC), Linq, Tests unitaires & fonctionnels (MsTest), Architecture (Layered), Multitenancy/SaaS</v-flex>
+
+                    <v-flex xs7 align-center>
+                      <div class="mb-2" />
+                      C#, ASP.NET CORE (+MVC), LINQ, 
+                      <div class="mb-2" />
+                      Tests unitaires & fonctionnels (MsTest, NUnit),
+                      <div class="mb-2" />
+                      Architecture (Layered, CQRS), Multitenancy/SaaS
+                       </v-flex>
                     <v-flex xs5 pl-2>
                       <!-- <div class="progress-value">45</div> -->
                       <v-progress-linear value="95" height="20" color="green"></v-progress-linear>
@@ -437,7 +445,24 @@
                   <v-layout align-center mt-3>
                     <v-flex
                       xs7
-                    >ORM (EF6 - EF CORE), Injection de dépendance (Autofac), Mapping (Automapper), API REST (Swagger), SOAP, Auth (JWT, Identity Framework), Message Broker (Hangfire), Cache (InMemory, Distribué), Logs (Serilog)</v-flex>
+                    >
+                    ORM (EF6, EF CORE), 
+                    
+                    <div class="mb-2" />
+
+                    REST (Swagger), 
+                    SOAP, 
+                    Auth (JWT, Identity Framework), 
+
+                    <div class="mb-2" />
+
+                    Patterns DDD,
+                    Injection de dépendances, 
+                    Event bus, Outbox Pattern, Background services (Hangfire), 
+                    Cache (InMemory, Distribué), 
+                    Logs (Serilog),
+                  
+                    </v-flex>
                     <v-flex xs5 pl-2>
                       <v-progress-linear value="95" height="20" color="green"></v-progress-linear>
                     </v-flex>
@@ -468,7 +493,7 @@
                     <v-icon left>dns</v-icon>Ops
                   </h3>
                   <v-layout align-center>
-                    <v-flex xs7>Intégration continue (Azure DevOps - VSTS), Déploiement continu (Azure DevOps - VSTS), Cloud Azure, Cloud AWS</v-flex>
+                    <v-flex xs7>Intégration continue (Azure DevOps), Déploiement continu (Azure DevOp), Cloud Azure, Cloud AWS</v-flex>
                     <v-flex xs5 pl-2>
                       <v-progress-linear value="75" height="20" color="green"></v-progress-linear>
                     </v-flex>
@@ -500,12 +525,6 @@
                     </v-flex>
                   </v-layout>
 
-                  <v-layout align-center>
-                    <v-flex xs7>Conception - Optimisation (Index, Normalisation) - Pattern : Dao, Repository</v-flex>
-                    <v-flex xs5 pl-2>
-                      <v-progress-linear value="90" height="20" color="green"></v-progress-linear>
-                    </v-flex>
-                  </v-layout>
                 </v-card-text>
 
                 <v-card-text>
@@ -515,6 +534,11 @@
 
                   <div>
                     <v-chip disabled label>Architecture Web & Cloud</v-chip>
+                    <v-chip disabled label>Clean Code</v-chip>
+                    <v-chip disabled label>DDD</v-chip>
+                    <v-chip disabled label>Code Review</v-chip>
+                    <v-chip disabled label>Pair programming</v-chip>
+
                     <v-chip disabled label>Trello</v-chip>
                     <v-chip disabled label>Git</v-chip>
                     <v-chip disabled label>Photoshop</v-chip>
@@ -547,8 +571,8 @@
                         </v-avatar>
                       </div>
 
-                      <div class="tag" style="bottom:150px; left:100px">
-                        <v-avatar v-ripple color="transparent" size="120" style="background-color: rgba(0, 191, 221, 0.9) !important; cursor: pointer;">
+                      <div class="tag" style="bottom:150px; left:110px">
+                        <v-avatar v-ripple color="transparent" size="100" style="background-color: rgba(0, 191, 221, 0.9) !important; cursor: pointer;">
                           <div>
                             <div>
                               <v-icon>far fa-paper-plane</v-icon>
@@ -558,8 +582,8 @@
                         </v-avatar>
                       </div>
 
-                      <div class="tag" style="bottom:105px; left:80px">
-                        <v-avatar v-ripple color="transparent" size="70" style="background-color: rgba(197, 214, 54, 0.8) !important; cursor: pointer;">
+                      <div class="tag" style="bottom:95px; left:80px">
+                        <v-avatar v-ripple color="transparent" size="80" style="background-color: rgba(197, 214, 54, 0.8) !important; cursor: pointer;">
                           <div>
                             <div>
                               <v-icon>restaurant_menu</v-icon>
