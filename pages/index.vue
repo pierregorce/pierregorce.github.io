@@ -79,10 +79,10 @@
           <v-flex xs12 sm7 class="pa-2">
             <v-card>
               <v-card-text>
-                <h1>Concepteur Développeur Web - Full Stack</h1>
+                <h1>Développeur & Architecte Web - Full Stack</h1>
                 <div style="font-size:16px;">
                   <v-icon left>format_quote</v-icon>Passionné par le web, le code, l'architecture logiciel, le design et les nouveautés associées ; je travaille actuellement
-                  sur la réalisation d'une application web SASS.
+                  sur la réalisation d'une application web SaaS.
                   <br>Mes préférences se tournent vers la conception, l'architecture, le backend & la mise en place de bonnes pratiques de développement.
                   <v-icon right>format_quote</v-icon>
                 </div>
@@ -101,25 +101,34 @@
                   <v-layout wrap>
                     <v-flex xs2>
                       <div class="timeline">
-                        <h3 class="timeline-date hidden-sm-and-down">2019</h3>
+                        <h3 class="timeline-date hidden-sm-and-down">2019-2020</h3>
                         <div class="timeline-point"></div>
                       </div>
                     </v-flex>
                     <v-flex xs10>
-                      <h3 class="timeline-date text-xs-center hidden-md-and-up">2019</h3>
+                      <h3 class="timeline-date text-xs-center hidden-md-and-up">2019-2020</h3>
                       <v-card flat class="cv-card">
                         <div class="cv-card triangle"></div>
                         <v-card-text>
-                          <h3>Concepteur Développeur, Bazimo - Startup, Editeur logiciel - Montpellier (34)</h3>
+                          <h3>Architecture & Développement, Bazimo - Startup, Editeur logiciel - Montpellier (34)</h3>
                           <div class="pa-0">
-                            <v-icon>chevron_right</v-icon>Application SASS de pilotage de patrimoine tertiaire.
+                            <v-icon>chevron_right</v-icon>Application SaaS de pilotage de patrimoine tertiaire.
                             <a target="_blank" href="https://www.bazimo.fr/">https://www.bazimo.fr/</a>
                           </div>
                           <div class="pa-0">
-                            <v-icon>chevron_right</v-icon>Refonte de modules, ajout de fonctionnalités, réalisation de spécifications techniques, amélioration de la base de code existante, mise en place d'une intégration continue sur Azure DevOps, mise en place de stratégies de migration & déploiement de base de donnée.
+                            <v-icon>chevron_right</v-icon>Architecture globale & refonte de modules, ajout de fonctionnalités, réalisation de spécifications techniques, amélioration de la base de code existante, mise en place de stratégies de migration & déploiement de base de donnée, garant des bonnes pratiques de développement.
                           </div>
                           <div class="pa-0">
-                            <v-icon>chevron_right</v-icon>ASP.NET, EF6, EF CORE, REST, Swagger, SimpleInjector, Autofac, Hangfire, Azure DevOps, Azure, Jira
+                            <v-icon>chevron_right</v-icon>Mise en place de tests unitaires & d’intégration
+                          </div>
+                          <div class="pa-0">
+                            <v-icon>chevron_right</v-icon>Mise en place de pipelines d’intégration continue & de déploiement continue via Azure DevOps
+                          </div>
+                          <div class="pa-0">
+                            <v-icon>chevron_right</v-icon>Mise en place d'une infrastructure sous docker & d'environnement azure à la demande par branche git (feature branching), utilisation de sh et terraform
+                          </div>
+                          <div class="pa-0">
+                            <v-icon>chevron_right</v-icon>ASP.NET CORE, EF CORE, REST, Swagger, Autofac, Hangfire, Azure DevOps, Azure, Jira, Docker, MSSQL
                           </div>
                         </v-card-text>
                       </v-card>
@@ -149,7 +158,7 @@
                         <v-card-text>
                           <h3>Concepteur Développeur, Enovalp - Agence Web - Grenoble (38)</h3>
                           <div class="pa-0">
-                            <v-icon>chevron_right</v-icon>Architecture & Réalisation d'une plateforme/produit ecommerce SASS (essentiellement pour libraires) ; front-office + backoffice, clients multiples & cloud
+                            <v-icon>chevron_right</v-icon>Architecture & Réalisation d'une plateforme/produit ecommerce SaaS (essentiellement pour libraires) ; front-office + backoffice, clients multiples & cloud
                             (exemples :
                             <a
                               target="_blank"
@@ -418,7 +427,7 @@
                   </h3>
 
                   <v-layout align-center>
-                    <v-flex xs7 d-flex align-center>C#, ASP.NET CORE (+MVC), Linq, Tests unitaires & fonctionnels (MsTest), Architecture (Layered), Multitenancy/SASS</v-flex>
+                    <v-flex xs7 d-flex align-center>C#, ASP.NET CORE (+MVC), Linq, Tests unitaires & fonctionnels (MsTest), Architecture (Layered), Multitenancy/SaaS</v-flex>
                     <v-flex xs5 pl-2>
                       <!-- <div class="progress-value">45</div> -->
                       <v-progress-linear value="95" height="20" color="green"></v-progress-linear>
@@ -428,7 +437,7 @@
                   <v-layout align-center mt-3>
                     <v-flex
                       xs7
-                    >ORM (EF6 - EF CORE), Injection de dépendance (Autofac), Mapping (Automapper), API REST (Swagger), SOAP, Auth (JWT, Identity Framework), Message Broker (Hangfire), Cache (SQL), Logs (Serilog)</v-flex>
+                    >ORM (EF6 - EF CORE), Injection de dépendance (Autofac), Mapping (Automapper), API REST (Swagger), SOAP, Auth (JWT, Identity Framework), Message Broker (Hangfire), Cache (InMemory, Distribué), Logs (Serilog)</v-flex>
                     <v-flex xs5 pl-2>
                       <v-progress-linear value="95" height="20" color="green"></v-progress-linear>
                     </v-flex>
@@ -442,7 +451,7 @@
                   <v-layout align-center>
                     <v-flex xs7>Javascript (Npm, Webpack, NodeJS, VueJS, Vuex, VueRouter), SSR (NuxtJS)</v-flex>
                     <v-flex xs5 pl-2>
-                      <v-progress-linear value="85" height="20" color="green"></v-progress-linear>
+                      <v-progress-linear value="75" height="20" color="green"></v-progress-linear>
                     </v-flex>
                   </v-layout>
 
@@ -461,13 +470,13 @@
                   <v-layout align-center>
                     <v-flex xs7>Intégration continue (Azure DevOps - VSTS), Déploiement continu (Azure DevOps - VSTS), Cloud Azure, Cloud AWS</v-flex>
                     <v-flex xs5 pl-2>
-                      <v-progress-linear value="70" height="20" color="green"></v-progress-linear>
+                      <v-progress-linear value="75" height="20" color="green"></v-progress-linear>
                     </v-flex>
                   </v-layout>
                   <v-layout align-center>
-                    <v-flex xs7>Docker, DockerCompose</v-flex>
+                    <v-flex xs7>Docker, DockerCompose, Shell-Bash</v-flex>
                     <v-flex xs5 pl-2>
-                      <v-progress-linear value="30" height="20" color="green"></v-progress-linear>
+                      <v-progress-linear value="55" height="20" color="green"></v-progress-linear>
                     </v-flex>
                   </v-layout>
                 </v-card-text>
@@ -824,7 +833,7 @@ export default {
   components: {},
   data: function () {
     return {
-      theme: 0
+      theme: 1
     }
   },
   created: function () { },
