@@ -116,7 +116,7 @@
                             <a target="_blank" href="https://www.bazimo.fr/">https://www.bazimo.fr/</a>
                           </div>
                           <div class="pa-0">
-                            <v-icon>chevron_right</v-icon>Architecture globale & refonte de modules, ajout de fonctionnalités, réalisation de spécifications techniques, amélioration de la base de code existante, mise en place de stratégies de migration & déploiement de base de donnée, garant des bonnes pratiques de développement.
+                            <v-icon>chevron_right</v-icon>Architecture globale (clean) & refonte de modules, ajout de fonctionnalités, réalisation de spécifications techniques, amélioration de la base de code existante, mise en place de stratégies de migration & déploiement de base de donnée, garant des bonnes pratiques de développement.
                           </div>
                           <div class="pa-0">
                             <v-icon>chevron_right</v-icon>Mise en place des tests unitaires & d’intégration
@@ -128,7 +128,7 @@
                             <v-icon>chevron_right</v-icon>Mise en place d'une infrastructure sous docker & d'environnement azure à la demande par branche git (feature branching), utilisation de sh et terraform
                           </div>
                           <div class="pa-0">
-                            <v-icon>chevron_right</v-icon>ASP.NET CORE, DDD, CQRS, EF CORE, REST, Swagger, Autofac, Hangfire, Azure DevOps, Azure, AWS, Jira, Docker, MSSQL
+                            <v-icon>chevron_right</v-icon>ASP.NET CORE, DDD, CQRS, Clean, EF CORE, REST, Swagger, Autofac, Hangfire, Azure DevOps, Azure, AWS, Jira, Docker, MSSQL
                           </div>
                         </v-card-text>
                       </v-card>
@@ -434,7 +434,7 @@
                       <div class="mb-2" />
                       Tests unitaires & fonctionnels (MsTest, NUnit),
                       <div class="mb-2" />
-                      Architecture (Layered, CQRS), Multitenancy/SaaS
+                      Architecture (Layered, CQRS, Clean), Multitenancy/SaaS
                        </v-flex>
                     <v-flex xs5 pl-2>
                       <!-- <div class="progress-value">45</div> -->
