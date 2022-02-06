@@ -52,25 +52,25 @@
                   <div>
                     <v-icon>room</v-icon>
                   </div>
-                  <h4>Montpellier (34)</h4>
+                  <div class="caption">Montpellier (34) <br> Full-remote</div>
                 </v-flex>
                 <v-flex v-ripple xs3 class="grey profil-block">
                   <div>
                     <v-icon>favorite</v-icon>
                   </div>
-                  <h4>Passionné</h4>
+                  <div class="caption">Passionné</div>
                 </v-flex>
                 <v-flex v-ripple xs3 class="blue profil-block">
                   <div>
                     <v-icon>search</v-icon>
                   </div>
-                  <h4>Curieux</h4>
+                  <div class="caption">Curieux</div>
                 </v-flex>
                 <v-flex v-ripple xs3 class="violet profil-block">
                   <div>
                     <v-icon>rowing</v-icon>
                   </div>
-                  <h4>Autonome</h4>
+                  <div class="caption">Autonome</div>
                 </v-flex>
               </v-layout>
             </v-card>
@@ -79,12 +79,18 @@
           <v-flex xs12 sm7 class="pa-2">
             <v-card>
               <v-card-text>
-                <h1>Développeur & Architecte Web - Full Stack</h1>
+                <h1>Développeur & Architecte Logiciel</h1>
                 <div style="font-size:16px;">
-                  <v-icon left>format_quote</v-icon>Passionné par le web, le code, l'architecture logiciel, le design et les nouveautés associées ; je travaille actuellement
-                  sur la réalisation d'une application web SaaS.
-                  <br>Mes préférences se tournent vers la conception, l'architecture, le backend & la mise en place de bonnes pratiques de développement.
-                  <v-icon right>format_quote</v-icon>
+                  
+                  <v-icon left>format_quote</v-icon> 
+                  <br>
+                  Passionné par l'architecture logicielle, des infrastructures et la mise en place de bonnes pratiques de développement ;
+                  Je suis continuellement engagé dans l'amélioration de la qualité des solutions et projets dont je m'occupe, 
+                  <br>
+                  Soucieux de répondre aux besoins métiers tout en livrant un travail de haute qualité, performant et évolutif ;
+                  Je suis entousiaste à travailler en équipe : mob-programming, code review, design collaboratif, conventions, ect...
+                  <br>
+                  <v-icon left>format_quote</v-icon> 
                 </div>
               </v-card-text>
             </v-card>
@@ -99,6 +105,50 @@
                   </h2>
 
                   <v-layout wrap>
+
+                    <v-flex xs2>
+                      <div class="timeline">
+                        <h3 class="timeline-date hidden-sm-and-down">2021</h3>
+                        <div class="timeline-point"></div>
+                      </div>
+                    </v-flex>
+                    <v-flex xs10>
+                      <h3 class="timeline-date text-xs-center hidden-md-and-up">2021</h3>
+                      <v-card flat class="cv-card">
+                        <div class="cv-card triangle"></div>
+                        <v-card-text>
+                          <h3>Architecture & Développement, Mangopay - Editeur logiciel - Full Remote / Paris (75)</h3>
+                          <div class="pa-0">
+                            <v-icon>chevron_right</v-icon>
+                            Solution d'api de paiement pour les marketplaces et les plateformes.
+                            <a target="_blank" href="https://www.mangopay.com/">https://www.mangopay.com/</a>
+                          </div>
+                          <div class="pa-0">
+                            <v-icon>chevron_right</v-icon>
+                            Participation aux réflexions d'architecture des nouveaux développements.
+                          </div>
+                          <div class="pa-0">
+                            <v-icon>chevron_right</v-icon>
+                            Etudes, réalisation, spécifications de l'évolution des applicatifs vers du monolith modulaire dans un contexte de haute disponibilité.
+                          </div>
+                          <div class="pa-0">
+                            <v-icon>chevron_right</v-icon>ASP.NET, Clean Architecture, résilience, haute disponibilité, gestion de la dette technique, monitoring
+                          </div>
+                        </v-card-text>
+                      </v-card>
+                    </v-flex>
+
+                    <v-flex xs12>
+                      <v-layout>
+                        <v-flex xs2>
+                          <div class="timeline">
+                            <div class="pt-3"></div>
+                          </div>
+                        </v-flex>
+                        <v-flex xs10></v-flex>
+                      </v-layout>
+                    </v-flex>
+
                     <v-flex xs2>
                       <div class="timeline">
                         <h3 class="timeline-date hidden-sm-and-down">2019-2021</h3>
@@ -110,13 +160,13 @@
                       <v-card flat class="cv-card">
                         <div class="cv-card triangle"></div>
                         <v-card-text>
-                          <h3>Architecture & Développement, Bazimo - Startup, Editeur logiciel - Montpellier (34)</h3>
+                          <h3>Lead technique, Architecture & Développement, Bazimo - Startup, Editeur logiciel - Montpellier (34)</h3>
                           <div class="pa-0">
                             <v-icon>chevron_right</v-icon>Application SaaS de pilotage de patrimoine tertiaire.
                             <a target="_blank" href="https://www.bazimo.fr/">https://www.bazimo.fr/</a>
                           </div>
                           <div class="pa-0">
-                            <v-icon>chevron_right</v-icon>Architecture globale (clean) & refonte de modules, ajout de fonctionnalités, réalisation de spécifications techniques, amélioration de la base de code existante, mise en place de stratégies de migration & déploiement de base de donnée, garant des bonnes pratiques de développement.
+                            <v-icon>chevron_right</v-icon>Architecture globale (clean architecture & domain driven design) & refonte de modules, ajout de fonctionnalités, réalisation de spécifications techniques, amélioration de la base de code existante, mise en place de stratégies de migration & déploiement de base de donnée, garant des bonnes pratiques de développement (no primitives, no nulls, srp, tests, ect).
                           </div>
                           <div class="pa-0">
                             <v-icon>chevron_right</v-icon>Mise en place des tests unitaires & d’intégration
@@ -145,32 +195,21 @@
                       </v-layout>
                     </v-flex>
 
+
                     <v-flex xs2>
                       <div class="timeline">
-                        <h3 class="timeline-date hidden-sm-and-down">2018</h3>
+                        <!-- <h3 class="timeline-date hidden-sm-and-down">2015-2018</h3> -->
+                        <h3 class="timeline-date hidden-sm-and-down">2014-2018</h3>
                         <div class="timeline-point"></div>
                       </div>
                     </v-flex>
                     <v-flex xs10>
-                      <h3 class="timeline-date text-xs-center hidden-md-and-up">2018</h3>
+                      <!-- <h3 class="timeline-date text-xs-center hidden-md-and-up">2015-2018</h3> -->
+                      <h3 class="timeline-date text-xs-center hidden-md-and-up">2014-2018</h3>
                       <v-card flat class="cv-card">
                         <div class="cv-card triangle"></div>
                         <v-card-text>
-                          <h3>Concepteur Développeur, Enovalp - Agence Web - Grenoble (38)</h3>
-                          <div class="pa-0">
-                            <v-icon>chevron_right</v-icon>Architecture & Réalisation d'une plateforme/produit ecommerce SaaS (essentiellement pour libraires) ; front-office + backoffice, clients multiples & cloud
-                            (exemples :
-                            <a
-                              target="_blank"
-                              href="https://www.icigrandsboulevards.fr/"
-                            >https://www.icigrandsboulevards.fr/</a>
-                            ,
-                            <a target="_blank" href="https://www.appeldulivre.fr/">https://www.appeldulivre.fr/</a>
-                            ,
-                            <a target="_blank" href="https://www.librairiepradoparadis.fr/">https://www.librairiepradoparadis.fr/</a>
-                            )
-                          </div>
-
+                        <h3>Concepteur Développeur, Enovalp - Agence Web - Grenoble (38)</h3>
                           <div class="pa-0">
                             <v-icon>chevron_right</v-icon>Catalogue produit, dialogue avec la gestion du magasin, Cms complet, Marketing, Promotions, Emailing, Paiements, Commandes, Gestion d'utilisateur
                             & permissions...
@@ -181,64 +220,125 @@
                           <div class="pa-0">
                             <v-icon>chevron_right</v-icon>ASP.NET CORE, EF CORE, REST, Swagger, Autofac, Hangfire, Cache, JWT, Azure DevOps (VSTS), Azure, AWS, VueJS, Nuxt, Vuetify, Webpack, Npm, NodeJS, Trello
                           </div>
-                        </v-card-text>
-                      </v-card>
-                    </v-flex>
 
-                    <v-flex xs12>
-                      <v-layout>
-                        <v-flex xs2>
-                          <div class="timeline">
-                            <div class="pt-3"></div>
-                          </div>
-                        </v-flex>
-                        <v-flex xs10></v-flex>
-                      </v-layout>
-                    </v-flex>
+                          <div class="mb-3"></div>
 
-                    <v-flex xs2>
-                      <div class="timeline">
-                        <h3 class="timeline-date hidden-sm-and-down">2016 - 2017</h3>
-                        <div class="timeline-point"></div>
-                      </div>
-                    </v-flex>
-                    <v-flex xs10>
-                      <h3 class="timeline-date text-xs-center hidden-md-and-up">2016 - 2017</h3>
-                      <v-card flat class="cv-card">
-                        <div class="cv-card triangle"></div>
-                        <v-card-text>
-                          <h3>Concepteur Développeur, Enovalp - Agence Web - Grenoble (38)</h3>
-                          <div class="pa-0">
-                            <v-icon>chevron_right</v-icon>Refonte & Conception de la gestion article - migration de la base de donnée pour le diffuseur Sofédis (
+                          <v-expansion-panel :value="1">
+                            <v-expansion-panel-content>
+                              <template v-slot:header>
+                                <h5>2018 - Architecture & Réalisation d'une plateforme/produit ecommerce SaaS (essentiellement pour libraires) ; front & back, clients multiples & cloud (exemples :
+                            <a
+                              target="_blank"
+                              href="https://www.icigrandsboulevards.fr/"
+                            >https://www.icigrandsboulevards.fr/</a>
+                            ,
+                            <a target="_blank" href="https://www.appeldulivre.fr/">https://www.appeldulivre.fr/</a>
+                            ,
+                            <a target="_blank" href="https://www.librairiepradoparadis.fr/">https://www.librairiepradoparadis.fr/</a>
+                            )
+                            </h5>
+                              </template>
+                              <template v-slot:actions>
+                                <v-icon class="hidden-print">$vuetify.icons.expand</v-icon>
+                              </template>
+                              <div>
+                                <div class="pa-0">
+                                  <v-icon>chevron_right</v-icon>Catalogue produit, dialogue avec la gestion du magasin, Cms complet, Marketing, Promotions, Emailing, Paiements, Commandes, Gestion d'utilisateur
+                                  & permissions...
+                                </div>
+                                <div class="pa-0">
+                                  <v-icon>chevron_right</v-icon>Référent technique & aide aux autres développeurs
+                                </div>
+                                <div class="pa-0">
+                                  <v-icon>chevron_right</v-icon>ASP.NET CORE, EF CORE, REST, Swagger, Autofac, Hangfire, Cache, JWT, Azure DevOps (VSTS), Azure, AWS, VueJS, Nuxt, Vuetify, Webpack, Npm, NodeJS, Trello
+                                </div>
+                              </div>
+                            </v-expansion-panel-content>
+                          </v-expansion-panel>
+
+                          <div class="mb-2"></div>
+
+                          <v-expansion-panel :value="1">
+                            <v-expansion-panel-content>
+                              <template v-slot:header>
+                                <h5>2016 - 2017 - Refonte & Conception de la gestion article - migration de la base de donnée pour le diffuseur Sofédis (
                             <a
                               target="_blank"
                               href="http://www.sofedis.fr/"
-                            >http://www.sofedis.fr/</a>).
-                          </div>
+                            >http://www.sofedis.fr/</a>)
+                            </h5>
+                              </template>
+                              <template v-slot:actions>
+                                <v-icon class="hidden-print">$vuetify.icons.expand</v-icon>
+                              </template>
+                              <div>
+                                <div class="pa-1">
+                                  <v-icon>chevron_right</v-icon>Applicatif de gestion de base article, éditeurs, parutions...
+                                </div>
 
-                          <div class="pa-1">
-                            <v-icon>chevron_right</v-icon>Applicatif de gestion de base article, éditeurs, parutions...
-                          </div>
+                                <div class="pa-0">
+                                  <v-icon>chevron_right</v-icon>2 nouveaux sites : Editeur & Administrateur, architecture, conception, développement.
+                                </div>
 
-                          <div class="pa-0">
-                            <v-icon>chevron_right</v-icon>2 nouveaux sites : Editeur & Administrateur, architecture, conception, développement.
-                          </div>
+                                <div class="pa-0">
+                                  <v-icon>chevron_right</v-icon>Nombreux export & import : Pdf, Excel, Ftp & Api Rest
+                                </div>
 
-                          <div class="pa-0">
-                            <v-icon>chevron_right</v-icon>Nombreux export & import : Pdf, Excel, Ftp & Api Rest
-                          </div>
+                                <div class="pa-0">
+                                  <v-icon>chevron_right</v-icon>Définition des spécifications, suivi de projet, suivi du développement, coding
+                                </div>
 
-                          <div class="pa-0">
-                            <v-icon>chevron_right</v-icon>Définition des spécifications, suivi de projet, suivi du développement, coding
-                          </div>
+                                <div class="pa-0">
+                                  <v-icon>chevron_right</v-icon>ASP.NET CORE, Entity & Identity Framework, C#, SQL Server, Git, VueJS, Trello
+                                </div>
+                              </div>
+                            </v-expansion-panel-content>
+                          </v-expansion-panel>
 
-                          <div class="pa-0">
-                            <v-icon>chevron_right</v-icon>ASP.NET CORE, Entity & Identity Framework, C#, SQL Server, Git, VueJS, Trello
-                          </div>
+                          <div class="mb-2"></div>
+
+                          <v-expansion-panel :value="1">
+                            <v-expansion-panel-content>
+                              <template v-slot:header>
+                                <!-- <h5>2015 - 2016 - Refonte complète et migration des 4 sites de la librairie Molat (<a target="_blank" href="https://www.mollat.com">https://www.mollat.com</a>)</h5> -->
+                                <h5>2014 - 2016 - Refonte complète et migration des 4 sites de la librairie Molat (<a target="_blank" href="https://www.mollat.com">https://www.mollat.com</a>)</h5>
+                              </template>
+                              <template v-slot:actions>
+                                <v-icon class="hidden-print">$vuetify.icons.expand</v-icon>
+                              </template>
+                              <div>
+
+                                <div class="pa-0">
+                                  <v-icon>chevron_right</v-icon>CMS, Site e-commerce, Site Pro, Site culturel, Blogs. Plateforme big data (analyse & profiling utilisateur)
+                                </div>
+                                <div class="pa-0">
+                                  <v-icon>chevron_right</v-icon>Conception des modèles de données SQL, Architecture du CMS, Creation & Utilisation d'API de dialogue avec le système de gestion
+                                  interne
+                                </div>
+                                <div class="pa-0">
+                                  <v-icon>chevron_right</v-icon>Refonte des schémas SQL & ré-écriture de l'ensemble du système e-commerce
+                                </div>
+                                <div class="pa-0">
+                                  <v-icon>chevron_right</v-icon>Réalisation des pages clients, workflow de commande & paiement, SSO (3 domaines)
+                                </div>
+                                <div class="pa-0">
+                                  <v-icon>chevron_right</v-icon>ecommerce sous forme d'un CMS complet, newsletter, permissions...
+                                </div>
+                                <div class="pa-0">
+                                  <v-icon>chevron_right</v-icon>Plateforme MongoDB : tracking, analyse & profiling utilisateur
+                                </div>
+                                <div class="pa-0">
+                                  <v-icon>chevron_right</v-icon>ASP.NET MVC5, Entity & Identity Framework, C# & VB.NET, Html, Css, Responsive, MySql, SOAP & REST, Js, Git, Azure, MongoDB
+                                </div>
+
+                              </div>
+                            </v-expansion-panel-content>
+                          </v-expansion-panel>
+
                         </v-card-text>
                       </v-card>
                     </v-flex>
-
+                    
                     <v-flex xs12>
                       <v-layout>
                         <v-flex xs2>
@@ -252,68 +352,15 @@
 
                     <v-flex xs2>
                       <div class="timeline">
-                        <h3 class="timeline-date hidden-sm-and-down">2015 - 2016</h3>
+                        <!-- <h3 class="timeline-date hidden-sm-and-down">2015</h3> -->
+                        <h3 class="timeline-date hidden-sm-and-down">2014</h3>
                         <div class="timeline-point"></div>
                       </div>
                     </v-flex>
+
                     <v-flex xs10>
-                      <h3 class="timeline-date text-xs-center hidden-md-and-up">2015 - 2016</h3>
-                      <v-card flat class="cv-card">
-                        <div class="cv-card triangle"></div>
-                        <v-card-text>
-                          <h3>Concepteur Développeur, Enovalp - Agence Web - Grenoble (38)</h3>
-
-                          <div class="pa-0">
-                            <v-icon>chevron_right</v-icon>Projet : Refonte complète et migration des 4 sites de la librairie Molat (
-                            <a target="_blank" href="https://www.mollat.com">https://www.mollat.com</a>)
-                          </div>
-
-                          <div class="pa-0">
-                            <v-icon>chevron_right</v-icon>CMS, Site e-commerce, Site Pro, Site culturel, Blogs. Plateforme big data (analyse & profiling utilisateur)
-                          </div>
-
-                          <div class="pa-0">
-                            <v-icon>chevron_right</v-icon>Conception des modèles de données SQL, Architecture du CMS, Creation & Utilisation d'API de dialogue avec le système de gestion
-                            interne
-                          </div>
-                          <div class="pa-0">
-                            <v-icon>chevron_right</v-icon>Refonte des schémas SQL & ré-écriture de l'ensemble du système e-commerce
-                          </div>
-                          <div class="pa-0">
-                            <v-icon>chevron_right</v-icon>Réalisation des pages clients, workflow de commande & paiement, SSO (3 domaines)
-                          </div>
-                          <div class="pa-0">
-                            <v-icon>chevron_right</v-icon>ecommerce sous forme d'un CMS complet, newsletter, permissions...
-                          </div>
-                          <div class="pa-0">
-                            <v-icon>chevron_right</v-icon>Plateforme MongoDB : tracking, analyse & profiling utilisateur
-                          </div>
-                          <div class="pa-0">
-                            <v-icon>chevron_right</v-icon>ASP.NET MVC5, Entity & Identity Framework, C# & VB.NET, Html, Css, Responsive, MySql, SOAP & REST, Js, Git, Azure, MongoDB
-                          </div>
-                        </v-card-text>
-                      </v-card>
-                    </v-flex>
-
-                    <v-flex xs12>
-                      <v-layout>
-                        <v-flex xs2>
-                          <div class="timeline">
-                            <div class="pt-3"></div>
-                          </div>
-                        </v-flex>
-                        <v-flex xs10></v-flex>
-                      </v-layout>
-                    </v-flex>
-
-                    <v-flex xs2>
-                      <div class="timeline">
-                        <h3 class="timeline-date hidden-sm-and-down">2015</h3>
-                        <div class="timeline-point"></div>
-                      </div>
-                    </v-flex>
-                    <v-flex xs10>
-                      <h3 class="timeline-date text-xs-center hidden-md-and-up">2015</h3>
+                      <!-- <h3 class="timeline-date text-xs-center hidden-md-and-up">2015</h3> -->
+                      <h3 class="timeline-date text-xs-center hidden-md-and-up">2014</h3>
                       <v-card flat class="cv-card">
                         <div class="cv-card triangle"></div>
                         <v-card-text>
@@ -422,51 +469,58 @@
                   <h2 class="mb-3">
                     <v-icon left>settings</v-icon>Compétences
                   </h2>
-                  <h3>
-                    <v-icon left>build</v-icon>Back-End
-                  </h3>
 
                   <v-layout align-center>
 
                     <v-flex xs7 align-center>
-                      <div class="mb-2" />
-                      C#, ASP.NET CORE (+MVC), LINQ, 
-                      <div class="mb-2" />
-                      Tests unitaires & fonctionnels (MsTest, NUnit),
-                      <div class="mb-2" />
-                      Architecture (Layered, CQRS, Clean), Multitenancy/SaaS
-                       </v-flex>
+                        <h3>
+                          <v-icon left>build</v-icon>Back-End
+                        </h3>
+                    </v-flex>
                     <v-flex xs5 pl-2>
                       <!-- <div class="progress-value">45</div> -->
                       <v-progress-linear value="95" height="20" color="green"></v-progress-linear>
                     </v-flex>
                   </v-layout>
 
-                  <v-layout align-center mt-3>
-                    <v-flex
-                      xs7
-                    >
-                    ORM (EF6, EF CORE), 
-                    
+                  <v-layout align-center>
+                    <v-flex xs12 align-center>
+                    <b>Architecture - Patterns : </b>
+                    <div class="mt-1"></div>
+                    Modular-monolith, Microservices <br>
+                    Bounded context & Domain Driven Design<br>
+                    Clean Architecture-Hexagonale / Layered, CQRS<br>
+                    <div class="mb-1"></div>
+                    <div class="mt-1 " style="border:solid 1px #9e9e9e"></div>
+                    Software craftsmanship, Software quality, Technical debt control and management
+                    <div class="mb-1"></div>
+                    <div class="mt-1" style="border:solid 1px #9e9e9e"></div>
+                    Multitenancy, SaaS, Dependency injection, SRP, Testability, Scalability, Availablity, Resilience, Distributed locks
+                    <div class="mt-1"></div>
+
                     <div class="mb-2" />
 
-                    REST (Swagger), 
-                    SOAP, 
-                    Auth (JWT, Identity Framework), 
-
+                    <b>Framework : </b> C#, .NET, LINQ, ORM (EF6, EF CORE, NHibernate, Dapper...)<br>
                     <div class="mb-2" />
 
-                    Patterns DDD,
-                    Injection de dépendances, 
-                    Event bus, Outbox Pattern, Background services (Hangfire), 
-                    Cache (InMemory, Distribué), 
-                    Logs (Serilog),
-                  
+                    <b>Test : </b> Unit & Integration (MsTest, NUnit...)<br>
+                    <div class="mb-2" />
+
+                    <b>Messaging - Processing : </b> Event bus, Outbox Pattern, Background services (Hangfire, Quartz, RabbitMQ...)<br>
+                    <div class="mb-2" />
+
+                    <b>Api : </b> REST, SOAP, JWT, OpenAPI (Swagger), Rate Limiting, Resilience and fault-handling (Polly)<br>
+                    <div class="mb-2" />
+
+                    <b>Cache : </b> InMemory, Distributed (SQL, Redis)<br>
+                    <div class="mb-2" />
+
+                    <b>Log - Monitoring : </b> (Serilog, NLog) & Stack Elasticsearch - Logstash - Kibana, Grafana
+
                     </v-flex>
-                    <v-flex xs5 pl-2>
-                      <v-progress-linear value="95" height="20" color="green"></v-progress-linear>
-                    </v-flex>
+
                   </v-layout>
+                  
                 </v-card-text>
 
                 <v-card-text>
@@ -490,18 +544,20 @@
 
                 <v-card-text>
                   <h3>
-                    <v-icon left>dns</v-icon>Ops
+                    <v-icon left>dns</v-icon>Ops - Cloud
                   </h3>
                   <v-layout align-center>
-                    <v-flex xs7>Intégration continue (Azure DevOps), Déploiement continu (Azure DevOp), Cloud Azure, Cloud AWS</v-flex>
+                    <v-flex xs7>Continuous integration, continuous deployment (Azure DevOps, Teamcity, Octopus), 
+                      <br>Cloud Azure, Cloud AWS
+                      </v-flex>
                     <v-flex xs5 pl-2>
                       <v-progress-linear value="75" height="20" color="green"></v-progress-linear>
                     </v-flex>
                   </v-layout>
                   <v-layout align-center>
-                    <v-flex xs7>Docker, DockerCompose, Shell-Bash</v-flex>
+                    <v-flex xs7>Docker, DockerCompose, Shell-Bash, Powershell</v-flex>
                     <v-flex xs5 pl-2>
-                      <v-progress-linear value="55" height="20" color="green"></v-progress-linear>
+                      <v-progress-linear value="65" height="20" color="green"></v-progress-linear>
                     </v-flex>
                   </v-layout>
                 </v-card-text>
@@ -512,14 +568,22 @@
                   </h3>
 
                   <v-layout align-center>
-                    <v-flex xs7>Relationnel (MySQL, SQL Server, PostGreSQL)</v-flex>
+                    <v-flex xs7>
+                      Relationnal (MySQL, SQL Server, PostGreSQL)
+                      <br>
+                      Locks, Transactions, Migrations
+                    </v-flex>
                     <v-flex xs5 pl-2>
                       <v-progress-linear value="90" height="20" color="green"></v-progress-linear>
                     </v-flex>
                   </v-layout>
 
                   <v-layout align-center>
-                    <v-flex xs7>Document (MongoDB)</v-flex>
+                    <v-flex xs7>
+                      Document (MongoDB, Elasticsearch)
+                      <br>
+                      KeyValue (Redis)
+                      </v-flex>
                     <v-flex xs5 pl-2>
                       <v-progress-linear value="65" height="20" color="green"></v-progress-linear>
                     </v-flex>
@@ -533,13 +597,11 @@
                   </h3>
 
                   <div>
-                    <v-chip disabled label>Architecture Web & Cloud</v-chip>
                     <v-chip disabled label>Clean Code</v-chip>
-                    <v-chip disabled label>DDD</v-chip>
                     <v-chip disabled label>Code Review</v-chip>
                     <v-chip disabled label>Pair programming</v-chip>
-
-                    <v-chip disabled label>Trello</v-chip>
+                    <v-chip disabled label>Trello / Jira</v-chip>
+                    <v-chip disabled label>Miro</v-chip>
                     <v-chip disabled label>Git</v-chip>
                     <v-chip disabled label>Photoshop</v-chip>
                     <v-chip disabled label>Illustator</v-chip>
@@ -701,7 +763,8 @@
                   <v-layout wrap>
                     <v-flex xs3>
                       <div class="timeline">
-                        <h3 class="pt-4 pr-3">2014 - 2015</h3>
+                        <!-- <h3 class="pt-4 pr-3">2014 - 2015</h3> -->
+                        <h3 class="pt-4 pr-3">2014</h3>
                         <div class="timeline-point"></div>
                       </div>
                     </v-flex>
@@ -857,7 +920,7 @@ export default {
   components: {},
   data: function () {
     return {
-      theme: 1
+      theme: 0
     }
   },
   created: function () { },
