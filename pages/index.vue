@@ -84,11 +84,10 @@
                   
                   <v-icon left>format_quote</v-icon> 
                   <br>
-                  Passionné par l'architecture logicielle, des infrastructures et la mise en place de bonnes pratiques de développement ;
-                  Je suis continuellement engagé dans l'amélioration de la qualité des solutions et projets dont je m'occupe, 
+                  Passionné par l'architecture logicielle, la conception d'infrastructures, l'industrialisation et la mise en place de bonnes pratiques de développement :
+                  use-case driven, design collaboratif, pair & mob-programming, code review, conventions, ect...
                   <br>
-                  Soucieux de répondre aux besoins métiers tout en livrant un travail de haute qualité, performant et évolutif ;
-                  Je suis entousiaste à travailler en équipe : mob-programming, code review, design collaboratif, conventions, ect...
+                  Je suis continuellement engagé dans l'amélioration de la qualité des solutions et projets dont je m'occupe.
                   <br>
                   <v-icon left>format_quote</v-icon> 
                 </div>
@@ -151,12 +150,12 @@
 
                     <v-flex xs2>
                       <div class="timeline">
-                        <h3 class="timeline-date hidden-sm-and-down">2019-2021</h3>
+                        <h3 class="timeline-date hidden-sm-and-down">2017-2021</h3>
                         <div class="timeline-point"></div>
                       </div>
                     </v-flex>
                     <v-flex xs10>
-                      <h3 class="timeline-date text-xs-center hidden-md-and-up">2019-2021</h3>
+                      <h3 class="timeline-date text-xs-center hidden-md-and-up">2017-2021</h3>
                       <v-card flat class="cv-card">
                         <div class="cv-card triangle"></div>
                         <v-card-text>
@@ -184,161 +183,6 @@
                       </v-card>
                     </v-flex>
 
-                    <v-flex xs12>
-                      <v-layout>
-                        <v-flex xs2>
-                          <div class="timeline">
-                            <div class="pt-3"></div>
-                          </div>
-                        </v-flex>
-                        <v-flex xs10></v-flex>
-                      </v-layout>
-                    </v-flex>
-
-
-                    <v-flex xs2>
-                      <div class="timeline">
-                        <!-- <h3 class="timeline-date hidden-sm-and-down">2015-2018</h3> -->
-                        <h3 class="timeline-date hidden-sm-and-down">2014-2018</h3>
-                        <div class="timeline-point"></div>
-                      </div>
-                    </v-flex>
-                    <v-flex xs10>
-                      <!-- <h3 class="timeline-date text-xs-center hidden-md-and-up">2015-2018</h3> -->
-                      <h3 class="timeline-date text-xs-center hidden-md-and-up">2014-2018</h3>
-                      <v-card flat class="cv-card">
-                        <div class="cv-card triangle"></div>
-                        <v-card-text>
-                        <h3>Concepteur Développeur, Enovalp - Agence Web - Grenoble (38)</h3>
-                          <div class="pa-0">
-                            <v-icon>chevron_right</v-icon>Catalogue produit, dialogue avec la gestion du magasin, Cms complet, Marketing, Promotions, Emailing, Paiements, Commandes, Gestion d'utilisateur
-                            & permissions...
-                          </div>
-                          <div class="pa-0">
-                            <v-icon>chevron_right</v-icon>Référent technique & aide aux autres développeurs
-                          </div>
-                          <div class="pa-0">
-                            <v-icon>chevron_right</v-icon>ASP.NET CORE, EF CORE, REST, Swagger, Autofac, Hangfire, Cache, JWT, Azure DevOps (VSTS), Azure, AWS, VueJS, Nuxt, Vuetify, Webpack, Npm, NodeJS, Trello
-                          </div>
-
-                          <div class="mb-3"></div>
-
-                          <v-expansion-panel :value="1">
-                            <v-expansion-panel-content>
-                              <template v-slot:header>
-                                <h5>2018 - Architecture & Réalisation d'une plateforme/produit ecommerce SaaS (essentiellement pour libraires) ; front & back, clients multiples & cloud (exemples :
-                            <a
-                              target="_blank"
-                              href="https://www.icigrandsboulevards.fr/"
-                            >https://www.icigrandsboulevards.fr/</a>
-                            ,
-                            <a target="_blank" href="https://www.appeldulivre.fr/">https://www.appeldulivre.fr/</a>
-                            ,
-                            <a target="_blank" href="https://www.librairiepradoparadis.fr/">https://www.librairiepradoparadis.fr/</a>
-                            )
-                            </h5>
-                              </template>
-                              <template v-slot:actions>
-                                <v-icon class="hidden-print">$vuetify.icons.expand</v-icon>
-                              </template>
-                              <div>
-                                <div class="pa-0">
-                                  <v-icon>chevron_right</v-icon>Catalogue produit, dialogue avec la gestion du magasin, Cms complet, Marketing, Promotions, Emailing, Paiements, Commandes, Gestion d'utilisateur
-                                  & permissions...
-                                </div>
-                                <div class="pa-0">
-                                  <v-icon>chevron_right</v-icon>Référent technique & aide aux autres développeurs
-                                </div>
-                                <div class="pa-0">
-                                  <v-icon>chevron_right</v-icon>ASP.NET CORE, EF CORE, REST, Swagger, Autofac, Hangfire, Cache, JWT, Azure DevOps (VSTS), Azure, AWS, VueJS, Nuxt, Vuetify, Webpack, Npm, NodeJS, Trello
-                                </div>
-                              </div>
-                            </v-expansion-panel-content>
-                          </v-expansion-panel>
-
-                          <div class="mb-2"></div>
-
-                          <v-expansion-panel :value="1">
-                            <v-expansion-panel-content>
-                              <template v-slot:header>
-                                <h5>2016 - 2017 - Refonte & Conception de la gestion article - migration de la base de donnée pour le diffuseur Sofédis (
-                            <a
-                              target="_blank"
-                              href="http://www.sofedis.fr/"
-                            >http://www.sofedis.fr/</a>)
-                            </h5>
-                              </template>
-                              <template v-slot:actions>
-                                <v-icon class="hidden-print">$vuetify.icons.expand</v-icon>
-                              </template>
-                              <div>
-                                <div class="pa-1">
-                                  <v-icon>chevron_right</v-icon>Applicatif de gestion de base article, éditeurs, parutions...
-                                </div>
-
-                                <div class="pa-0">
-                                  <v-icon>chevron_right</v-icon>2 nouveaux sites : Editeur & Administrateur, architecture, conception, développement.
-                                </div>
-
-                                <div class="pa-0">
-                                  <v-icon>chevron_right</v-icon>Nombreux export & import : Pdf, Excel, Ftp & Api Rest
-                                </div>
-
-                                <div class="pa-0">
-                                  <v-icon>chevron_right</v-icon>Définition des spécifications, suivi de projet, suivi du développement, coding
-                                </div>
-
-                                <div class="pa-0">
-                                  <v-icon>chevron_right</v-icon>ASP.NET CORE, Entity & Identity Framework, C#, SQL Server, Git, VueJS, Trello
-                                </div>
-                              </div>
-                            </v-expansion-panel-content>
-                          </v-expansion-panel>
-
-                          <div class="mb-2"></div>
-
-                          <v-expansion-panel :value="1">
-                            <v-expansion-panel-content>
-                              <template v-slot:header>
-                                <!-- <h5>2015 - 2016 - Refonte complète et migration des 4 sites de la librairie Molat (<a target="_blank" href="https://www.mollat.com">https://www.mollat.com</a>)</h5> -->
-                                <h5>2014 - 2016 - Refonte complète et migration des 4 sites de la librairie Molat (<a target="_blank" href="https://www.mollat.com">https://www.mollat.com</a>)</h5>
-                              </template>
-                              <template v-slot:actions>
-                                <v-icon class="hidden-print">$vuetify.icons.expand</v-icon>
-                              </template>
-                              <div>
-
-                                <div class="pa-0">
-                                  <v-icon>chevron_right</v-icon>CMS, Site e-commerce, Site Pro, Site culturel, Blogs. Plateforme big data (analyse & profiling utilisateur)
-                                </div>
-                                <div class="pa-0">
-                                  <v-icon>chevron_right</v-icon>Conception des modèles de données SQL, Architecture du CMS, Creation & Utilisation d'API de dialogue avec le système de gestion
-                                  interne
-                                </div>
-                                <div class="pa-0">
-                                  <v-icon>chevron_right</v-icon>Refonte des schémas SQL & ré-écriture de l'ensemble du système e-commerce
-                                </div>
-                                <div class="pa-0">
-                                  <v-icon>chevron_right</v-icon>Réalisation des pages clients, workflow de commande & paiement, SSO (3 domaines)
-                                </div>
-                                <div class="pa-0">
-                                  <v-icon>chevron_right</v-icon>ecommerce sous forme d'un CMS complet, newsletter, permissions...
-                                </div>
-                                <div class="pa-0">
-                                  <v-icon>chevron_right</v-icon>Plateforme MongoDB : tracking, analyse & profiling utilisateur
-                                </div>
-                                <div class="pa-0">
-                                  <v-icon>chevron_right</v-icon>ASP.NET MVC5, Entity & Identity Framework, C# & VB.NET, Html, Css, Responsive, MySql, SOAP & REST, Js, Git, Azure, MongoDB
-                                </div>
-
-                              </div>
-                            </v-expansion-panel-content>
-                          </v-expansion-panel>
-
-                        </v-card-text>
-                      </v-card>
-                    </v-flex>
-                    
                     <v-flex xs12>
                       <v-layout>
                         <v-flex xs2>
@@ -405,14 +249,169 @@
                       </v-layout>
                     </v-flex>
 
+
                     <v-flex xs2>
                       <div class="timeline">
-                        <h3 class="timeline-date hidden-sm-and-down">2011 - 2014</h3>
+                        <!-- <h3 class="timeline-date hidden-sm-and-down">2015-2018</h3> -->
+                        <h3 class="timeline-date hidden-sm-and-down">2012-2017</h3>
                         <div class="timeline-point"></div>
                       </div>
                     </v-flex>
                     <v-flex xs10>
-                      <h3 class="timeline-date text-xs-center hidden-md-and-up">2011 - 2014</h3>
+                      <!-- <h3 class="timeline-date text-xs-center hidden-md-and-up">2015-2018</h3> -->
+                      <h3 class="timeline-date text-xs-center hidden-md-and-up">2012-2017</h3>
+                      <v-card flat class="cv-card">
+                        <div class="cv-card triangle"></div>
+                        <v-card-text>
+                        <h3>Concepteur Développeur, Enovalp - Agence Web - Grenoble (38)</h3>
+                          <div class="pa-0">
+                            <v-icon>chevron_right</v-icon>Catalogue produit, dialogue avec la gestion du magasin, Cms complet, Marketing, Promotions, Emailing, Paiements, Commandes, Gestion d'utilisateur
+                            & permissions...
+                          </div>
+                          <div class="pa-0">
+                            <v-icon>chevron_right</v-icon>Référent technique & aide aux autres développeurs
+                          </div>
+                          <div class="pa-0">
+                            <v-icon>chevron_right</v-icon>ASP.NET CORE, EF CORE, REST, Swagger, Autofac, Hangfire, Cache, JWT, Azure DevOps (VSTS), Azure, AWS, VueJS, Nuxt, Vuetify, Webpack, Npm, NodeJS, Trello
+                          </div>
+
+                          <div class="mb-3"></div>
+
+                          <v-expansion-panel :value="1">
+                            <v-expansion-panel-content>
+                              <template v-slot:header>
+                                <h5># Architecture & Réalisation d'une plateforme/produit ecommerce SaaS (essentiellement pour libraires) ; front & back, clients multiples & cloud (exemples :
+                            <a
+                              target="_blank"
+                              href="https://www.icigrandsboulevards.fr/"
+                            >https://www.icigrandsboulevards.fr/</a>
+                            ,
+                            <a target="_blank" href="https://www.appeldulivre.fr/">https://www.appeldulivre.fr/</a>
+                            ,
+                            <a target="_blank" href="https://www.librairiepradoparadis.fr/">https://www.librairiepradoparadis.fr/</a>
+                            )
+                            </h5>
+                              </template>
+                              <template v-slot:actions>
+                                <v-icon class="hidden-print">$vuetify.icons.expand</v-icon>
+                              </template>
+                              <div>
+                                <div class="pa-0">
+                                  <v-icon>chevron_right</v-icon>Catalogue produit, dialogue avec la gestion du magasin, Cms complet, Marketing, Promotions, Emailing, Paiements, Commandes, Gestion d'utilisateur
+                                  & permissions...
+                                </div>
+                                <div class="pa-0">
+                                  <v-icon>chevron_right</v-icon>Référent technique & aide aux autres développeurs
+                                </div>
+                                <div class="pa-0">
+                                  <v-icon>chevron_right</v-icon>ASP.NET CORE, EF CORE, REST, Swagger, Autofac, Hangfire, Cache, JWT, Azure DevOps (VSTS), Azure, AWS, VueJS, Nuxt, Vuetify, Webpack, Npm, NodeJS, Trello
+                                </div>
+                              </div>
+                            </v-expansion-panel-content>
+                          </v-expansion-panel>
+
+                          <div class="mb-2"></div>
+
+                          <v-expansion-panel :value="1">
+                            <v-expansion-panel-content>
+                              <template v-slot:header>
+                                <h5># Refonte & Conception de la gestion article - migration de la base de donnée pour le diffuseur Sofédis (
+                            <a
+                              target="_blank"
+                              href="http://www.sofedis.fr/"
+                            >http://www.sofedis.fr/</a>)
+                            </h5>
+                              </template>
+                              <template v-slot:actions>
+                                <v-icon class="hidden-print">$vuetify.icons.expand</v-icon>
+                              </template>
+                              <div>
+                                <div class="pa-1">
+                                  <v-icon>chevron_right</v-icon>Applicatif de gestion de base article, éditeurs, parutions...
+                                </div>
+
+                                <div class="pa-0">
+                                  <v-icon>chevron_right</v-icon>2 nouveaux sites : Editeur & Administrateur, architecture, conception, développement.
+                                </div>
+
+                                <div class="pa-0">
+                                  <v-icon>chevron_right</v-icon>Nombreux export & import : Pdf, Excel, Ftp & Api Rest
+                                </div>
+
+                                <div class="pa-0">
+                                  <v-icon>chevron_right</v-icon>Définition des spécifications, suivi de projet, suivi du développement, coding
+                                </div>
+
+                                <div class="pa-0">
+                                  <v-icon>chevron_right</v-icon>ASP.NET CORE, Entity & Identity Framework, C#, SQL Server, Git, VueJS, Trello
+                                </div>
+                              </div>
+                            </v-expansion-panel-content>
+                          </v-expansion-panel>
+
+                          <div class="mb-2"></div>
+
+                          <v-expansion-panel :value="1">
+                            <v-expansion-panel-content>
+                              <template v-slot:header>
+                                <!-- <h5>2015 - 2016 - Refonte complète et migration des 4 sites de la librairie Molat (<a target="_blank" href="https://www.mollat.com">https://www.mollat.com</a>)</h5> -->
+                                <h5># Refonte complète et migration des 4 sites de la librairie Molat (<a target="_blank" href="https://www.mollat.com">https://www.mollat.com</a>)</h5>
+                              </template>
+                              <template v-slot:actions>
+                                <v-icon class="hidden-print">$vuetify.icons.expand</v-icon>
+                              </template>
+                              <div>
+
+                                <div class="pa-0">
+                                  <v-icon>chevron_right</v-icon>CMS, Site e-commerce, Site Pro, Site culturel, Blogs. Plateforme big data (analyse & profiling utilisateur)
+                                </div>
+                                <div class="pa-0">
+                                  <v-icon>chevron_right</v-icon>Conception des modèles de données SQL, Architecture du CMS, Creation & Utilisation d'API de dialogue avec le système de gestion
+                                  interne
+                                </div>
+                                <div class="pa-0">
+                                  <v-icon>chevron_right</v-icon>Refonte des schémas SQL & ré-écriture de l'ensemble du système e-commerce
+                                </div>
+                                <div class="pa-0">
+                                  <v-icon>chevron_right</v-icon>Réalisation des pages clients, workflow de commande & paiement, SSO (3 domaines)
+                                </div>
+                                <div class="pa-0">
+                                  <v-icon>chevron_right</v-icon>ecommerce sous forme d'un CMS complet, newsletter, permissions...
+                                </div>
+                                <div class="pa-0">
+                                  <v-icon>chevron_right</v-icon>Plateforme MongoDB : tracking, analyse & profiling utilisateur
+                                </div>
+                                <div class="pa-0">
+                                  <v-icon>chevron_right</v-icon>ASP.NET MVC5, Entity & Identity Framework, C# & VB.NET, Html, Css, Responsive, MySql, SOAP & REST, Js, Git, Azure, MongoDB
+                                </div>
+
+                              </div>
+                            </v-expansion-panel-content>
+                          </v-expansion-panel>
+
+                        </v-card-text>
+                      </v-card>
+                    </v-flex>
+
+                    <v-flex xs12>
+                      <v-layout>
+                        <v-flex xs2>
+                          <div class="timeline">
+                            <div class="pt-3"></div>
+                          </div>
+                        </v-flex>
+                        <v-flex xs10></v-flex>
+                      </v-layout>
+                    </v-flex>
+
+                    <v-flex xs2>
+                      <div class="timeline">
+                        <h3 class="timeline-date hidden-sm-and-down">< 2012</h3>
+                        <div class="timeline-point"></div>
+                      </div>
+                    </v-flex>
+                    <v-flex xs10>
+                      <h3 class="timeline-date text-xs-center hidden-md-and-up">< 2012</h3>
                       <v-card flat class="cv-card">
                         <div class="cv-card triangle"></div>
                         <v-card-text>
@@ -506,7 +505,7 @@
                     <b>Test : </b> Unit & Integration (MsTest, NUnit...)<br>
                     <div class="mb-2" />
 
-                    <b>Messaging - Processing : </b> Event bus, Outbox Pattern, Background services (Hangfire, Quartz, RabbitMQ...)<br>
+                    <b>Messaging - Processing : </b> Event bus (RabbitMQ, Amazon SQS/SNS), Outbox Pattern, Background services (Hangfire, Quartz, .net ...)<br>
                     <div class="mb-2" />
 
                     <b>Api : </b> REST, SOAP, JWT, OpenAPI (Swagger), Rate Limiting, Resilience and fault-handling (Polly)<br>
@@ -569,7 +568,7 @@
 
                   <v-layout align-center>
                     <v-flex xs7>
-                      Relationnal (MySQL, SQL Server, PostGreSQL)
+                      Relationnal (MySQL, SQL Server, PostgreSql)
                       <br>
                       Locks, Transactions, Migrations
                     </v-flex>
@@ -706,7 +705,7 @@
                       <div class="timeline-point"></div>
                       <v-card flat class="cv-card">
                         <v-card-text>
-                          <h3 class="text-xs-center">2006 - 2007</h3>
+                          <h3 class="text-xs-center study-year">2006 - 2007</h3>
                           <h3 class="text-xs-center">BAC</h3>
                           <div class="pa-3">Baccalauréat Général Série S - Mention AB - Privas (07)</div>
                         </v-card-text>
@@ -717,7 +716,7 @@
                       <div class="timeline-point"></div>
                       <v-card flat class="cv-card">
                         <v-card-text>
-                          <h3 class="text-xs-center">2007 - 2008</h3>
+                          <h3 class="text-xs-center study-year">2007 - 2008</h3>
                           <h3 class="text-xs-center">Classe Préparatoire</h3>
                           <div class="pa-3">Classe préparatoire école d'ingénieur (E.S.I.S.A.R) - Valence (26)</div>
                         </v-card-text>
@@ -728,7 +727,7 @@
                       <div class="timeline-point"></div>
                       <v-card flat class="cv-card">
                         <v-card-text>
-                          <h3 class="text-xs-center">2008 - 2010</h3>
+                          <h3 class="text-xs-center study-year">2008 - 2010</h3>
                           <h3 class="text-xs-center">BAC+2</h3>
                           <div class="pa-3">DUT Génie Thermique et Energie - Université Joseph Fourier - Grenoble (38)</div>
                         </v-card-text>
@@ -739,7 +738,7 @@
                       <div class="timeline-point"></div>
                       <v-card flat class="cv-card">
                         <v-card-text>
-                          <h3 class="text-xs-center">2010 - 2011</h3>
+                          <h3 class="text-xs-center study-year">2010 - 2011</h3>
                           <h3 class="text-xs-center">BAC+3</h3>
                           <div class="pa-3">Licence Professionnelle Chargé d’Affaires en Génie Climatique - Mention AB - Université Blaise Pascal - Montluçon (03)</div>
                         </v-card-text>
@@ -750,7 +749,7 @@
                       <div class="timeline-point"></div>
                       <v-card flat class="cv-card">
                         <v-card-text>
-                          <h3 class="text-xs-center">2014 - 2015</h3>
+                          <h3 class="text-xs-center study-year">2014 - 2015</h3>
                           <h3 class="text-xs-center">BAC+4</h3>
                           <div class="pa-3">Concepteur-développeur informatique Option J2EE - AFPA - Pont de Claix (38)</div>
                         </v-card-text>
@@ -793,7 +792,7 @@
                   <v-layout wrap>
                     <v-flex xs3>
                       <div class="timeline">
-                        <h3 class="pt-4 pr-3">2010 - 2011</h3>
+                        <h3 class="pt-4 pr-3 study-year">2010 - 2011</h3>
                         <div class="timeline-point"></div>
                       </div>
                     </v-flex>
@@ -822,7 +821,7 @@
                   <v-layout wrap>
                     <v-flex xs3>
                       <div class="timeline">
-                        <h3 class="pt-4 pr-3">2008 - 2010</h3>
+                        <h3 class="pt-4 pr-3 study-year">2008 - 2010</h3>
                         <div class="timeline-point"></div>
                       </div>
                     </v-flex>
@@ -851,7 +850,7 @@
                   <v-layout wrap>
                     <v-flex xs3>
                       <div class="timeline">
-                        <h3 class="pt-4 pr-3">2007 - 2008</h3>
+                        <h3 class="pt-4 pr-3 study-year">2007 - 2008</h3>
                         <div class="timeline-point"></div>
                       </div>
                     </v-flex>
@@ -880,7 +879,7 @@
                   <v-layout wrap>
                     <v-flex xs3>
                       <div class="timeline">
-                        <h3 class="pt-4 pr-3">2006 - 2007</h3>
+                        <h3 class="pt-4 pr-3 study-year">2006 - 2007</h3>
                         <div class="timeline-point"></div>
                       </div>
                     </v-flex>
