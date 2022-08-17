@@ -11,7 +11,7 @@
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint",
-    "deploy": "git subtree push --prefix dist origin gh-pages"
+    "deploy": "rmdir /s /q .\\_nuxt & nuxt generate & xcopy .\\dist .\\ /E /H /Y & git add . & git commit -m 'new-deploy' & git push"
   },
   "dependencies": {
     "nuxt": "^2.4.0",

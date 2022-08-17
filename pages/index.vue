@@ -8,16 +8,21 @@
               <v-card-text>
                 <v-layout>
                   <v-flex xs4>
-                    <div style="height:118px; overflow:hidden">
-                      <!-- <img style="max-width: 158px; margin-top: -12px; margin-left: -11px;" src="profil.jpg" alt="photo-profil-gorce-pierre"> -->
 
-                      <v-img src="profil.jpg" aspect-ratio="1.3" class="grey lighten-2">
+                     <div style="display: flex;
+                                flex-wrap: nowrap;
+                                align-content: center;
+                                justify-content: center;
+                                align-items: center;">
+                      <!-- <img style="max-width: 158px; margin-top: -12px; margin-left: -11px;" src="profil.jpg" alt="photo-profil-gorce-pierre"> -->
+                    <img style="width: 100%;" src="~/assets/profil.jpg" />
+                      <!-- <v-img contain src="/assets/profil.jpg" aspect-ratio="1.6">
                         <template v-slot:placeholder>
                           <v-layout fill-height align-center justify-center ma-0>
                             <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
                           </v-layout>
                         </template>
-                      </v-img>
+                      </v-img> -->
                     </div>
                   </v-flex>
                   <v-flex xs9 pl-3 style="overflow:hidden;">
@@ -32,6 +37,10 @@
                       <v-icon left>public</v-icon>
                       <a target="_blank" href="https://pierregorce.github.io/">https://pierregorce.github.io/</a>
                     </div>
+                    <!-- <div style="width:200px;">
+                      <v-icon left>cake</v-icon>
+                      <span>02 août</span>
+                    </div> -->
                     <div class="hidden-print" style="text-align: right;">
                       <v-btn flat icon small @click="theme==0 ? theme=1 : theme=0">
                         <div v-if="theme==0">
@@ -47,26 +56,37 @@
               </v-card-text>
             </v-card>
             <v-card>
-              <v-layout>
-                <v-flex v-ripple xs3 class="green profil-block">
+              <v-layout style="overflow : hidden;">
+                <v-flex v-ripple xs3 class="green profil-block" style="flex-basis: 20% !important;">
                   <div>
                     <v-icon>room</v-icon>
                   </div>
-                  <div class="caption">Montpellier (34) <br> Full-remote</div>
+                  <div class="caption">
+                    Full-remote
+                  </div>
+                  <div style="font-size:9px">
+                    France
+                  </div>
                 </v-flex>
-                <v-flex v-ripple xs3 class="grey profil-block">
+                <v-flex v-ripple xs3 class="grey profil-block" style="background-color: rgba(197, 214, 54, 1) !important; flex-basis: 20% !important;">
                   <div>
                     <v-icon>favorite</v-icon>
                   </div>
                   <div class="caption">Passionné</div>
                 </v-flex>
-                <v-flex v-ripple xs3 class="blue profil-block">
+                <v-flex v-ripple xs3 class="blue profil-block" style="flex-basis: 20% !important;">
                   <div>
                     <v-icon>search</v-icon>
                   </div>
                   <div class="caption">Curieux</div>
                 </v-flex>
-                <v-flex v-ripple xs3 class="violet profil-block">
+                <v-flex v-ripple xs3 class="violet profil-block" style="flex-basis: 20% !important;">
+                  <div>
+                    <v-icon>hive</v-icon>
+                  </div>
+                  <div class="caption">Rigoureux</div>
+                </v-flex>
+                <v-flex v-ripple xs3 class="yellow profil-block" style="background-color: rgba(24, 217, 163, 0.7) !important; flex-basis: 20% !important;">
                   <div>
                     <v-icon>rowing</v-icon>
                   </div>
@@ -81,15 +101,14 @@
               <v-card-text>
                 <h1>Développeur & Architecte Logiciel</h1>
                 <div style="font-size:16px;">
-                  
-                  <v-icon left>format_quote</v-icon> 
-                  <br>
-                  Passionné par l'architecture logicielle, la conception d'infrastructures, l'industrialisation et la mise en place de bonnes pratiques de développement :
-                  use-case driven, design collaboratif, pair & mob-programming, code review, conventions, ect...
-                  <br>
-                  Je suis continuellement engagé dans l'amélioration de la qualité des solutions et projets dont je m'occupe.
                   <br>
                   <v-icon left>format_quote</v-icon> 
+                  Je suis passionné par l'architecture logicielle, la conception d'infrastructures, l'industrialisation et la mise en place de bonnes pratiques de développement :
+                  craftsmanship, usine logicielle, pair & mob-programming, design collaboratif, conventions, clean code, définition de besoin, ect...
+                  <br>
+                  Je suis ainsi continuellement engagé dans l'amélioration de la qualité des solutions et projets dont je m'occupe.
+                  <br>
+                  <br>
                 </div>
               </v-card-text>
             </v-card>
@@ -490,10 +509,10 @@
                     Bounded context & Domain Driven Design<br>
                     Clean Architecture-Hexagonale / Layered, CQRS<br>
                     <div class="mb-1"></div>
-                    <div class="mt-1 " style="border:solid 1px #9e9e9e"></div>
+                    <div class="mt-1 " style="border:solid 1px #9e9e9e; background: #9e9e9e;"></div>
                     Software craftsmanship, Software quality, Technical debt control and management
                     <div class="mb-1"></div>
-                    <div class="mt-1" style="border:solid 1px #9e9e9e"></div>
+                    <div class="mt-1" style="border:solid 1px #9e9e9e; background: #9e9e9e;"></div>
                     Multitenancy, SaaS, Dependency injection, SRP, Testability, Scalability, Availablity, Resilience, Distributed locks
                     <div class="mt-1"></div>
 
@@ -625,7 +644,7 @@
                         <v-avatar v-ripple color="transparent" size="100" style="background-color: rgba(101, 193, 120, 0.9)  !important; cursor: pointer;">
                           <div>
                             <div>
-                              <v-icon>directions_run</v-icon>
+                              <v-icon>sports_tennis</v-icon>
                             </div>
                             <h3>SQUASH</h3>
                           </div>
@@ -636,7 +655,7 @@
                         <v-avatar v-ripple color="transparent" size="100" style="background-color: rgba(0, 191, 221, 0.9) !important; cursor: pointer;">
                           <div>
                             <div>
-                              <v-icon>far fa-paper-plane</v-icon>
+                              <v-icon>paragliding</v-icon>
                             </div>
                             <h3>KITESURF</h3>
                           </div>
@@ -919,7 +938,7 @@ export default {
   components: {},
   data: function () {
     return {
-      theme: 0
+      theme: 1
     }
   },
   created: function () { },
